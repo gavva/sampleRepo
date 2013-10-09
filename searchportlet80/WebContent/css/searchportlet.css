@@ -1,0 +1,4788 @@
+/*********************** ES COPYRIGHT START  *********************************
+  @copyright(disclaimer)
+  
+  Licensed Materials - Property of IBM
+  5724-Z21
+  (C) Copyright IBM Corp. 2003, 2012
+  
+  US Government Users Restricted Rights
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+  
+  DISCLAIMER OF WARRANTIES :
+  
+  Permission is granted to copy and modify this Sample code, and to
+  distribute modified versions provided that both the copyright
+  notice, and this permission notice and warranty disclaimer appear
+  in all copies and modified versions.
+  
+  THIS SAMPLE CODE IS LICENSED TO YOU "AS-IS".
+  IBM  AND ITS SUPPLIERS AND LICENSORS  DISCLAIM
+  ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, IN SUCH SAMPLE CODE,
+  INCLUDING THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+  WILL IBM OR ITS LICENSORS OR SUPPLIERS BE LIABLE FOR ANY DAMAGES ARISING
+  OUT OF THE USE OF  OR INABILITY TO USE THE SAMPLE CODE, DISTRIBUTION OF
+  THE SAMPLE CODE, OR COMBINATION OF THE SAMPLE CODE WITH ANY OTHER CODE.
+  IN NO EVENT SHALL IBM OR ITS LICENSORS AND SUPPLIERS BE LIABLE FOR ANY
+  LOST REVENUE, LOST PROFITS OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+  CONSEQUENTIAL,INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS
+  OF THE THEORY OF LIABILITY, EVEN IF IBM OR ITS LICENSORS OR SUPPLIERS
+  HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  
+  @endCopyright
+ *********************** ES COPYRIGHT END  ***********************************/
+/*-----------------------------------------
+  button.css start
+------------------------------------------*/
+ 
+ .edr .ButtonContainer {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	width: 100%;
+	/*height: 100%;*/
+	border: none;
+	background-image: none;
+}
+
+.edr .ButtonContainerTop {
+	background-image: url("../images/button_active_topright.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+
+.dj_ie .edr .ButtonContainerTop {
+	height: 17px; 
+} 
+
+.edr .ButtonContainerTopLeft {
+	width: 2px;
+	height: 17px; 
+	background-image: url("../images/button_active_topleft.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.dj_ie .edr .ButtonContainerTopLeft {
+	margin-right: -2px;
+}
+
+.edr .ButtonContainerTopMiddle {
+	margin: 0px 2px;
+	background-image: url("../images/button_active_topcenter.png");
+	background-repeat: repeat-x;
+	height: 17px; 
+}
+
+.dj_ie .edr .ButtonContainerTopMiddle {
+	margin: 0px 2px 0px 2px; 
+}
+
+.edr .ButtonContainerBottom {
+	background-image: url("../images/button_active_bottomright.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.dijitRtl .edr .ButtonContainerBottom {
+	background-image: url("../images/button_active_bottomleft.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.widgetsLtr .edr .ButtonContainerBottom {
+	background-image: url("../images/button_active_bottomright.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.edr .ButtonContainerBottomLeft {
+	width: 2px;
+	height: 4px;
+	background-image: url("../images/button_active_bottomleft.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.dijitRtl .edr .ButtonContainerBottomLeft {
+	width: 2px;
+	height: 4px;
+	background-image: url("../images/button_active_bottomright.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.widgetsLtr .edr .ButtonContainerBottomLeft {
+	width: 2px;
+	height: 4px;
+	background-image: url("../images/button_active_bottomleft.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.dj_ie .edr .ButtonContainerBottomLeft {
+	float: left;
+}
+
+.dj_ie.dijitRtl .edr .ButtonContainerBottomLeft {
+	float: right;
+}
+
+.edr .ButtonContainerBottomMiddle {
+	margin: -4px 2px 0px; 
+	background-image: url("../images/button_active_bottomcenter.png");
+	background-position: top center;
+	height: 4px;
+}
+
+.dj_ie .edr .ButtonContainerBottomMiddle {
+	margin: 0px 2px 0px 2px; 
+}
+	
+.edr .ButtonContainerMiddle {
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.edr .ButtonContainerMiddleLeft {
+}
+
+.edr .ButtonContainerMiddleMiddle {
+}
+
+.edr .ButtonContent {
+	margin: 0px 3px;
+}
+
+.edr .ButtonContainer .dijitButtonNode {
+	width:100%;
+	border: none;
+	background: none;
+	margin-top: -1px !important;
+}
+
+.edr .dijitButtonActive .dijitButtonNode {
+	/* border-color:#366dba;
+	background: #ededed url("images/buttonActive.png") bottom repeat-x; */
+/*	border: none; @@tmp@@*/
+}
+/*-----------------------------------------
+	DISABLED BUTTONS START
+------------------------------------------*/
+.edr .dijitButtonDisabled .ButtonContainerTop {
+	background-image: url("../images/button_disabled_topright.png");
+}
+
+.edr .dijitButtonDisabled .ButtonContainerTopLeft {
+	background-image: url("../images/button_disabled_topleft.png");
+}
+
+.edr .dijitButtonDisabled .ButtonContainerTopMiddle {
+	background-image: url("../images/button_disabled_topcenter.png");
+}
+
+.edr .dijitButtonDisabled .ButtonContainerBottom {
+	background-image: url("../images/button_disabled_bottomright.png");
+}
+
+.edr .dijitButtonDisabled .ButtonContainerBottomLeft {
+	background-image: url("../images/button_disabled_bottomleft.png");
+}
+
+.edr .dijitButtonDisabled .ButtonContainerBottomMiddle {
+	background-image: url("../images/button_disabled_bottomcenter.png");
+}
+/*-----------------------------------------
+	DISABLED BUTTONS START
+------------------------------------------*/
+/*-----------------------------------------
+	HOVERED BUTTONS START
+------------------------------------------*/
+.edr .dijitButtonHover .ButtonContainerTop {
+	background-image: url("../images/button_hover_topright.png");
+}
+
+.edr .dijitButtonHover .ButtonContainerTopLeft {
+	background-image: url("../images/button_hover_topleft.png");
+}
+
+.edr .dijitButtonHover .ButtonContainerTopMiddle {
+	background-image: url("../images/button_hover_topcenter.png");
+}
+
+.edr .dijitButtonHover .ButtonContainerBottom {
+	background-image: url("../images/button_hover_bottomright.png");
+}
+
+.edr .dijitButtonHover .ButtonContainerBottomLeft {
+	background-image: url("../images/button_hover_bottomleft.png");
+}
+
+.edr .dijitButtonHover .ButtonContainerBottomMiddle {
+	background-image: url("../images/button_hover_bottomcenter.png");
+}
+/*-----------------------------------------
+	HOVERED BUTTONS START
+------------------------------------------*/
+
+/*-----------------------------------------
+  button.css end
+------------------------------------------*/
+
+/*-----------------------------------------
+  common.css start
+------------------------------------------*/
+
+/*-----------------------------------------
+	PAGE BODY BEGIN
+------------------------------------------*/
+
+.edr .dijitSplitter {
+	z-index: 0 !important;
+}
+
+.edr.portletOverallContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.edr .bannerHeader {
+	width: 100%;
+	height: 3em;
+	position: absolute;
+	top: 0;
+}
+
+.edr .topBorderContainer {
+	left: 10px;
+	right: 10px;
+	position: absolute;
+	top: 3em;
+	bottom: 9px;	
+	background: none;
+}
+
+.edr .queryContentPane {
+/*	min-height: 100px; */
+	background: none;
+}
+
+.edr .contentDiv {	
+	overflow:hidden;
+	background: none;
+}
+
+.edr .footerDiv {
+	width: 100%;
+	height: 9px;
+	position: absolute;
+	bottom: 0;	
+}
+
+.edr .searchPaneClass {
+	width: 100%;
+}
+
+.edr .horizontalSearchPanes {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	right: 0px;
+}
+
+/*-----------------------------------------
+	PAGE BODY END
+------------------------------------------*/
+
+/*-----------------------------------------
+	SWOOSH BEGIN
+------------------------------------------*/
+
+#swoosh {
+	background-image: url('../images/login_bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.defaultDistance {
+	width:1px;
+	height:50%;
+	margin-bottom:-179px; /* half of container's height (280px) plus banner height (39px) */
+	float:left;
+}
+
+/*-----------------------------------------
+	SWOOSH END
+------------------------------------------*/
+
+/*-----------------------------------------
+	SPLASH SCREEN BEGIN
+------------------------------------------*/
+
+.edr .Splash { 
+	background-image: url('../images/edisc_bg.png');
+	height: 100%;
+	width: 100%;
+	text-align: center;		
+	padding: 0;
+	margin: 0;
+	z-index: 999;
+	vertical-align: center; 
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: white;
+	background-repeat: repeat-x;
+}
+
+.edr .Splash .SplashDistance {
+	width: 1px;
+	height: 50%;
+	margin-bottom:-30px; /* half of container's height (60px) */
+	float: left;
+}
+
+.edr .Splash .SplashInner {
+	width: 190px; 	
+	height: 60px; 
+	line-height: 60px;
+	color: #000; 	
+	clear: left;
+	position: relative;
+	border: 1px solid #666666;
+	background-color: #FFF;
+	margin: 0 auto;
+	opacity: .85;
+	filter: alpha(opacity=85); 
+	-moz-opacity: 0.85;
+	padding: 0px;
+}
+
+.edr .Splash .SplashInner img {
+	vertical-align: middle;
+}	
+
+/*-----------------------------------------
+	SPLASH SCREEN END
+------------------------------------------*/
+		
+		
+/*-----------------------------------------
+	HTML ELEMENT STYLES BEGIN
+------------------------------------------*/
+
+/* General links within all pages. Changes to links are in table and tree classes */
+.edr a {
+	color: #003366;
+}
+.edr a:visited {
+    color: #660033;
+}    
+.edr a, a:active, a:visited, a:hover {
+	cursor: pointer;
+	font-weight: normal;
+}
+
+/* General color change for links when hovered over. */
+.edr a:hover {
+    color: #339999;
+	text-decoration: underline;
+}
+	
+.edr img {
+	border: 0px;
+}
+
+
+/*-----------------------------------------
+	HTML ELEMENT STYLES END
+------------------------------------------*/
+
+/*-----------------------------------------
+	FORM STYLES BEGIN
+------------------------------------------*/
+
+.edr form {
+	margin: 0;
+	padding: 0;
+}
+
+.edr input, .edr textarea,.edr select, .edr button {
+	font-family: Tahoma;
+	font-size: 12px;
+/*	width: auto;*/
+	color: #000;
+}
+.edr .dijitButtonNode {
+	color: #003366;
+}	
+
+.edr form label { 
+	padding: 0; 
+}
+
+.edr .dijitTextBoxFocused,
+.edr .dijitComboBoxFocused,
+.edr .dijitSpinnerFocused {
+	/* input field when focused (ie: typing affects it) */
+	border-color:#666666;
+}
+
+.dj_ie .edr INPUT.dijitTextBox,
+.dj_ie .edr TD.dijitInputField,
+.dj_ie .edr .dijitInputField INPUT {
+	height: 15px; /* needed since the INPUT is position:absolute */
+}
+
+/*-----------------------------------------
+	FORM STYLES END
+------------------------------------------*/
+
+/*-----------------------------------------
+	PORTLET BEGIN
+------------------------------------------*/
+	
+.edr .customDialog_portlet {
+	background-color: #FFF;
+	position: absolute;
+}
+
+.edr .customDialog_portlet .customDialog_header {
+	height: 23px;
+}
+
+.dj_ie.dijitRtl .edr .customDialog_portlet .customDialog_header {
+	position: relative;
+}
+
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top {
+	background-image: url("../images/edisc_titlebar_right.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_left {
+	width: 3px;
+	height: 20px;
+	background-image: url("../images/edisc_titlebar_left.png");
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_left {
+	margin-right: -3px;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle {
+	color: #000;
+	height: 20px;
+	line-height: 20px;
+	margin: 0px 3px;
+	background-image: url("../images/edisc_titlebar_center.png");
+	background-repeat: repeat-x;
+	font-size: 12px;
+	position: relative;
+}
+
+.dj_ie .edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle {
+	margin: 0px 3px 0px 3px;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle .customDialog_title {
+	padding: 0px 5px;
+	text-align: left;
+	float: left;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle .context-help {
+	padding: 0px 5px;
+	text-align: left;
+	float: right;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle .collapse {
+	float: right;
+	padding: 2px 5px;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle .collapse a.link {
+	text-decoration: none;
+	height: 16px;
+	width: 16px;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_bottom {
+	height:3px;
+	background-color:#FFF;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	background-image: url("../images/edisc_titlebar_bottom_right.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_bottom .customDialog_middle {
+	height:3px;
+	background-color:#FFF;
+	border-top: 1px solid #666666;
+	margin: 0 3px;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_bottom .customDialog_left {
+	width: 3px;
+	height: 3px;
+	background-image: url("../images/edisc_titlebar_bottom_left.png");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top left;
+	float: left;
+	position: relative;
+}
+
+.edr .customDialog_portlet .customDialog_content {
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #FFF;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	position: absolute;
+	top: 23px;
+	bottom: 4px;
+	left: 0;
+	right: 0;
+	padding-top: 1px;
+	overflow: auto;
+}
+
+.edr .customDialog_portlet .customDialog_footer {
+	height: 4px; /* curved image height + 1 px border */
+	background-color: #FFF;
+	background-image: url("../images/edisc_portlet_bottom_right.png");	
+	background-color: transparent;
+	background-position: right top;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0px;
+	left: 1px;
+	right: 1px;
+}
+
+.edr .customDialog_portlet .customDialog_footer .customDialog_middle {
+	height: 3px;
+	background-color: #FFF;
+	border-bottom: 1px solid #666666;
+	margin: 0 3px;
+}
+
+.edr .customDialog_portlet .customDialog_footer .customDialog_left {
+	width: 3px;
+	height: 3px;
+	background-color: #FFF;
+	background-image: url("../images/edisc_portlet_bottom_left.png");	
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top left;
+	float: left;
+	position: relative;
+}
+
+.edr .customDialog_portlet .customDialog_buttonBar {
+	height: 35px;
+	background-image: url("../images/edisc_button_bar_right.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	border-top: 1px solid #666666;
+}
+
+.dj_ie .edr .customDialog_portlet .customDialog_buttonBar {
+	position: relative;
+}
+
+.edr .customDialog_portlet .customDialog_buttonBar .customDialog_middle {
+	height: 35px;
+	margin: 0px 3px;
+	background-image: url("../images/edisc_button_bar_center.png");
+	background-repeat: repeat-x;
+	background-position: right bottom;
+	position: relative;	
+}
+
+.edr .customDialog_portlet .customDialog_buttonBar .customDialog_buttons {
+	float: right;
+	padding-right: 5px;
+	margin-top: 5px;
+}
+
+.dijitRtl .edr .customDialog_portlet .customDialog_buttonBar .customDialog_buttons {
+	float: left;
+	padding-left: 5px;
+	margin-top: 5px;
+}	
+
+.edr .customDialog_portlet .customDialog_buttonBar .customDialog_left {
+	width: 3px;
+	height: 35px;
+	background-image: url("../images/edisc_button_bar_left.png");	
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	float: left;
+	position: relative;
+}
+
+/*-----------------------------------------
+	PORTLET END
+------------------------------------------*/
+
+/*-----------------------------------------
+	BANNER BEGIN
+------------------------------------------*/
+
+.edr .Banner {
+	color: #FFF;
+	height: 3.1em;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.edr .Banner .BannerLeft {
+	background-image: url("../images/edisc_banner_left.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	position: relative;
+	float: left;
+	width: 20px;
+	height: 3.1em;
+}
+
+.dj_ie .edr .Banner .BannerLeft {
+	margin-right: -20px;
+}
+
+.edr .Banner .BannerGroup {
+	background-image: url("../images/edisc_banner_right.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 100%;
+	height: 3.1em;
+}
+
+.edr .Banner .BannerCenter {
+	background-image: url("../images/edisc_banner_center.png");
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	position: relative;
+	margin: 0px 20px 0px 20px;
+	height: 3.1em;
+}
+
+.dj_ie .edr .Banner .BannerCenter {
+	margin: 0px 20px 0px 20px;
+}
+
+.edr .Banner .BannerContent {
+	padding: 0px 10px;
+	text-align: left;	
+}
+
+.edr .Banner .BannerContent .BannerLogo {
+	float: left;
+	margin-top: 3px;	
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerLogo {
+	float: right;
+}
+
+.edr .Banner .BannerContent .BannerProductName {
+	font-weight:bold;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 9px; /* (parent height - image height)/2 ; hack to vertically align the image */ 
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerProductName {
+	float: right;	
+}
+
+.edr .Banner .BannerContent .BannerNav {
+	height: 30px;
+	line-height: 30px;
+	float: right;
+	font-size: 12px;
+	color: #FFF;
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerNav {
+	float: left;
+}
+
+.edr .Banner .BannerContent .BannerNav a {
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerNav a {
+	
+}
+
+.edr .Banner .BannerContent .BannerNav a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.edr .Banner .BannerContent .BannerLoginId {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #FFF;
+	float:right;
+	margin-right:10px;
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerLoginId {
+	float: left;
+}
+
+.edr .Banner .BannerContent .BannerLoginId span {
+	font-weight:bold;
+}
+
+.edr .Banner .BannerContent .BannerCollections {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #FFF;
+	float:right;
+	margin-right:70px;
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerCollections {
+	float: left;
+}
+
+.edr .Banner .BannerContent .BannerCollections span {
+	font-weight:bold;
+}
+
+.edr .Banner .BannerContent .BannerCollections a {
+	font-size: 12px;
+	color: #FFF;
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerCollections a {
+	
+}
+
+.edr .Banner .BannerContent .BannerCollections a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+/* for portlet */
+.edr.portletOverallContainer .Banner {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerLeft {
+	background-image: none;
+}
+
+.edr.portletOverallContainer .Banner .BannerLogo {
+	display: none;
+}
+
+.edr.portletOverallContainer .Banner .BannerGroup {
+	background-image: none;
+}
+
+.edr.portletOverallContainer .Banner .BannerCenter {
+	background-image: none;
+}
+
+.edr.portletOverallContainer .Banner .BannerProductName {
+	visibility: hidden;
+}
+
+.edr.portletOverallContainer .Banner .BannerNav {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerNav a {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerNav a:hover {
+	color: #293E5F;
+}
+
+.edr.Portlet .Banner {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerContent .BannerCollections span {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerContent .BannerCollections a {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerContent .BannerCollections a:hover {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerLoginId {
+	display: none;
+}
+
+.edr.portletOverallContainer .separator_myProfile {
+	display: none;
+}
+
+.edr.portletOverallContainer .link_help {
+	display: none;
+}
+
+.edr.portletOverallContainer .separator_help {
+	display: none;
+}
+
+.edr.portletOverallContainer .link_about {
+	display: none;
+}
+
+.edr.portletOverallContainer .separator_about {
+	display: none;
+}
+
+.edr.portletOverallContainer .link_logOff {
+	display: none;
+}
+
+/*-----------------------------------------
+	BANNER END
+------------------------------------------*/
+
+/*-----------------------------------------
+	SEARCH FORM BEGIN
+------------------------------------------*/
+
+.edr .advSearchForm .searchFormInput {
+	margin-bottom: 4px;
+}
+
+/* override dojo's TitlePane style */
+.tundra.edr .dijitTitlePaneContentOuter {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;	
+}
+
+/* override dojo's TitlePane style */
+.tundra.edr .dijitTitlePane .dijitArrowNode {
+	height:14px;
+}
+
+.edr .advSearchForm label {	
+	color: #000;
+	padding: 0 0 0 1px;
+	font-size: 12px;
+}
+
+.edr .advSearchForm input.textbox {
+	width: 90%;
+}
+
+.edr .advSearchForm div.date-label {
+	float: left;
+	padding-right: 5px;
+	padding-left: 9px
+}
+
+.edr .advSearchForm .date-textbox {
+	width: 75px;
+}
+
+.edr .advSearchForm .date-row img {
+	vertical-align: middle;
+}	
+
+.edr .advSearchForm #concepts-more-link {
+	color: #000;
+	font-size: 10px;
+	font-style: italic;
+	margin-left: 35px;	
+}
+
+.edr .advSearchForm .noError, #searchForm .error {
+	padding-left: 2px;
+	font-size: 12px;
+}
+
+.edr .advSearchForm .noError {
+	visibility: hidden;
+}
+
+.edr .advSearchForm .error {
+	color: red;
+	visibility: visible;
+}
+
+.edr .advSearchForm .inputRow {
+	margin: 0px;
+}
+
+.edr .advSearchForm label {
+	margin: 0px;
+	border: none;
+}
+
+/* override Dojo TitlePane's background */
+
+.tundra.edr .dijitTitlePane {
+	margin-bottom: 5px;
+}
+
+.tundra.edr .dijitTitlePane .dijitTitlePaneTitle {
+	background-image: url(../images/edisc_messages_center.png);
+	background-position: center top;
+	backgournd-repeat: repat-x;
+	padding:2px 2px 1px;
+	font-size: 12;
+	position:relative;
+}
+
+.tundra.edr .dijitTitlePaneContentOuter {
+	background-color: #F5F5F5;
+	border-top: none;
+	border-left: 1px solid #BFBFBF;
+	border-right: 1px solid #BFBFBF;
+	border-bottom: 1px solid #BFBFBF;
+}
+
+.tundra.edr .dijitTitlePaneContentInner {
+	position: relative;
+	padding: 0px;
+}
+
+.edr .advSearchForm .facet-dialog-link {
+	margin-left: -5px;
+	vertical-align: middle; 	
+}
+
+/*-----------------------------------------
+	SEARCH FORM END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	FLASH BEGIN
+------------------------------------------*/
+
+.edr .flash-container {
+	border: 1px solid #666666;
+	width: 400px;
+	background-color: #FFF;
+	padding: 5px;
+	margin: 2px;
+}
+	
+.edr .flash-heading {
+	padding: 2px;
+}
+
+.edr .flash-heading-text {
+	font-weight: bold;
+	color: #000;
+	float: left;
+	padding-left: 10px;
+}
+
+.edr .flash-icon {
+	float: left;
+}
+
+.edr .flash-hr {
+	clear: left;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #000;
+}
+	
+.edr .info {
+	color: #000;
+}
+
+.edr .info .info-entry {
+}
+
+.edr .warn {
+	color: #000;
+}
+
+.edr .warn .warn-entry {
+}
+
+.edr .error {
+	color: red;
+}
+
+.edr .error .error-entry {
+}
+
+.edr .info, .warn, .error {	
+	clear: both;	
+}
+
+.edr .info .info-entry, .warn .warn-entry, .error .error-entry {
+	padding: 5px 0px 5px 20px;
+}
+
+/*-----------------------------------------
+	FLASH END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	TOOLTIPS BEGIN
+------------------------------------------*/
+
+.edr .dijitTooltip, .edr .dijitTooltipContents {
+	/*font-family: Helvetica, Arial, Verdana, Sans Serif;*/
+	font-size: 10px;
+	/* width: 300px;  <= this causes left tooltip's arrows to not display correctly */
+}
+
+/*-----------------------------------------
+	TOOLTIPS END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	PREVIEW DIALOG BEGIN
+------------------------------------------*/
+
+.edr .previewDialogTitleMessage {
+	position:absolute;
+	top:8px;
+	right:20px;
+}
+
+.dijitRtl .edr .previewDialogTitleMessage {
+	left: 8px;
+	right: auto;
+}
+
+/*-----------------------------------------
+	PREVIEW DIALOG END
+------------------------------------------*/
+
+/*-----------------------------------------
+	FACET DIALOG START
+------------------------------------------*/
+
+.edr .facet-dlg-counts {
+	float: left;
+}
+
+.edr .facet-dlg-content .facet-column {
+}
+
+.edr .facet-dlg-content td {
+   vertical-align: top;
+   white-space: nowrap;
+}
+
+.edr .facet-column .facet-row {
+}
+
+.edr .facet-row {
+  position: relative;
+}
+
+.edr .facet-column .facet-row.odd {
+	background-color: #ECF3FB;
+}
+
+.edr .facet-column .facet-row.even {
+	background-color: #FFFFFF;
+}
+
+.edr .facet-column .facet-row img.include {
+   margin-left: 36px;
+}
+
+.edr .correlation-container {
+  background-color: white;
+  border: 1px solid #000000;
+  width: 30px;
+  height: 8px; 
+  position:absolute;
+  left: 0px;
+  top: 3px;  
+  margin: 1px 5px 0 0
+}
+
+.edr .correlation-container .correlation-bar {
+  background-image:url(../images/correlation_bar.png);
+  background-repeat:repeat-x;
+  height: 8px;
+}
+
+.edr .facet-dlg-filter {
+	float: right;
+	margin: 5px;
+}
+
+.edr .facet-dlg-sort {
+	float: right;
+	margin-right: 5px;
+}
+
+.edr .facet-dlg-sort-values {
+	font-size: 10px;
+}
+
+.edr .facet-dlg-sort-values a img {
+	padding-left: 3px;
+}
+
+.edr .facet-dlg-show label, .edr .facet-dlg-sort label {
+	color: #666666;
+	font-size: 10px;
+}
+
+.edr .facet-dlg-show .label, .edr .facet-dlg-sort .label {
+	color: #666666;
+	font-size: 10px;
+}
+
+.edr .facet-dlg-show .facet-dlg-show-values {
+	font-size: 10px;
+}
+
+.edr .dlg-filter {
+  padding-right: 2px;
+  float:right;
+  margin-top: 0.2em;
+}
+
+/*-----------------------------------------
+	FACET DIALOG END
+------------------------------------------*/
+
+/*-----------------------------------------
+	LOADING BACKGROUND BEGIN
+------------------------------------------*/
+
+.edr .loadingBackground {
+	background-color: #EEEEEE;
+	opacity: 0.6;
+}
+
+.edr .resizingBackground {
+	background-color: #EEEEEE;
+	opacity: 0.6;
+}
+
+/*-----------------------------------------
+	LOADING BACKGROUND END
+------------------------------------------*/
+
+/*-----------------------------------------
+	(ACC) LINK TO MAIN CONTENT BEGIN
+------------------------------------------*/
+.edr .forSkipNavigation {
+	top: -3000px;
+	position: absolute;
+	width: 100px;
+}
+
+.edr .hiddenHeading {
+	top: -3000px;
+	position: absolute;
+	width: 100px;	
+}
+
+.edr .hiddenAccessible {
+	top: -3000px;
+	position: absolute;
+	width: 100px;	
+	height: 0px;
+	overflow: hidden;
+}
+/*-----------------------------------------
+	(ACC) LINK TO MAIN CONTENT END
+------------------------------------------*/
+
+.edr .resizableTable th {
+    background-image: url(../images/edisc_messages_center.png);
+}
+
+.edr .tableHeaderCell {
+    position: relative;
+/*    width: 220px; */
+    height: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+  
+.edr .tableHeaderCellContent {
+	margin-left: 3px;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 98%;
+}
+  
+.edr .columnResizer {
+    cursor: w-resize;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 5px;
+    display: block;
+}
+
+/*-----------------------------------------
+	Resizable Table Column Support End
+------------------------------------------*/
+
+/*------------------------------------------
+	Override Dojo's default Style
+------------------------------------------*/
+
+.tundra.edr .dijitSplitContainer-child,
+.tundra.edr .dijitBorderContainer-child {
+	border: none;
+	padding: 0px;
+}
+
+.tundra.edr .dijitCheckBox {
+	background-image:url(../images/check_kiso_unsel13.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitCheckBoxChecked {
+	background-image:url(../images/check_kiso_sel13.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitCheckBoxDisabled {
+	background-image:url(../images/check_kiso_unsel13_d.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitCheckBoxCheckedDisabled {
+	background-image:url(../images/check_kiso_sel13_d.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitRadio,
+.tundra.edr .dijitRadioIcon {
+	background-image:url(../images/radio_kiso_unsel13.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitRadioDisabled {
+	background-image:url(../images/radio_kiso_unsel13_d.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitRadioChecked,
+.tundra.edr .dijitRadioCheckedHover,
+.tundra.edr .dijitToggleButtonChecked .dijitRadioIcon  {
+	background-image:url(../images/radio_kiso_sel13.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitRadioCheckedDisabled {
+	background-image:url(../images/radio_kiso_sel13_d.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitTabContainerTop-dijitContentPane,
+.tundra.edr .dijitTabContainerLeft-dijitContentPane,
+.tundra.edr .dijitTabContainerBottom-dijitContentPane,
+.tundra.edr .dijitTabContainerRight-dijitContentPane,
+.tundra.edr .dijitAccordionContainer-dijitContentPane {
+	background-color: #fff;
+	padding: 0px;
+}
+
+.tundra.edr .dijitTabContainerTop-container {
+	border-style: none;
+}
+
+/*------------------------------------------
+	for Analytics Preview Style
+------------------------------------------*/
+.edr .OFHighlightTerm1 {
+	background-color: #FFF9AE;	
+}
+
+.edr .OFHighlightTerm2 {
+	background-color: #adff2f
+}
+
+.edr .OFHighlightTerm3 {
+	background-color: #00ffff
+}
+
+.edr .OFHighlightTerm4 {
+	background-color: #87ceeb
+}
+
+.edr .OFHighlightTerm5 {
+	background-color: #32cd32
+}
+
+.edr .selectedOFHighlightTerm {
+	background-color: #AAAAAA !important;
+}
+
+.edr .detailHighlight {
+	background-color: #00FF00;
+}
+.edr .detailViewTable th {
+	font-weight: bold;
+	text-align: center;	
+}
+
+.edr .detailViewTable tr.odd {
+	background-color: #FFFFFF;
+}
+
+.edr .detailViewTable tr.even {
+	background-color: #DDEBFB;
+}
+
+.edr .detailViewTable tr.even:hover td,
+.edr .detailViewTable tr.odd:hover td {
+	background-color : #99CCCC;
+}
+
+.edr .detailViewTable tr.selected td {
+	background-color: #6E96C8 !important;
+}
+
+.edr .standardInfoTable th {
+	font-weight: bold; 
+	text-align: center;	
+}
+
+.edr .standardInfoTable tr.odd {
+	background-color: #FFFFFF;
+}
+
+.edr .standardInfoTable tr.even {
+	background-color: #F5F5F5;
+}
+
+/*------------------------------------------
+	for Query Tree Style
+------------------------------------------*/
+
+.edr .conjunctionTable td {
+    border: 1px solid white;
+    background-color: #F5F5F5;
+    background-image : none;
+}
+
+.edr .conjunctionTable td.selected {
+    background-color: #6E96C8 !important;
+    border: 1px solid white;
+}
+
+.edr .conjunctionTable td.option {
+	color: #2D3238 !important;
+    background-color: #C6CFD1 !important;
+    border: 1px solid white;
+}
+
+.edr .conjunctionTable td.mouseOver {
+	background-image : url(../images/edisc_bg.png) !important;
+	background-repeat: repeat-x;
+	background-color : #FFFFFF;
+	cursor : pointer;
+}
+
+.edr .conjunctionTable td.leaf {
+    border: 1px solid white;
+    background-color: #E6E6FA;
+    background-image : none;
+}
+
+/*------------------------------------------
+	for Type Ahead Table Style
+------------------------------------------*/
+.edr .typeAheadDiv {
+	max-height: 310px;
+	overflow: auto;
+	border: 1px solid #7B9EBD;
+	visibility: hidden;
+}
+
+.edr .typeAheadTable {
+	border-collapse : collapse;
+	width: 100%;
+}
+
+.edr .typeAheadTable tr {
+	cursor: pointer;
+}
+
+.edr .typeAheadTable tr.odd {
+	background-color: #FFFFFF;
+}
+
+.edr .typeAheadTable tr.even {
+	background-color: #F5F5F5;
+}
+
+.edr .typeAheadTable td.hasSeparator {
+	border-top: 1px solid #999999;
+}	
+
+.edr .typeAheadTable tr.selected td{
+	color: #FFFFFF;
+	background-color: #6E96C8 !important;
+}
+
+.edr .typeAheadTable tr.selected span{
+	color: #FFFFFF;
+	background-color: #6E96C8 !important;
+}
+
+.edr .typeAheadCellQuery{
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.edr .typeAheadCellLabel{
+	color: #999999;	
+}
+	
+.edr .typeAheadCellType{
+	color: #999999;	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.edr .typeAheadCell{
+	width: 30px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+.edr .typeAheadCellChart{
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 120px;
+	height: 8px;
+}
+
+.edr .typeAheadBarChart{
+	background-color:#6666FF;
+	background-image: url(../images/typeAheadBarChart.png);
+	background-repeat:repeat-x;
+	background-position:0% 0%;
+	height:100%;
+}
+
+.edr .leftContentTitle{
+	font-size:120%;
+	width: 100%;
+	height: 18px;
+	border-top: 1px solid black;
+	background-image : url(../images/button_active_topcenter_reverse.png);
+	background-repeat: repeat-x;
+	background-color : #FFFFFF;
+	background-position : 0% 99% ;
+	margin-bottom: 1px;
+}
+
+/*-----------------------------------------
+  common.css end
+------------------------------------------*/
+
+/*-----------------------------------------
+  dialog.css start
+------------------------------------------*/
+   
+/* Dialog Styling*/
+.edr .dijitDialog {
+	background-color: transparent;
+	overflow: hidden;
+	border: 0;
+}
+
+/* Close icon for the dialog */
+.edr .dijitDialog .closeIcon {
+	float: right;
+	padding: 2px 5px;
+}
+
+.edr .dijitDialog .contentOuter {
+	background-color: #FFF;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;	
+
+}
+
+.edr .dijitDialog .contentInner {	
+	padding: 5px;
+}
+
+/* Make sure hidden input fields have a display:none 
+   style to avoid a dojo bug with dialogs finding the wrong
+   first and last focusable input fields */
+.edr .dijitDialog input { /*this is for IE/WIN only*/
+	display: expression(this.type=="hidden"?'none':'');
+}
+
+.edr .dijitDialog input[type="hidden"] { 
+	display: none; 
+}
+
+/* Dialog Form Styling */
+.edr .dialogForm .input-text, .dialogForm textarea {
+	display: block;
+	width: 40%;
+	float: left;
+	margin-bottom: 10px;	
+}
+
+.edr .dialogForm label {
+	text-align: right;
+	width: 40%;
+	padding-right: 20px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.edr .dialogForm br {
+	clear: left;	
+}
+
+.edr .dialogForm {
+	margin-top: 9px;
+}
+
+.edr .dialogForm .dialogHeader {
+	padding: 0px 9px 9px;
+}
+
+.edr .progress-dialog {
+	height: 50px;	
+}
+
+.ExportSearchDialog .dijitComboBox {
+	width: 100%;
+}
+/*-----------------------------------------
+  dialog.css end
+------------------------------------------*/
+
+/*-----------------------------------------
+  email-list.css start
+------------------------------------------*/
+/*-----------------------------------------
+	SEARCH SYNTAX ERROR BEGIN
+------------------------------------------*/
+
+.edr .searchResultsHeaderTable { 
+	width: 100%;
+}
+
+.edr .email-search-error {
+	background-color: #ECF3FB;	
+	padding:9px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	overflow: auto;
+}
+
+.edr .query-error {
+	color: red;	
+}
+
+/*-----------------------------------------
+	SEARCH SYNTAX ERROR END
+------------------------------------------*/
+
+/*-----------------------------------------
+	NO RESULTS BEGIN
+------------------------------------------*/
+
+/*.edr #email-entry-empty-container {
+	width: 100%; 
+	background-color: #ECF3FB;
+}
+
+.edr #email-entry-empty {
+	width: 400px; 
+	margin: 0 auto; 
+	padding: 10px 0;	
+}*/
+
+/*-----------------------------------------
+	NO RESULTS END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	TOOLBAR BEGIN
+------------------------------------------*/
+
+/*
+.edr .results-toolbar-container {
+	margin: 0px;
+}
+
+.edr .results-toolbar {
+	background-color: #EBEBEB;
+	padding: 0px; 
+}
+.edr .results-toolbar.dijitToolbar {
+	height: 36px; 
+	line-height: 18px;
+	padding: 0px 4px;
+}
+*/
+/*
+.edr .results-toolbar.ToolbarContainer { 
+	height: 44px; 
+	line-height: 15px;
+} */
+
+/*.edr #results-container {
+	overflow: hidden;	
+	padding: 0px;
+}*/
+
+/*.edr .results-toolbar .ToolbarContainerMiddle {
+	height: 30px;  
+}*/
+
+.edr .results-toolbar .ToolbarContainerMiddleMiddle {
+	padding-top: 0px;
+	overflow:hidden;
+}
+
+/*.edr .dj_ie .results-toolbar #selectAllDiv {
+	margin-top: -3px;
+}*/
+
+.edr .results-toolbar .dijitButton {
+}
+
+/*.edr #results-middle {
+	margin-right: 10px;  
+}*/
+
+/*.edr #results-right {
+	text-align: right;
+	margin-right: 10px; 
+}*/
+
+/*.edr #results-count {
+	color: #000;
+	font-size: 1em;
+}
+
+.edr #results-count-1 {
+	display: inline;
+	width: 400px;
+	height: 35px;
+	margin-right: 15px;
+}
+
+.edr #results-count-1 label {
+	color: #666666;
+}
+
+.edr #results-selected {
+	color: #666666;
+}*/
+
+.edr .results-pagination {
+	color: #000;/*#4664A2;*/
+}
+
+.edr .results-pagination span.current {
+	color: #000;/*#4664A2;*/
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+.edr .results-pagination span.inactive {
+	color: #000;/*#4664A2;*/
+	font-weight: normal;
+	font-size: 10pt;
+}
+
+.edr .results-pagination a.active {
+	/*color: blue;*/ /*#000;*/
+	/*#4664A2;*/
+	font-weight: normal;
+	font-size: 10pt;
+	cursor: hand;
+}
+
+.edr .results-per-page {
+	/*padding-right: 10px;
+	position:relative;
+	top:-3px;
+	padding-top:2px; */
+}
+
+.edr .results-per-page-msg {
+/*	position:relative;
+	top:1px;
+	padding:0pt; */
+}
+
+.dj_ie .edr .results-per-page-msg {
+	top:2px;
+}
+
+.edr .results-per-page .dijitArrowButtonInner {
+	background-image: url("../images/arrow_down_blue_small.png");
+	width: 6px;
+	height: 5px; 
+}
+
+.edr .results-per-page .dojoxDropDownSelect{
+	position:relative;
+	top:-2px;
+}
+
+.dj_ie7 .edr .results-per-page .dojoxDropDownSelect{
+	position:relative;
+	top:3px;
+}
+
+.edr .ResultToolbarContent {
+	/*padding-right: 10px;
+	position:relative;
+	top:-3px;
+	padding-top:2px;
+	vertical-align:top*/
+}
+
+.edr .results-filter-by-msg {
+/*	position:relative;
+	top:1px;
+	padding:0pt; */
+}
+
+.dj_ie .edr .results-filter-by-msg {
+	top:2px;
+}
+
+.edr .ResultToolbarContent .dijitArrowButtonInner {
+	background-image: url("../images/arrow_down_blue_small.png");
+	width: 6px;
+	height: 5px; 
+}
+
+.edr .ResultToolbarContent .dojoxDropDownSelect{
+	position:relative;
+	top:-2px;
+}
+
+.dj_ie7 .edr .ResultToolbarContent .dojoxDropDownSelect{
+	position:relative;
+	top:3px;
+}
+
+/*.edr #results-displayed {
+	color: #000;
+}*/
+
+.edr .results-per-page div.drop-down {
+	padding: 0px 9px 0px 9px;
+}
+
+/* Lower email results toolbar */
+/*.edr #searchRightPaneDiv .results-toolbar .dijitToolbar#lowerEmailResultToolbarContainer {
+	background-image: none; 
+}
+
+.edr .results-toolbar #lowerEmailResultToolbarContainer .ToolbarContainerMiddle {
+}
+
+.edr #email-results-container #lowerEmailResultToolbarContainer .ToolbarContainerMiddle {
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.edr #email-results-container #lowerEmailResultToolbarContainer .ToolbarContainerBottom {
+	background-image: url("../images/edisc_rounded_light_bottom_right.png");
+}
+
+.edr #email-results-container #lowerEmailResultToolbarContainer .ToolbarContainerBottom .ToolbarContainerBottomLeft {
+	background-image: url("../images/edisc_rounded_light_bottom_left.png");
+	border-color: #CCCCCC;
+}
+
+.edr #email-results-container #lowerEmailResultToolbarContainer .ToolbarContainerBottom .ToolbarContainerBottomMiddle {
+	border-color: #CCCCCC;
+}*/
+
+/* preview button */
+/*.edr .previewEmailIcon {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background-image: url(../images/preview_23.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .previewEmailIcon {
+	background-image: url(../images/preview_u_23.gif);
+}*/
+
+/* move to folder button */
+/*.edr .moveEmailIcon {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background-image: url(../images/folder_copyto_23.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .moveEmailIcon {
+	background-image: url(../images/folder_copyto_u_23.gif);
+}
+
+.edr #email_set_flag_disabled_icon {
+	color: #666666; 
+	text-align: center;
+}
+
+.edr #email_set_flag_icon {
+	text-decoration: none; 
+	text-align: center;
+	cursor: pointer;
+}*/
+
+/* set flag button */
+.edr .setEmailFlagIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/flag23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/* IE only */
+.dj_ie .edr .setEmailFlagIcon {
+}
+
+.edr .dijitButtonDisabled .setEmailFlagIcon {
+	background-image: url(../images/flag23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .setEmailFlagIcon {
+	background-image: url(../images/flag26.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/* expand/collapse results */
+
+.edr .expandResultsIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/expand23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .expandResultsIcon {
+	background-image: url(../images/expand23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .searchBackwardIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/backward23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .searchBackwardIcon {
+	background-image: url(../images/backward23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+.edr .searchForwardIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/forward23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .searchForwardIcon {
+	background-image: url(../images/forward23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+.edr .openConfigDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/edit_display23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .openConfigDialogIcon {
+	background-image: url(../images/edit_display_d23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+.edr .saveSearchDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/save_flat23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .resetSearchButtonIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/reset23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .showSearchAreaButtonIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/query_text23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .hideSearchAreaButtonIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/refreshicon.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .exportSearchDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/export23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .exportSearchDialogIcon {
+	background-image: url(../images/export23_d.png);
+}
+
+.edr .deepInspectionDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/inspection-report23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .deepInspectionDialogIcon {
+	background-image: url(../images/inspection-report23_d.png);
+}
+
+.edr .cognosIntegrationDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/cognos_intg.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	position: relative;
+	top: 3px;	
+}
+
+.edr .facetSearchDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/search23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .facetSearchDialogIcon {
+	background-image: url(../images/search23_d.png);
+}
+
+.edr .previousHighlightButton {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/prev_match23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .nextHighlightButtonIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/next_match23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+/*
+.edr .dijitButtonDisabled .saveSearchDialogIcon {
+	background-image: url(../images/save16t_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+*/
+
+.edr .ResultBottomBar .dijitButtonNode {
+	border: 0 none;
+}
+.edr .ResultButtomBar span.dijitButton {
+	margin: 0px 0px 0px 0px;
+}
+
+
+/*
+.edr .dijitButtonHover .printResultsIcon {
+	background-image: url(../images/expand26.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+*/
+.edr .collapseResultsIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/collapse23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .collapseResultsIcon {
+	background-image: url(../images/collapse23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+/* set flag button */
+.edr .printResultsIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/print23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .printResultsIcon {
+	background-image: url(../images/print23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonHover .printResultsIcon {
+	background-image: url(../images/print26.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .exportEmailIcon {
+	background-image: url(../images/export23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/* layout buttons */
+.edr .layout1Icon {
+	margin-top: 2px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	background-image: url(../images/layout1.PNG);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .layout2Icon {
+	margin-top: 2px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	background-image: url(../images/layout2.PNG);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .layout3Icon {
+	margin-top: 2px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	background-image: url(../images/layout3.PNG);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .layout4Icon {
+	margin-top: 2px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	background-image: url(../images/layout4.PNG);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/*
+.edr .disabledAppearance {
+    filter: alpha(opacity=20);  
+    -moz-opacity: 0.2;          
+    opacity: 0.2;               
+}
+
+.edr .normalAppearance {
+    filter: alpha(opacity=100); 
+    -moz-opacity: 1;            
+    opacity: 1;                 
+}
+*/
+
+.dj_ie .edr .mixedCheckbox {
+	margin-left: 4px;
+	margin-top: 3px;
+}
+
+/*.edr #lowerEmailResultToolbarContainer {
+	display: none;
+}*/
+
+.edr .headerColumnSplitter {
+	display: inline;	
+}
+
+.edr .ResultToolbarContent {
+	display: inline-block;
+}
+
+.dj_ie .edr .ResultToolbarContent {
+	display: inline;
+	zoom: 1;
+}
+
+.edr .ResultToolbarTable {
+	color: #293e5f;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.edr .ResultToolbarTable .disabledInfo {
+	visibility: hidden;
+}
+	
+/*-----------------------------------------
+	TOOLBAR END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	EMAIL RESULTS HEADER BEGIN
+------------------------------------------*/
+
+.edr .email-toolbar-cp {
+	/* height: 67px; *//* fixed height for the header */ 
+}
+	
+/*.edr #email-results-heading {
+	border-bottom: 1px inset #9b9b9b;
+	clear:both;
+}
+	
+.edr #email-list-header {
+	height: 20px;
+	color: #000;
+	font-weight: normal;
+	table-layout:fixed;
+}*/
+
+.edr .result-column-default {
+	width: 160px;
+	padding-top: 5px;
+}
+
+.edr .result-column-info {
+	background-color: #FFF;
+	width: 220px;
+}
+
+.edr .result-column-filetype {
+	padding-top: 5px;
+	width: 160px;
+	cursor: pointer;
+}
+
+.edr .result-column-score {
+	padding-top: 5px;	
+	width: 100px;
+}
+
+.edr .result-column-date {
+	padding-top: 5px;	
+	width: 120px;
+}
+
+.edr .result-column-title {
+	width: 340px;
+	font-size: medium;
+/*	font-style: italic; */
+}
+
+.edr .email-list td.result-column-thumbnail {
+	vertical-align: middle;
+}
+
+.edr .email-list .result-column-thumbnail img {
+	margin-left: 3px;
+}
+
+.edr .result-column-description-container {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.edr .result-column-description-container-forcebr {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	word-break: break-all;
+}
+
+.edr .result-column-description {
+	padding-bottom: 0.5em;
+}
+
+/*-----------------------------------------
+	EMAIL RESULTS HEADER END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	EMAIL RESULTS BEGIN
+------------------------------------------*/
+/*.edr .dj_ie #email-results-border-div {
+	top: 55px;
+}
+
+.edr #email-results-border-div {
+	border-left: solid 1px #CCCCCC;
+	border-right: solid 1px #CCCCCC;
+	border-bottom: solid 1px #CCCCCC;	
+	position: absolute;
+	top: 53px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	overflow-x: hidden;
+	overflow-y: auto;	
+}
+
+.edr #email-results-cp {
+	overflow:auto;
+	overflow-x: hidden; 
+}*/
+	
+/*.edr #email-results-data {
+	overflow:auto;
+	overflow-x: hidden;
+}
+
+.edr .email-list {	
+}*/
+	
+/*.edr #results-sort-by label {
+	font-size: 10px;
+}
+
+.edr #results-sort-by label {
+	color: #666666;
+}
+
+.edr #results-sort-by #sortKeySelect {
+	font-size: 10px;
+}
+
+.edr #results-sort-by .currentKey {
+}
+
+.edr #results-sort-by a.sortKey {
+	font-size: 10px;
+	cursor: hand;
+}
+
+.edr #results-sort-by a img {
+	padding-left: 3px;
+}*/
+/*
+.edr #results-sort-by .sort-asc {
+	background-image: url(../images/sort_up8.png);	
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+
+.edr #results-sort-by .sort-desc {
+	background-image: url(../images/sort_down8.png);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;	
+} */
+
+/*.edr #results-group-by {
+	margin-right: 15px;
+	font-size: 10px;
+	padding-top:2px;
+}
+
+.edr #results-group-by label {
+	color: #666666;
+}
+
+.edr #results-group-by .currentKey {
+	font-weight: bold;
+}
+
+.edr #results-group-by a.groupKey {
+	font-weight: normal;
+	cursor: hand;
+}*/
+
+.edr .email-list td {
+	vertical-align: top;
+}
+	
+.edr .email-list th.actions, td.actions {
+	width: 10%;
+}
+
+.edr .email-list th.togglegroup, td.togglegroup {
+	width: 1%;
+	text-align: center;
+	align: center;
+	vertical-align: bottom;
+}
+
+.edr .email-list th.date, td.date {
+	width: 16%;
+	padding-left: 10px
+}
+
+.edr .email-list-date {
+	margin-left: 5px;
+}
+
+.edr .email-list th.subject, td.subject {
+	width: 27%;
+}
+
+.edr .email-list th.from, td.from {
+	width: 57%;
+}
+
+.edr .email-list th.to, td.to {
+	width: 20%;
+}
+
+.edr .email-list td.from label,
+.edr .email-list td.to label,
+.edr .email-list td.subject label {
+	color: #666666;
+}
+
+.edr .email-list td.to {
+	 padding-bottom: 4px; /*9px; */
+}
+
+.dj_ie .edr .email-list td.to {
+	 padding-bottom: 9px; 
+}
+
+
+.edr .email-list th.flag, td.flag {
+	width: 5%;
+	padding-left: 10px
+}
+
+.edr .email-list td.flag .flagLabel {
+	text-decoration: underline;
+	/*color: blue;*/
+	margin-left: 5px;
+}
+
+.edr .email-list td.description {
+	padding-left: 10px
+}
+	
+.edr .email-list td.description fieldset {
+	border: 1px solid #666666;
+	position: relative;
+	margin: 0 1.5em .5em 0; 
+}
+
+.edr .email-list td.description fieldset legend {
+	color: #003366;
+	font-size: 8pt; /*11px; */
+	margin-left: 7px;
+	
+	position: absolute;
+	top: -.5em;
+	left: .2em;
+}
+
+.edr .email-list td.description fieldset .email-description {
+	padding: 7px;
+	/* margin-top: -6px; */ /* Works in mozilla, but not IE */
+}
+
+.edr .email-list .email-entry-description-hover { 
+/*
+	background-color: #99cccc;	
+	cursor: pointer; cursor: hand;  /* ORDER IS IMPORTANT! */
+*/
+}
+
+.edr .email-list .email-entry-description { 
+	cursor: arrow;
+}
+
+.edr .email-list .email-entry-togglegroup {
+	padding-top: 3px;
+	padding-bottom: 3px;
+    cursor: pointer;
+    background: #99ccff;
+    text-align: center;
+	align: center;
+	vertical-align: center;
+}
+
+.edr .email-list .groupresult {
+	padding-left: 10px;
+}
+
+.edr .email-list .groupresultbar {
+    background: #99ccff;
+}
+
+.edr .email-list tr.odd {
+  	/*background-color: #EBEBEB; light grey */
+  	/*background-color: #DEEAF7;  light blue */
+  	background-color: #ECF3FB; /* rob's blue */
+}
+
+.edr .email-list tr.even {
+	background-color: #FFF; 		
+}
+.edr .email-list tr.email-entry-row-body {
+  	height: 3em;
+	cursor: arrow;
+}
+.edr .email-list tr.email-entry-row-header {
+  	height: 2em;
+	cursor: arrow;
+}
+
+/*
+.edr .email-list tr .email-entry-row-hover {
+	background-color: #99cccc;	
+	cursor: pointer; cursor: hand; 
+}
+*/
+/*
+.edr .email-list .dijitTooltip .highlight{
+	font-weight: bold;
+}
+*/
+
+/*.edr .dijitTooltip, .edr .dijitTooltipContents { */
+
+/*
+.edr .to .dijitTooltip, .edr .to .dijitTooltipContents {
+	width: 250px;	
+	color: red;
+}
+*/
+
+.edr .email-list td.email-entry {
+	padding: 9px 5px 5px 5px;
+}
+
+.edr .email-list a.more-link {
+	font-size: 8pt;
+	color: #000;
+}
+
+.edr .email-list span.viewthread-link {
+	font-size: 8pt;
+	margin-left: 5px;
+}
+
+.edr .email-list span.viewthread-link a {
+	/*color: blue;*/ /* #000; */
+}
+
+.edr .email-list .results-document-details {
+	margin-bottom: 1em;
+}
+
+.edr .email-list .result-column-description {
+	margin-top: 0.2em;
+	margin-bottom: 0.8em;
+}
+
+/*-----------------------------------------
+	EMAIL RESULTS END
+------------------------------------------*/
+
+/*-----------------------------------------
+	EMAIL RESULT TO ADDRESS BEGIN
+------------------------------------------*/
+/*.edr #displayEmailToAddressData, #displayEmailFlagsData {
+	height: 200px;
+	background-color: white;
+	overflow: auto;	
+}
+
+.edr #setEmailFlagsValues {
+	height: 200px;
+	background-color: white;
+	overflow: auto;	
+	border: 1px solid #666666;
+	padding: 5px;
+}*/
+
+.edr .setEmailFlagCheckbox {
+	margin-top: 1px;
+}
+
+.edr .setEmailFlagCheckbox .disabled {
+	color: gray;
+}
+/*-----------------------------------------
+	EMAIL RESULT TO ADDRESS END
+------------------------------------------*/
+
+.edr .clearfix:after {
+     content: "."; 
+     display: block; 
+     height: 0; 
+     clear: both; 
+     visibility: hidden;
+}
+/* Hides from IE-mac \*/
+* html .edr .clearfix {height: 1%;}
+/* End hide from IE-mac */
+
+
+
+.edr .setColumnData {
+	height: 230px;
+}
+
+/*-----------------------------------------
+	SET COLUMN DIALOG START
+------------------------------------------*/
+/*.edr #resultSummaryData {
+	height: 340px; 
+	position: relative;
+}
+.edr #resultSummaryData .gpHeader {
+	overflow: visible;
+}
+.edr #resultSummaryData .tabContentBorder {
+	padding: 20px 10px 0px 10px;
+}
+.edr #resultSummaryData hr {
+	margin: 30px 0px;
+}
+.edr #resultSummaryData .dialog-instructions {
+	padding-bottom: 20px;
+}
+.edr #resultSummaryData #formatDisplaySummarySlider {
+	margin-left: 50px; 
+	margin-top: 20px; 
+	width: 300px; 
+	height: 40px;
+}*/
+
+.edr .setColumnData .setColumnsHeader {
+	float: left;
+	width: 100%;
+	height: 20px;
+}
+
+.edr .setColumnData .setColumnsHeader .setColumnsHeaderTable {
+	width: 300px;
+}
+
+.edr .setColumnData .setColumnsHeader .setColumnsHeaderShow {
+	width: 65px;
+	padding-left: 5px;
+}
+.edr .setColumnData .setColumnsHeader .setColumnsHeaderHeader {
+	padding-left: 5px
+}
+
+.dijitRtl .edr .setColumnData .setColumnsHeader {
+	float: right;
+}
+
+.dijitRtl .edr .setColumnData .setColumnsHeader .setColumnsHeaderShow {
+	padding-left: 0px;
+	padding-right: 5px;
+	text-align: right;
+}
+.dijitRtl .edr .setColumnData .setColumnsHeader .setColumnsHeaderHeader {
+	padding-left: 0px;
+	padding-right: 5px;
+	text-align: right;
+}
+
+.edr .setColumnData .setColumnsValues {
+	float: left;
+	margin-right: 10px;
+	height: 200px;
+	width: 300px;
+	overflow: auto;
+	border: 1px solid #666666;
+}
+
+.dijitRtl .edr .setColumnData .setColumnsValues {
+	float:right;
+}
+
+.edr .setColumnData .setColumnsValues table {
+	border-collapse: collapse;
+}
+.edr .setColumnData .setColumnsValues .odd {
+  	background-color: #DDEBFB; 
+}
+.edr .setColumnData .setColumnsValues .even {
+  	background-color: #FFF;
+}
+.edr .setColumnData .setColumnsValues tr.even:hover td, 
+.edr .setColumnData .setColumnsValues tr.odd:hover td {
+	background-color: #99cccc;
+}
+.edr .setColumnData .setColumnsValues tr.selected td {
+	background-color: #D5D5AC !important;
+}
+.edr .setColumnData .setColumnsValues tr.focused td {
+	background-color: #add682;
+}
+
+.edr .setColumnData .setColumnsValues td.columnCheckbox {
+	padding: 5px 0px 5px 15px;
+}
+
+.edr .setColumnData .setColumnsValues td.columnName {
+	padding-left: 5px;
+}
+.edr .setColumnData .setColumnsValues td.columnName a:active,
+.edr .setColumnData .setColumnsValues td.columnName a:hover {
+	color: black;
+	text-decoration: underline;
+}
+.edr .setColumnData .setColumnsValues td.columnName a:link {
+	color: black;
+	text-decoration: none;
+}
+
+.edr .setColumnData .setColumnsValuesButtons {
+	float: left;
+}
+
+.dijitRtl .edr .setColumnData .setColumnsValuesButtons {
+	float: right;
+}
+/*
+.edr .setColumnData .setColumnsValuesButtons .dijitButtonNode {
+	width: 10em;
+}
+*/
+/*-----------------------------------------
+	SET COLUMN DIALOG END
+------------------------------------------*/
+
+
+/*
+Result Toolbar
+*/
+
+
+.edr .ResultToolbarButtons button {
+	width: 30px;
+}
+
+.edr td.ResultToolbarButtons {
+	min-width: 335px;
+}
+
+.dj_ie .edr td.ResultToolbarButtons {
+	width: auto;
+}
+
+.edr table.ResultToolbarTable {
+	width: 100%;
+}
+
+.edr tr.ResultToolbarInfo {
+	display: none;
+	height: 30px;
+}
+
+.edr td.ResultToolbarCount {
+	text-align: left;
+	width: 225px;
+	padding-right: 10px;
+	white-space: nowrap;
+}
+
+.dijitRtl .edr td.ResultToolbarCount {
+	text-align: right;
+	width: 225px;
+	padding-left: 10px;
+	white-space: nowrap;
+}
+
+.edr tr.ResultToolbarButtons {
+	text-align:left;
+	white-space: nowrap;
+}
+
+.dijitRtl .edr tr.ResultToolbarButtons {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.edr td.ResultToolbarDocumentButtons {
+	text-align:left;
+}
+
+.dijitRtl .edr td.ResultToolbarDocumentButtons {
+	text-align: right;
+}
+
+.edr .ResultToolbarDocumentButtons > table {
+	width: 100%;
+}
+
+.edr td.ResultToolbarFilterByParent {
+	width: 200px;
+	vertical-align:top;
+}
+
+.edr td.ResultToolbarPerPageParent {
+	width: 170px;
+	vertical-align:top;
+}
+
+.edr td.ResultToolbarPaginationParent {
+	white-space: nowrap;
+	text-align:right;
+}
+
+.dijitRtl .edr td.ResultToolbarPaginationParent {
+	white-space: nowrap;
+	text-align: left;
+}
+
+.edr .ResultToolbarPaginationParent a {
+	text-decoration: none;
+}
+
+.edr .ResultToolbarHelp {
+	text-align: right;
+	white-space: nowrap;
+	padding-right: 5px;
+	padding-bottom:2px;
+}
+
+.dijitRtl .edr .ResultToolbarHelp {
+	text-align: left;
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-bottom:2px;
+}
+
+
+/*-----------------------------------------
+  email-list.css end
+------------------------------------------*/
+
+/*-----------------------------------------
+  error.css start
+------------------------------------------*/
+.edr .error-dialog-label-heading {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+
+.edr .error-details {
+	overflow: auto;
+	max-height: 300px;
+}
+/*
+.edr #error-dialog .header .top {
+	background-image:url(../images/error_bar_right.png);
+}
+
+.edr #error-dialog .header .top .left {
+	background-image:url(../images/error_bar_left.png);	
+}
+
+.edr #error-dialog .header .top .middle {
+	background-image:url(../images/error_bar_center.png);	
+}
+
+.edr #error-dialog .header .bottom .left {
+	background-image:url(../images/error_rounded_left.png);	
+}
+
+.edr #error-dialog .header .bottom {
+	background-image:url(../images/error_rounded_right.png);	
+}
+
+.edr #error-dialog .header .top .middle .title {
+	color: white;
+}
+*/
+.edr .error-dlg-icon-container {
+	float:left;
+	padding-left:10px;
+	padding-top:10px;
+}
+
+.edr .error-dlg-content-container {
+	padding-left: 80px;	
+}
+
+/*-----------------------------------------
+  error.css end
+------------------------------------------*/
+
+/*-----------------------------------------
+  tabs.css start
+------------------------------------------*/
+
+/*-----------------------------------------
+	SEARCH TABS BEGIN
+------------------------------------------*/
+
+.edr .tabContainer {
+	height: 100%;
+	width: 100%;
+}
+
+.edr #tabContent {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;	
+}
+
+.edr .tabContainerTop {
+	background-image: url("../images/edisc_container_top_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 9px;
+	position: absolute;
+	top: 0;
+}
+
+.edr .tabContainerTopLeft {
+	width: 9px;
+	height: 9px;
+	background-image: url("../images/edisc_container_top_left.png");
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .tabContainerTopLeft {
+	margin-right: -9px;
+}
+
+.edr .tabContainerTopMiddle {
+	height: 9px;
+	margin: 0px 9px;
+	background-image: url("../images/edisc_container_top_center.png");
+	background-repeat: repeat-x;
+	position: relative;
+}
+
+.dj_ie .edr .tabContainerTopMiddle {
+	margin: 0px 9px 0px 9px;
+}
+
+.edr .tabContainerBottom {
+	background-image: url("../images/edisc_container_bottom_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 9px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.edr .tabContainerBottomLeft {
+	width: 9px;
+	height: 9px;
+	background-image: url("../images/edisc_container_bottom_left.png");
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .tabContainerBottomLeft {
+	margin-right: -9px;
+}
+
+.edr .tabContainerBottomMiddle {
+	height: 9px;
+	margin: 0px 9px;
+	background-image: url("../images/edisc_container_bottom_center.png");
+	background-repeat: repeat-x;
+	position: relative;
+}
+
+.dj_ie .edr .tabContainerBottomMiddle {
+	margin: 0px 9px 0px 9px;
+}
+	
+.edr .tabContainerMiddle {
+	width: 100%;
+	position: absolute;
+	top: 9px;
+	bottom: 9px;
+}
+
+.edr .tabContainerMiddleLeft {
+	background-image: url("../images/edisc_container_left_center.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	position: absolute;
+	left: 0px;
+	width: 9px;
+	height: 100%;
+}
+
+.edr .tabContainerMiddleMiddle {
+	background-color: #FFF;
+	position: absolute;
+	left: 9px;
+	right: 9px;
+	height: 100%;	
+}
+
+.edr .tabContainerMiddleRight {
+	background-image: url("../images/edisc_container_right_center.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	position: absolute;
+	right: 0px;
+	width: 9px;
+	height: 100%;
+}
+	
+.edr .tabSearchIconActive {
+	background: url(../images/search23.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin-top: 3px;
+}
+
+.edr .tabSearchIconInactive {
+	background: url(../images/search16_d.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 5px;
+}
+	
+.edr .tabAdministrationIconActive {
+	background: url(../images/admin23.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin-top: 3px;
+}
+
+.edr .tabAdministrationIconInactive {
+	background: url(../images/admin16_d.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 5px;
+}
+
+.edr .tabCaseInfoIconActive {
+	background: url(../images/info23.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin-top: 3px;
+}
+	
+.edr .tabCaseInfoIconInactive {
+	background: url(../images/info16_d.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 5px;
+}
+
+.edr .tabContent {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.edr .tabText {
+	padding-left: 5px;
+	float: left;
+	cursor: pointer;
+}
+	
+.edr .tabActive {
+	height: 27px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #005596;
+	padding: 0px;
+	float:left;
+	margin-right: 3px;
+}
+
+.edr .tabActive .tabActiveMiddle {
+	background-image: url("../images/edisc_tab_active_center.png");	
+	background-repeat: repeat-x;
+	height: 27px;	
+	line-height: 27px;	
+	float: left;	
+	padding: 0px 10px;
+}
+
+.edr .tabActive .tabActiveLeft {
+	background-image: url("../images/edisc_tab_active_left.png");	
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 3px;
+	height: 27px;
+	float: left;
+	position: relative;
+}
+
+.edr .tabActive .tabActiveRight {
+	background-image: url("../images/edisc_tab_active_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	width:3px;
+	height: 27px;
+	float: left;
+	position: relative;
+}
+
+.edr .tabInactive {
+	height: 27px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #FFF;
+	padding: 0px;
+	float: left;
+	margin-right: 3px;
+}
+
+/*-----------------------------------------
+	SEARCH TABS END
+------------------------------------------*/
+
+/*-----------------------------------------
+	GRAPH TABS BEGIN
+------------------------------------------*/
+
+.edr .greyPortlet .tabButtonContainer {	
+	margin-left: 0px;
+}
+
+.edr #tabButtonContainerRight {
+	float: right; 
+	margin-right: 6px
+	height: 27px;
+	line-height: 27px;
+}
+
+.edr #timelineContainer {
+	margin-top: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.edr .graphTabs {
+	margin-left: 3px; 
+}
+
+.edr .graphTabs .tabText {
+	color: black;
+}
+
+.edr .graphTabs .tabActive, .graphTabs .tabInactive {
+	margin-top: 4px; 
+	margin-right: 3px; 
+}	
+
+.edr .graphTabs .tabActive .tabActiveLeft {
+	background-image: url(../images/edisc_tab2a_left.png);
+}
+.edr .graphTabs .tabActive .tabActiveMiddle {
+	background-image: url(../images/edisc_tab2a_center.png);
+}	
+.edr .graphTabs .tabActive .tabActiveRight {
+	background-image: url(../images/edisc_tab2a_right.png);
+}
+
+.edr .graphTabs .tabInactive .tabInactiveLeft {
+	background-image: url(../images/edisc_tab2n_left.png);
+}
+.edr .graphTabs .tabInactive .tabInactiveMiddle {
+	background-image: url(../images/edisc_tab2n_center.png);
+}	
+.edr .graphTabs .tabInactive .tabInactiveRight {
+	background-image: url(../images/edisc_tab2n_right.png);
+}
+
+.edr .tabGraphTimelineIconActive {
+	background: url(../images/timeline16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+
+.edr .tabGraphTimelineIconInactive {
+	background: url(../images/timeline16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+	
+.edr .tabGraphNetworkIconActive {
+	background: url(../images/network16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+	
+.edr .tabGraphNetworkIconInactive {
+	background: url(../images/network16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+/*-----------------------------------------
+	GRAPH TABS END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	EMAIL PREVIEW TABS BEGIN
+------------------------------------------*/
+
+.edr .tabEmailIconActive {
+	background: url(../images/email16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+	
+.edr .tabEmailIconInactive {									    
+	background: url(../images/email16_d.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+
+.edr .tabAttachmentIconActive {
+	background: url(../images/attachment_16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+	
+.edr .tabAttachmentIconInactive {									    
+	background: url(../images/attachment16_d.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+
+.edr .tabCloseLink { 
+	margin-left: 5px;
+}
+
+/*-----------------------------------------
+	EMAIL PREVIEW TABS BEGIN
+------------------------------------------*/
+
+/*-----------------------------------------
+  tabs.css end
+------------------------------------------*/
+
+
+/*-----------------------------------------
+  toolbar.css start
+------------------------------------------*/
+   
+.edr .ToolbarContainer {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	width: 100%;
+	/*height: 100%;*/
+	border: none;
+	background-image: url("../images/edisc_toolbar.png");
+	background-position: center;
+	background-repeat: repeat-x;
+	background-color: #f5f5f5;
+}
+
+.edr .ToolbarContainerTop {
+	background-image: url("../images/edisc_rounded_light_top_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	/* height: 3px; */
+}
+
+.dj_ie .edr .ToolbarContainerTop {
+	height: 3px;
+}
+
+.edr .ToolbarContainerTopLeft {
+	width: 3px;
+	height: 3px;
+	background-image: url("../images/edisc_rounded_light_top_left.png");
+	/* background-color: #CCCCCC; */
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .ToolbarContainerTopLeft {
+	margin-right: -3px;
+}
+
+.edr .ToolbarContainerTopMiddle {
+	margin: 0px 3px;
+	border-top: 1px solid #CCCCCC;
+	position: relative;
+}
+
+.dj_ie .edr .ToolbarContainerTopMiddle {
+	margin: 0px 3px 0px 3px;
+}
+
+.edr .ToolbarContainerBottom {
+	background-image: url("../images/edisc_rounded_light_bottom_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.edr .ToolbarContainerBottomLeft {
+	width: 3px;
+	height: 3px;
+	background-image: url("../images/edisc_rounded_light_bottom_left.png");
+	/* background-color: #CCCCCC; */
+	background-position: top left;
+	background-repeat: no-repeat;
+	/* float: left; */
+	position: relative;
+}
+
+.dj_ie .edr .ToolbarContainerBottomLeft {
+	margin-right: -3px;
+}
+
+.edr .ToolbarContainerBottomMiddle {
+	margin-left: 3px;
+	margin-right: 3px;
+	border-bottom: 1px solid #CCCCCC;
+	position: relative;
+}
+
+.dj_ie .edr .ToolbarContainerBottomMiddle {
+	margin: 0px 3px 0px 3px; 
+}
+	
+.edr .ToolbarContainerMiddle {
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.edr .ToolbarContainerMiddleLeft {
+}
+
+.edr .ToolbarContainerMiddleMiddle {
+}
+
+.edr .ToolbarContent {
+	margin-left: 5px;
+}
+
+.edr .dijitToolbar .dijitButtonHover,
+.edr .dijitToolbar .dijitToggleButtonHover,
+.edr .dijitToolbar .dijitDropDownButtonHover {
+	background: transparent none;
+/*	border: 0px; @@tmp@@*/	
+}
+
+.edr .dijitToolbar .dijitButtonHover .dijitButtonNode,
+.edr .dijitToolbar .dijitToggleButtonHover .dijitButtonNode,
+.edr .dijitToolbar .dijitDropDownButtonHover .dijitButtonNode {
+	background: transparent none;
+	/* IE hackery */
+	_border: 0px;
+	_margin: -1px 0px 0px 0px;
+	_padding: 0px;
+}
+
+.edr .dijitToolbar .dijitDropDownButtonHover .dijitButtonText {
+	text-decoration: underline;
+}
+
+.edr .dijitToolbar .dijitButton, 
+.edr .dijitToolbar .dijitToggleButton, 
+.edr .dijitToolbar .dijitDropDownButton {
+	border: 0px;
+}
+
+.dj_ie .edr .dijitToolbar .dijitButton,
+.dj_ie .edr .dijitToolbar .dijitToggleButton, 
+.dj_ie .edr .dijitToolbar .dijitDropDownButton {
+	/*margin-right: 10px;*/
+	margin-right: 3px;
+}
+
+.dj_ie .edr .dijitToolbar .dijitButton {
+	margin-right: 3px;
+}
+
+
+.dj_ie .edr .dijitToolbar .dijitToolbarSeparator {
+	/*margin-right: 10px;*/
+	margin-right: 3px;
+}
+
+
+.edr .dijitToolbarSeparator {
+	height: 23px;
+}
+
+.edr .toolbarIcon {
+	width: 26px;
+	height: 26px;
+}
+
+.edr .downloadIcon {
+	background-image: url("../images/download23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .downloadIcon {
+	background-image: url("../images/download23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .downloadIcon {
+	background-image: url("../images/download26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .ignoreRulesIcon {
+	background-image: url("../images/ignore_rules23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .ignoreRulesIcon {
+	background-image: url("../images/ignore_rules23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .ignoreRulesIcon {
+	background-image: url("../images/ignore_rules26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .goBackIcon {
+	background-image: url("../images/backward23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .goBackIcon {
+	background-image: url("../images/backward23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .goBackIcon {
+	background-image: url("../images/backward26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .goForwardIcon {
+	background-image: url("../images/forward23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .goForwardIcon {
+	background-image: url("../images/forward23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .goForwardIcon {
+	background-image: url("../images/forward26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .loadSearchIcon {
+	background-image: url("../images/loadsearch23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .loadSearchIcon {
+	background-image: url("../images/loadsearch23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .loadSearchIcon {
+	background-image: url("../images/loadsearch26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .saveSearchIcon {
+	background-image: url("../images/save23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .saveSearchIcon {
+	background-image: url("../images/save23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .saveSearchIcon {
+	background-image: url("../images/save26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .manageSavedSearchIcon {
+	background-image: url("../images/savedsearches23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .manageSavedSearchIcon {
+	background-image: url("../images/savedsearches23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .manageSavedSearchIcon {
+	background-image: url("../images/savedsearches26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/*-----------------------------------------
+	EMAIL PREVIEW TOOLBAR START
+------------------------------------------*/
+.edr .ToolbarContainer.previewContentToolbar {
+	height: auto;
+	width: auto;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	margin-left: 6px;
+	margin-right: 6px;
+
+}
+/*-----------------------------------------
+	EMAIL PREVIEW TOOLBAR END
+------------------------------------------*/
+
+/*-----------------------------------------
+	EMAIL RESULTS TOOLBAR START
+------------------------------------------*/
+.edr #results-container .ToolbarContainerTop {
+	background-image: url("../images/edisc_rounded_top_right.png");
+}
+
+.edr #results-container .ToolbarContainerTopLeft {
+	border-color: #666666;
+	background-image: url("../images/edisc_rounded_top_left.png");
+}
+
+.edr #results-container .ToolbarContainerTopMiddle {
+	border-color: #666666;
+}
+
+.edr #results-container .ToolbarContainerBottom {
+	background-image: url("../images/edisc_rounded_bottom_right.png");
+}
+
+.edr #results-container .ToolbarContainerBottomLeft {
+	background-image: url("../images/edisc_rounded_bottom_left.png");
+	border-color: #666666;
+}
+
+.edr #results-container .ToolbarContainerBottomMiddle {
+	border-color: #666666;
+}
+
+.edr #results-container .ToolbarContainerMiddle {
+	border-right: 1px solid #666666;
+	border-left: 1px solid #666666;
+}
+/*-----------------------------------------
+	EMAIL RESULTS TOOLBAR END
+------------------------------------------*/
+
+/*-----------------------------------------
+	CRITERIA TOOLBAR START
+------------------------------------------*/
+.edr #toolbar-container {
+	overflow: hidden;
+}
+
+.dj_ie .edr #toolbar-container {
+	margin-bottom: 2px;	
+}
+
+.edr #criteria-toolbar-buttons {
+	float:left; 
+	padding-top: 2px; 
+	margin-bottom: 2px;	
+}
+
+/* Search Filters Tooltip Dialog */
+
+.edr #searchFiltersDialog .dijitTooltipConnector {
+	height: 0px;	
+}
+
+.edr #searchFiltersDropdown .dijitArrowButtonInner {
+	width: 0px;
+	display: none;
+}
+
+.edr #searchFiltersDropdown .dijitArrowButtonChar {
+	width: 0px;
+	display: none;	
+}
+
+.edr #searchFiltersDropdown .dijitButtonText {
+	padding: 0px;
+	margin: 0px;	
+}
+
+.edr #searchFiltersDropdown {
+	font-size:11px;
+}
+
+.edr #searchFiltersDropdownContainer {
+	bottom: 2px;
+	position: relative;	
+}
+
+.dj_ie .edr #searchFiltersDropdownContainer {
+	bottom: 0px;	
+}
+
+.edr #searchFiltersDialog {
+	width: 220px;
+	padding: 0px;	
+}
+
+.edr #searchFiltersDialog .progressDiv {
+	height: 200px;
+	width: 100%;
+	background-image: url(../images/status_indicator_20_slow.gif);
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+
+.edr #filtersDiv {
+	padding-top: 3px;
+	padding-bottom: 3px; 
+	padding-left: 10px; 
+	padding-right: 5px; 
+	border: 1px solid #CCCCCC; 
+	height: 120px; 
+	overflow: auto;
+	margin-bottom: 30px;	
+}
+
+.edr #searchFiltersButtonDiv {
+	position: absolute;
+	right: 15px;
+	bottom: 0px;
+}
+
+.edr #searchFiltersContainer {
+	padding: 5px;
+	position: relative;	
+}
+
+/* End Search Filters Tooltip Dialog */
+
+.dj_ie .edr #searchRightPane #criteria-toolbar #toolbar-container div div,
+.dj_ie .edr #searchRightPane #criteria-toolbar #toolbar-container div span {
+	margin-right: 2px;
+}
+
+.edr #criteria-toolbar {
+	background-color: #f5f5f5;
+	background-image: none;
+	margin-bottom: 7px;
+}
+
+.edr #criteria-toolbar #criteria-container .dijitButtonNode {
+	/* vertical-align: middle; */
+	/*
+	border: 1px solid #9b9b9b;
+	background:#e9e9e9 url("../images/buttonEnabled.png") repeat-x top; */
+}
+
+.edr #criteria-toolbar #criteria-container .dijitButton {
+	margin: 0.2em;
+}
+/*-----------------------------------------
+	CRITERIA TOOLBAR END
+------------------------------------------*/
+
+/*-----------------------------------------
+	CRITERIA TEXTAREA START
+------------------------------------------*/
+.edr div#query-string {
+	font: 12px; 
+	font-family: Tahoma;
+}
+/*
+.dj_ie .edr #criteria-container fieldset.dijitTextArea {
+ 	border: 1px gray solid;
+}
+
+.dj_ie .edr #criteria-container fieldset.dijitTextArea div {
+ 	border: none;   
+}
+
+.dj_ie #query-string {
+	padding: 3px 3px 0px 3px;  
+} */
+
+/*-----------------------------------------
+	CRITERIA TEXTAREA END
+------------------------------------------*/
+
+/*-----------------------------------------
+	TEXTAREA START
+------------------------------------------*/
+.edr .textareaContainer {
+	position:absolute;
+	left:5px;
+	right:5px;
+	top:5px;
+	bottom:5px;
+}
+
+.edr .textareaContainerTop {
+	background-image: url("../images/edisc_rounded_light_top_right.png");
+	/* background-image: url("../images/edisc_container_top_right.png"); */
+	background-position: top right;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	height: 3px;
+}
+
+.edr .textareaContainerTopLeft {
+	width: 3px;
+	height: 3px;
+	background-image: url("../images/edisc_rounded_light_top_left.png");
+	/* background-image: url("../images/edisc_container_top_left.png"); */
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .textareaContainerTopLeft {
+	margin-right: -3px;
+}
+
+.edr .textareaContainerTopMiddle {
+	height: 3px;
+	margin: 0px 3px;
+	/* background-image: url("../images/edisc_container_top_center.png"); 
+	background-repeat: repeat-x; */
+	background: #FFFFFF url("../images/validationInputBg.png") repeat-x scroll left top;
+	border-top: 1px solid #CCCCCC;
+	position: relative;
+}
+
+.dj_ie .edr .textareaContainerTopMiddle {
+	margin: 0px 3px 0px 3px;
+}
+
+.edr .textareaContainerBottom {
+	/* background-image: url("../images/edisc_container_bottom_right.png"); */
+	background-image: url("../images/edisc_rounded_light_bottom_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	position:absolute;
+	width: 100%;
+	bottom: 0px;
+	height: 3px;
+}
+
+.edr .textareaContainerBottomLeft {
+	width: 3px;
+	height: 3px;
+	/* background-image: url("../images/edisc_container_bottom_left.png"); */
+	background-image: url("../images/edisc_rounded_light_bottom_left.png");
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .textareaContainerBottomLeft {
+	margin-right: -3px;
+}
+
+.edr .textareaContainerBottomMiddle {
+	height: 3px;
+	margin: 0px 3px;
+	/* background-image: url("../images/edisc_container_bottom_center.png"); 
+	background-repeat: repeat-x;  */
+	border-bottom: 1px #CCCCCC solid;
+	position: relative;
+	background-color: #FFFFFF;
+}
+
+.dj_ie .edr .textareaContainerBottomMiddle {
+	margin: 0px 3px 0px 3px;
+}
+	
+.edr .textareaContainerMiddle {
+	background-color: #FFF;	
+	border-left: 1px #CCCCCC solid;
+	border-right: 1px #CCCCCC solid;
+	position: absolute;
+	top: 3px;
+	bottom: 3px;
+	left: 0px;
+	right: 0px;
+}
+
+.edr .textareaContainerMiddleLeft {
+	/* background-image: url("../images/edisc_container_left_center.png");
+	background-repeat: repeat-y;
+	background-color: transparent; */
+	float: left; 
+	height: 100%;
+	width: 3px;
+}
+
+.edr .textareaContainerMiddleMiddle {
+	float: left; 
+	width: 98%; 
+}
+
+.edr .textareaContainerMiddleRight {
+	width: 3px;
+	height: 100%;
+}
+	
+.edr .textareaContent {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	float: left; 
+	width: 100%; 	
+}
+
+.edr .textareaContent textarea {
+	border: none;
+}	
+
+/*-----------------------------------------
+	TEXTAREA END
+------------------------------------------*/
+
+
+/*
+override default theme style
+*/
+.tundra.edr .dijitToolbar .dijitButton,
+.tundra.edr .dijitToolbar .dijitToggleButton,
+.tundra.edr .dijitToolbar .dijitDropDownButton,
+.tundra.edr .dijitToolbar .dijitComboButton .dijitButtonContents,
+.tundra.edr .dijitToolbar .dijitComboButton .dijitDownArrowButton  {
+	padding: 0px;
+}
+
+/*-----------------------------------------
+  toolbar.css end
+------------------------------------------*/
+
+/*-----------------------------------------
+  TabContainer.css start
+------------------------------------------*/
+
+.edr .dijitTab {
+	cursor: pointer;
+	color: #000000;
+	font-size: 13px;
+	font-weight: normal;
+	height: 24px;
+	padding: 0px;
+	border-style: none;
+}
+
+.dijitRtl .edr .dijitTab {
+	float: right;
+}
+
+.edr .dijitTab .tabIcon {
+	width: 16px;
+	height: 16px;
+	vertical-align: text-bottom;
+}
+
+.edr .dijitTab .tabInactiveLeft {
+	background-image: url(../images/edisc_tab2n_left.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	float: left;
+	height: 24px;
+	width: 3px;
+}
+
+.edr .dijitTab .tabInactiveMiddle {
+	background-image: url(../images/edisc_tab2n_center.png);
+	background-repeat: repeat-x;
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	padding: 0px 10px;
+	vertical-align: middle;
+	border-left-style: none;
+}
+
+.edr .dijitTab .tabInactiveRight {
+	background-image: url(../images/edisc_tab2n_right.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	float: left;
+	height: 24px;
+	width: 3px;
+}
+
+.edr .dijitTabChecked {
+	cursor: pointer;
+	color: #000000;
+	font-size: 13px;
+	font-weight: normal;
+	height: 24px;
+	padding: 0px;
+	border-style: none;
+}
+
+.edr .dijitTabChecked .tabActiveLeft {
+	background-image: url(../images/edisc_tab2a_left.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	float: left;
+	height: 24px;
+	width: 3px;
+}
+
+.edr .dijitTabChecked .tabActiveMiddle {
+	background-image: url(../images/edisc_tab2a_center.png);
+	background-repeat: repeat-x;
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	padding: 0px 10px;
+	vertical-align: middle;
+	border-left-style: none;
+}
+
+.edr .dijitTabChecked .tabActiveRight {
+	background-image: url(../images/edisc_tab2a_right.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	float: left;
+	height: 24px;
+	width: 3px;
+}
+
+.edr .tabWindowRight {
+	background-image: url(../images/edisc_messages_right2.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	width: 3px;
+	height: 29px;
+	top: 1px;
+	position:absolute;
+}
+
+.edr .tabWindowLeft {
+	background-image: url(../images/edisc_messages_left2.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	width: 3px;
+	height: 29px;
+	top: 1px;
+	left: 0px;
+	position:absolute;
+}
+
+.edr .tabWindowMiddle {
+	background-image: url(../images/edisc_messages_center.png);
+	background-position: top;
+	background-repeat: repeat-x;
+	height: 24px;
+	padding-top: 5px;
+}
+
+.edr .tabWindowBottomRight {
+	background-color:transparent;
+	background-image:url(../images/edisc_rounded_light_bottom_right.png);
+	background-position:right top;
+	background-repeat:no-repeat;
+	height:3px;
+	right: 0px;
+	bottom: 1px;
+	width:3px;
+	position: absolute;
+}
+
+.edr .tabWindowBottomRight_rtl {
+	background-color:transparent;
+	background-image:url(../images/edisc_rounded_light_bottom_left.png);
+	background-position:right top;
+	background-repeat:no-repeat;
+	height:3px;
+	left: 0px;
+	bottom: 1px;
+	width:3px;
+	position: absolute;
+}
+
+.edr .tabWindowBottomLeft {
+	background-color:transparent;
+	background-image:url(../images/edisc_rounded_light_bottom_left.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	height:3px;
+	width:3px;
+	bottom: 1px;
+	position: absolute;
+}
+
+.edr .tabWindowBottomLeft_rtl {
+	background-color:transparent;
+	background-image:url(../images/edisc_rounded_light_bottom_right.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	height:3px;
+	width:3px;
+	bottom: 1px;
+	position: absolute;
+}
+
+.edr .tabWindowBottomMiddle {
+	background-color:#FFFFFF;
+	border-bottom:1px solid #CCCCCC;
+	height:3px;
+	left: 0px;
+	bottom: 0px;
+	margin:0 3px;
+	position: absolute;
+}
+
+.dijitRtl .edr .tabWindowBottomMiddle {
+	background-color:#FFFFFF;
+	border-bottom:1px solid #CCCCCC;
+	height:3px;
+	left: auto;
+	right: 0px;
+	bottom: 0px;
+	margin:0 3px;
+	position: absolute;
+}
+
+.dijitRtl .edr .dijitTab .dijitTabInnerDiv {
+	border-left:none;
+	border-right:none;
+	padding: 0px 10px; 
+}
+
+.dj_ie-rtl .tundra.edr .dijitTab .dijitTabInnerDiv {
+	width: auto !important;
+}
+
+.widgetsLtr .edr .dijitTab {
+	float: left;
+}
+
+.widgetsLtr .edr DIV.dijitArrowButton, .dijitRtl .edr .dijitValidationIcon, .dijitRtl .dijitValidationIconText {
+	float: right;
+}
+
+.widgetsLtr .edr .dijitInputField * {
+	direction: ltr;
+}
+
+
+/*-----------------------------------------
+  TabContainer.css end
+------------------------------------------*/
+
+/*-----------------------------------------
+  SlideTabContainer.css start
+------------------------------------------*/
+   
+.edr .slidTabWidget {
+	float: right;
+}
+   
+.dijitRtl .edr .slidTabWidget {
+	float: left;
+}
+
+.edr .slideTabContainer {
+	position: relative;
+}
+
+.edr .slideTabContainer .tabTitle {
+	padding-left: 1px;
+	font-size: 12px;
+	font-weight: bold;
+	position:relative;
+	top:3px;
+}
+
+.dijitRtl .edr .slideTabContainer .tabTitle {
+	padding-left: 0px;
+	padding-right: 1px;
+}
+
+.edr .slideTabContainer .tabIcon {
+	width: 20px;
+	height: 20px;
+	position:absolute;
+/*	right:0; */
+	top:2px;
+}
+
+.dijitRtl .edr .slideTabContainer .tabIcon {
+/*	left:0;	*/
+}
+
+.edr .slideTabContainerTab {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 21px;
+}
+
+.edr .slideTabContainerTabLeft {
+/*	background-image: url("../images/edisc_container_left_center.png"); */
+	background-image: url("../images/slide_left2.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 9px;
+	height: 21px;
+}
+
+.edr .slideTabContainerTabMiddle {
+/*	background-color: #FFF; */
+	background-repeat: repeat-x;
+	background-image: url('../images/slidetab_bg2.png');
+	background-color: #FFF;
+	position: absolute;
+	left: 9px;
+	right: 9px;
+	top: 0px;
+	height: 21px;
+}
+
+.edr .slideTabContainerTabMiddleMiddle {
+	overflow:hidden;
+	cursor: pointer;
+	height: 21px;
+}
+
+.edr .slideTabContainerTabRight {
+/*	background-image: url("../images/edisc_container_right_center.png"); */
+	background-image: url("../images/slide_right2.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 9px;
+	height: 21px;
+}
+
+.edr .slideTabContainerMiddle {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 21px;
+	bottom: 9px;
+}
+
+.edr .slideTabContainerMiddleLeft {
+/*	background-image: url("../images/edisc_container_left_center.png"); */
+	background-image: url("../images/slide_left2.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	background-position: 0px -21px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 9px;
+}
+
+.edr .slideTabContainerMiddleMiddle {
+	background-repeat: repeat-x;
+	background-image: url('../images/slidetab_bg2.png');
+	background-color: #FFF;
+	background-position: 0px -21px;
+	position: absolute;
+	left: 9px;
+	right: 9px;
+	top: 0px;
+	bottom: 0px;
+	overflow:hidden;
+}
+
+.edr .slideTabContainerMiddleRight {
+/*	background-image: url("../images/edisc_container_right_center.png"); */
+	background-image: url("../images/slide_right2.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	background-position: 0px -21px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 9px;
+}
+
+.edr .slideTabContainerBottom {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 9px;
+}
+
+.edr .slideTabContainerBottomLeft {
+	background-image: url("../images/slide_bottom_left.png");
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 9px;
+	height: 9px;
+}
+
+.edr .slideTabContainerBottomMiddle {
+	background-image: url("../images/slide_bottom_center.png");
+	background-repeat: repeat-x;
+	position: absolute;
+	left: 9px;
+	right: 9px;
+	top: 0px;
+	height: 9px;
+}
+
+.edr .slideTabContainerBottomRight {
+	background-image: url("../images/slide_bottom_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 9px;
+	height: 9px;
+}
+
+
+/*-----------------------------------------
+  SlideTabContainer.css end
+------------------------------------------*/
+
+/*-----------------------------------------
+  FacetTree.css start
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	Style information for the facet refinement list
+------------------------------------------*/
+
+.edr .refinement {
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+.edr .refinement .selected-facet-container {
+	padding-left:5px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+.edr .refinement .selected-facet {
+	width:95%;
+	padding-top:3px;
+}
+
+.edr .refinement .selected-facet-img {
+	width:15px;
+	height:15px;
+	vertical-align:bottom;
+}
+
+.edr .refinement .selected-facet-label {
+	padding-left:5px;
+}
+
+.edr .refinement .refinement-group {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 0px;
+	font-size: 11px;
+}
+
+.dijitRtl .edr .refinement .refinement-group {
+	padding-left: 0px;
+	padding-right: 5px;
+}
+
+.edr .refinement .refinement-group-ica {
+	margin-top: 3px;
+}
+
+.edr .refinement .refinement-title {
+	cursor:pointer;
+	background: #d7d7d7;
+}
+
+.edr .refinement .refinement-title-ica {
+	cursor:pointer;
+/*	min-height: 20px; */
+	height: auto !important;
+/*	height: 20px; */
+	background: #d7d7d7;
+}
+
+.edr .refinement .refinement-title-ica-selected {
+	cursor:pointer;
+/*	min-height: 20px; */
+	height: auto !important;
+/*	height: 20px; */
+	background: #6E96C8;
+}
+
+.edr .refinement .refinement-title.hover {
+	background: #6E96C8;	
+}
+
+.edr .refinement .refinement-title-body {
+	padding: 0px 4px;
+	font-weight: bold;	
+	overflow:hidden;
+}
+
+.edr .refinement .refinement-title-body-ica {
+	padding: 0px 4px;
+	padding-left: 3px;
+	overflow:hidden;
+/*	font-weight: bold; */	
+/*	min-height: 20px; */
+/*	background: #d7d7d7; */
+	position:relative;
+}
+
+.dijitRtl .edr .refinement .refinement-title-body-ica {
+	padding-left: 0px;
+	padding-right: 3px;
+}
+
+.edr .refinement .arrow-img {
+	margin-top:3px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .arrow-img {
+	float: right;
+}
+
+.edr .refinement .arrow-img-hierarchical {
+	margin-top:3px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .arrow-img-hierarchical {
+	float: left;
+}
+
+.edr .refinement .arrow-container {
+	width:15px;
+	height:15px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .arrow-container {
+	float: right;
+}
+
+.edr .refinement .label {
+	padding-left: 8px;
+	overflow:hidden;
+	float: left;
+}
+
+.edr .refinement .maglink {
+	visibility: hidden;
+	padding-right:3px;
+	float: right;
+}
+
+.dijitRtl .edr .refinement .label {
+	padding-left: 0px;
+	padding-right: 8px;
+	float: right;
+}
+
+.dijitRtl .edr .refinement .maglink {
+	visibility: hidden;
+	padding-right:0px;
+	padding-left:3px;
+	float: left;
+}
+
+.edr .refinement .label-ica {
+	padding-left: 0px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .label-ica {
+	padding-right: 0px;
+	float: right;
+}
+
+.edr .refinement .pfacet {
+	padding-left: 5px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .pfacet {
+	padding-left: 0px;
+	padding-right: 5px;
+	float: right;
+}
+
+.edr .refinement .sfacet {
+	padding-left: 2px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .sfacet {
+	padding-left: 0px;
+	padding-right: 2px;
+	float: right;
+}
+
+.edr .refinement .refinement-title-top {
+	background: url('../images/facet_head_top_left.png') no-repeat top left; 
+}
+
+.edr .refinement .refinement-title-top-selected {
+	background: url('../images/facet_head_top_left_h.png') no-repeat top left; 
+}
+
+.edr .refinement .refinement-title-top div {
+	background: url('../images/facet_head_top_right.png') no-repeat top right;
+}
+
+.edr .refinement .refinement-title-top-selected div {
+	background: url('../images/facet_head_top_right_h.png') no-repeat top right;
+}
+
+.edr .refinement .refinement-title-bottom {
+	background: url('../images/facet_head_bottom_left.png') no-repeat bottom left;	
+}
+
+.edr .refinement .refinement-title-bottom-selected {
+	background: url('../images/facet_head_bottom_left_h.png') no-repeat bottom left;	
+}
+
+.edr .refinement .refinement-title-bottom div {
+	background: url('../images/facet_head_bottom_right.png') no-repeat bottom right;	
+}
+
+.edr .refinement .refinement-title-bottom-selected div {
+	background: url('../images/facet_head_bottom_right_h.png') no-repeat bottom right;	
+}
+
+.edr .refinement .hover .refinement-title-top {
+	background: url('../images/facet_head_top_left_h.png') no-repeat top left; 
+}
+
+.edr .refinement .hover .refinement-title-top div {
+	background: url('../images/facet_head_top_right_h.png') no-repeat top right;
+}
+
+.edr .refinement .hover .refinement-title-bottom {
+	background: url('../images/facet_head_bottom_left_h.png') no-repeat bottom left;	
+}
+
+.edr .refinement .hover .refinement-title-bottom div {
+	background: url('../images/facet_head_bottom_right_h.png') no-repeat bottom right;	
+}
+
+.edr .refinement .refinement-title-top,
+.edr .refinement .refinement-title-top-selected,
+.edr .refinement .refinement-title-top div, 
+.edr .refinement .refinement-title-top-selected div, 
+.edr .refinement .refinement-title-bottom,
+.edr .refinement .refinement-title-bottom-selected,
+.edr .refinement .refinement-title-bottom div,
+.edr .refinement .refinement-title-bottom-selected div {
+	height: 3px;
+	width: 100%;
+	padding: 0;
+	margin: 0;	
+}
+
+.edr .refinement .refinement-list {
+	padding-left:6px;
+}
+
+.dijitRtl .edr .refinement .refinement-list {
+	padding-left:0px;
+	padding-right:6px;
+}
+
+.edr .refinement .refinement-group-list {
+	margin-left: 10px;
+}
+
+.dijitRtl .edr .refinement .refinement-group-list {
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+.edr .refinement .facet-refine-link {
+	margin-left: -5px;
+}
+
+.dijitRtl .edr .refinement .facet-refine-link {
+	margin-left: 0px;
+	margin-right: -5px;
+}
+
+.edr .refinement .add-facet-img {
+	vertical-align:middle;
+	padding-right: 5px;
+}
+
+.dijitRtl .edr .refinement .add-facet-img {
+	padding-right: 0px;
+	padding-left: 5px;
+}
+
+.edr .refinement .not-facet-img {
+	vertical-align:middle;	
+	padding-right: 5px;
+}
+
+.dijitRtl .edr .refinement .not-facet-img {
+	vertical-align:middle;	
+	padding-right: 0px;
+	padding-left: 5px;
+}
+
+.edr .refinement .horizontal-category-img {
+	padding-left:5px;
+	float:left;
+}
+
+.dijitRtl .edr .refinement .horizontal-category-img {
+	padding-left:0px;
+	padding-right:5px;
+	float:right;
+}
+
+.edr .refinement .vertical-category-img {
+	padding-left:5px;
+	float:left;
+}
+
+.dijitRtl .edr .refinement .vertical-category-img {
+	padding-left:0px;
+	padding-right:5px;
+	float:right;
+}
+
+.edr .refinement .morelink {
+	padding-left:15px;
+}
+
+.dijitRtl .edr .refinement .morelink {
+	padding-left:0px;
+	padding-right:15px;
+}
+
+.edr .refinement .contentBody-ica {
+	padding-left:3px;
+}
+
+.dijitRtl .edr .refinement .contentBody-ica {
+	padding-left:0px;
+	padding-right:3px;
+}
+
+/*-----------------------------------------
+  FacetTree.css end
+------------------------------------------*/
+
+/*-----------------------------------------
+  SearchPane.css start
+------------------------------------------*/
+
+
+.edr .searchPane .leftSpace {
+	float: left;
+}
+
+.dijitRtl .edr .searchPane .leftSpace {
+	float: right;
+}
+
+.edr .searchPane .middleSpace {
+	float: left;
+}
+
+.dijitRtl .edr .searchPane .middleSpace {
+	float: right;
+}
+
+.edr .searchPane .queryTextBox {
+	width:100%;
+	height:60px;
+}
+
+.edr .searchPane .middleSpaceContainer {
+	width:100%;
+	position:relative;
+	right:5px;
+}
+
+.dijitRtl .edr .searchPane .middleSpaceContainer {
+	right:0px;
+	left:5px;
+}
+
+.edr .searchPane .rightSpace {
+	float:left;
+	padding-top:35px;
+}
+
+.dijitRtl .edr .searchPane .rightSpace {
+	float: right;
+}
+
+.edr .searchPane .rightSpaceContainer {
+	padding-left:15px;
+}
+
+.dijitRtl .edr .searchPane .rightSpaceContainer {
+	padding-left:0px;
+	padding-right:15px;
+}
+
+.edr .searchPane .buttonWidget {
+	height: 20px;
+}
+
+.edr .searchPane .withinSearchContainer {
+	padding-top:5px;
+	padding-left:20px;
+}
+
+.dijitRtl .edr .searchPane .withinSearchContainer {
+	padding-left:0px;
+	padding-right:20px;
+}
+
+.edr .searchPane .helplink {
+	float:left;
+	padding-top:39px;
+	padding-left:2px;
+}
+
+.dijitRtl .edr .searchPane .helplink {
+	float:right;
+	padding-left:0px;
+	padding-right:2px;
+}
+
+
+/*-----------------------------------------
+  SearchPane.css end
+------------------------------------------*/
+
+.dj_ie .dijitDownArrowButton div.dijitArrowButtonInner {
+	height: 15px !important;
+}

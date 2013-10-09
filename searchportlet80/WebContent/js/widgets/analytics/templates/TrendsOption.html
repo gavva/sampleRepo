@@ -1,0 +1,44 @@
+<div>
+	<form dojoAttachPoint="analytcsTrendsOptionsForm" style="width:100%;height:100%;">
+		<div style="padding:5px;width:98%;" title="">
+		
+			<label for="${prefix}numberOfResultsForTrend">${messages_preferences_analytics_trends_numberOfResults}:</label><br/>
+			<select dojoAttachPoint="numberOfResults" id="${prefix}numberOfResultsForTrend" dojoType="dijit.form.ComboBox" name="trendsNumberOfResults">
+			</select><br/><br/>
+		
+			<label for="${prefix}numberOfChartsForTrend">${messages_preferences_analytics_trends_numberOfCharts}:</label><br/>
+			<input dojoAttachPoint="numberOfCharts" id="${prefix}numberOfChartsForTrend" dojoType="dijit.form.NumberSpinner" name="trendsNumberOfCharts"
+				value="3" smallDelta="1" largeDelta="5" constraints="{min:1,max:100,places:0}">
+			</input><br/><br/>
+			
+			<div role="radiogroup">
+				<label>${messages_preferences_analytics_trends_showLineInChart}:</label><br/>
+				<input dojoAttachPoint="showLineInChartYes" id="${prefix}showLineInChartYesForTrend" dojoType="dijit.form.RadioButton" value="true" name="trendsShowLineInChart"/>
+				<label for="${prefix}showLineInChartYesForTrend">${messages_preferences_analytics_label_yes}</label>&nbsp;
+				<input dojoAttachPoint="showLineInChartNo" id="${prefix}showLineInChartNoForTrend" dojoType="dijit.form.RadioButton" value="false" name="trendsShowLineInChart"/>
+				<label for="${prefix}showLineInChartNoForTrend">${messages_preferences_analytics_label_no}</label><br/><br/>
+			</div>
+			
+			<label for="${prefix}defaultSortByIdForTrend">${messages_preferences_analytics_trends_defaultSortBy}:</label>
+			<br/>
+			<select dojoAttachPoint="defaultSortBy" id="${prefix}defaultSortByIdForTrend" dojoType="dijit.form.FilteringSelect" name="trendsDefaultSortBy" searchAttr="label" labelAttr="label">
+			</select><br/><br/>
+			
+			<label for="${prefix}defaultShowTargetIdForTrend">${messages_preferences_analytics_trends_defaultShowTarget}:</label>
+			<br/>
+			<select dojoAttachPoint="defaultShowTarget" id="${prefix}defaultShowTargetIdForTrend" dojoType="dijit.form.FilteringSelect" name="trendsDefaultShowTarget" searchAttr="label" labelAttr="label">
+			</select><br/><br/>
+			
+			<label for="${prefix}defaultTimeScaleIdForTrend">${messages_preferences_analytics_trends_defaultTimeScale}:</label>
+			<br/>
+			<select dojoAttachPoint="defaultTimeScale" id="${prefix}defaultTimeScaleIdForTrend" dojoType="dijit.form.FilteringSelect" name="trendsDefaultTimeScale" searchAttr="label" labelAttr="label">
+			</select><br/><br/>
+			
+			<label for="${prefix}barColorOfMultiChartForTrend">${messages_preferences_analytics_trends_barColorOfMultiChart}:</label>
+			<br/>
+			<select dojoAttachPoint="barColorOfMultiChart" id="${prefix}barColorOfMultiChartForTrend" dojoType="dijit.form.FilteringSelect" name="trendsBarColorOfMultiChart" searchAttr="label" labelAttr="label">
+			</select><br/><br/>
+			
+		</div>
+	</form>	
+</div>

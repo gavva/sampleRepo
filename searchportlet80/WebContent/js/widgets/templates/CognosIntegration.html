@@ -1,0 +1,64 @@
+<div>
+	<form dojoAttachPoint="cognosIntegrationForm" onSubmit="return false;"  style="width:100%;height:100%;">
+		<div style="width:98%;padding:5px;">
+			<div>
+				<label for="${idprefix}deepInspectionName">${message_name}:</label>
+			</div>
+			<div style="margin-bottom:15px;">
+				<input type="text" name="cognosIntegrationId" style="width:100%;" id="${idprefix}deepInspectionName" title="${message_name}" dojoAttachPoint="deepInspectName"/>
+			</div>
+			<div style="width:48%;float:left;">
+				<div style="margin-bottom:15px;">
+					<label for="${idprefix}numOfPrimary">${message_maxrow}:</label><br/>
+					<select id="${idprefix}numOfPrimary" name="max_returned_primary" dojoType="dijit.form.ComboBox" title="${message_tooltip_maxrow}">
+					<option value="100">100</option>
+					<option value="1000">1000</option>
+					<option value="5000">5000</option>
+					<option value="10000">10000</option>
+					<option value="25000">25000</option>
+					<option value="50000">50000</option>
+					</select>
+				</div>
+				<div style="margin-bottom:15px;">
+					<label for="${idprefix}numOfRecord">${message_maxresult}:</label><br/>
+					<select id="${idprefix}numOfRecord" name="max_results" dojoType="dijit.form.ComboBox" title="${message_tooltip_maxresult}">
+					<option value="10">10</option>
+					<option value="25">25</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+					<option value="250">250</option>
+					<option value="500">500</option>
+					</select>
+				</div>
+				<div style="margin-bottom:15px;" role="radiogroup">
+					<label title="Output format">Output format:</label><br/>
+					<input id="${idprefix}formatCognos" type="radio" name="format" title="Report created by Cognos 8 BI" value="frequency" checked="">
+					<label for="${idprefix}formatCognos">Cognos 8 BI Report</label>&nbsp;&nbsp;&nbsp;
+					<input id="${idprefix}formatCvs" type="radio" name="format" title="CSV file" value="index">
+					<label for="${idprefix}formatCvs">.CSV file</label>
+				</div>	
+			</div>	
+			<div style="width:48%;float:left;">
+				<div style="margin-bottom:15px;">
+					<label for="${idprefix}numOfSecondary">${message_maxcolumn}:</label><br/>
+					<select id="${idprefix}numOfSecondary" name="max_returned_secondary" dojoType="dijit.form.ComboBox" title="${message_tooltip_maxcolumn}">
+					<option value="100">100</option>
+					<option value="1000">1000</option>
+					<option value="5000">5000</option>
+					<option value="10000">10000</option>
+					<option value="25000">25000</option>
+					<option value="50000">50000</option>
+					</select>
+				</div>
+				<div style="margin-bottom:15px;" role="radiogroup">
+					<label title="${message_sortresult}">${message_sortresult}:</label><br/>
+					<input id="${idprefix}sortFreq" type="radio" name="sortType" title="${message_sortresult_frequency}" value="frequency" checked="">
+					<label for="${idprefix}sortFreq">${message_sortresult_frequency}</label>&nbsp;
+					<input id="${idprefix}sortIndex" type="radio" name="sortType" title="${message_sortresult_indexcol}" value="index">
+					<label for="${idprefix}sortIndex">${message_sortresult_indexcol}</label>
+				</div>
+			</div>
+		</div>
+	</form>
+	<div dojoAttachPoint="messageDiv" style="width:100%;height:100%;"></div>
+</div>

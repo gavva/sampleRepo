@@ -1,0 +1,76 @@
+<div>
+	<!-- main toolbar -->
+	<div dojoType="widgets.Toolbar">
+		<div class="facet-dlg-toolbar clearfix">
+			<div class="facet-dlg-counts">
+				<div><span dojoAttachPoint="facetNameSpan"></span></div>
+        		<div><span dojoAttachPoint="facetSelectedSpan"></span></div>
+			</div>
+			<div class="facet-dlg-filter">
+				<label id="${prefix}facetItemFilterText">${messages_facetItems_label_filter}</label>: <input type="text" size="20"
+					dojoAttachPoint="filterText" dojoAttachEvent="onkeypress: onFilterChanged" id="${prefix}facetItemFilterText"></input>  		        
+		    </div>
+		</div>
+	</div>
+	
+	<!-- lower toolbar -->
+	<div class="dijit dijitToolbar ToolbarContainer lowerFacetResultToolbarContainer">
+		<div class="ToolbarContainerMiddle">
+			<div class="ToolbarContainerMiddleLeft"></div>
+			<div class="ToolbarContainerMiddleMiddle">											
+				<div class="ToolbarContent">
+				    <div class="facet-dlg-sort">
+				    	<span class="label">${messages_facetItems_label_sortBy}:</span>
+				    	<span class="label">
+				    		<a href="javascript:;" style="font-weight:bold; color:#339999;"
+				    			dojoAttachEvent="onclick: onCountSortClicked">${messages_facetItems_label_count}</a>
+				    	</span>
+						<span class="facet-dlg-sort-values">   
+				    	  	<img dojoAttachPoint="desArrowImg" src="${imgBasePath}arrow_down_blue8.png" alt="" title=""/>
+				    	  	<img dojoAttachPoint="ascArrowImg" src="${imgBasePath}arrow_up8_d.png" alt="" title=""/>
+				      	</span>	  
+				    </div>		    
+	
+				    <div class="facet-dlg-show">
+				      <span class="label">${messages_facetItems_label_show}:</span>
+				      <span class="facet-dlg-show-values">
+				      	<span dojoAttachPoint="allLabel" style="font-weight: bold;">${messages_facetItems_label_all}</span>
+					    <a dojoAttachPoint="allLink" href="javascript:;"
+					    	dojoAttachEvent="onclick: onShowAllClicked" style="display:none;">${messages_facetItems_label_all}</a>
+					    | 
+				      	<span dojoAttachPoint="includeLabel" style="font-weight: bold; display:none">${messages_facetItems_label_include}</span>
+					    <a dojoAttachPoint="includeLink" href="javascript:;"
+					    	dojoAttachEvent="onclick: onShowIncludeClicked">${messages_facetItems_label_include}</a>
+<!-- 
+				    	| 
+				      	<span dojoAttachPoint="excludeLabel" style="font-weight: bold; display: none;">Exclude</span>
+					    <a dojoAttachPoint="excludeLink" href="javascript:;"
+					    	dojoAttachEvent="onclick: onShowExcludeClicked">Exclude</a>
+ -->
+ 				      </span>
+				    </div>
+			  
+				</div>
+			</div>
+		</div>
+		<div class="ToolbarContainerBottom">	
+			<div class="ToolbarContainerBottomLeft"></div>
+			<div class="ToolbarContainerBottomMiddle"></div>
+		</div>
+	</div>
+	
+	<!-- space -->
+	<div style="width:100%;height:5px;"></div>
+	
+	<!-- facet items table -->
+	<div dojoAttachPoint="facetTableContainer" class="facet-dlg-content" style="overflow-x:auto;overflow-y:hidden;position:relative;">
+		<table dojoAttachPoint="facetTable" border="0" cellpadding="0" cellspacing="0"
+			style="position:absolute;left:0px;top;0px; white-space:nowrap; table-layout:fixed; z-Index:1;">
+			<tbody><tr dojoAttachPoint="itemsRow"></tr></tbody>
+		</table>
+		<table dojoAttachPoint="dummyTable" style="height:100%;" border="0" cellpadding="0" cellspacing="0">
+			<tbody><tr><td class="facet-column" dojoAttachPoint="dummyCell"></td></tr></tbody>
+		</table>
+		<span dojoAttachPoint="hiddenSpan" style="visibility:hidden;position:absolute;"></span>
+	</div>
+</div>

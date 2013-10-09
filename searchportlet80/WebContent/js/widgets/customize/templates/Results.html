@@ -1,0 +1,47 @@
+<div class="SearchApplicationCustomizePane ResultsPane">
+<div>${messages_customizer_results_section1}:
+<table>
+	<tbody>
+<!-- 	<tr configkey="numberSearchResultsReturned.show" configtype="bool"><td></td><td><input dojoType="dijit.form.CheckBox" value="" /></td></tr> -->
+<!--	<tr configkey="showDetails.show" configtype="bool"><td></td><td><input dojoType="dijit.form.CheckBox" value="" /></td></tr> -->
+<!-- 	<tr configkey="showDetailsImage.show" configtype="bool"><td></td><td><input dojoType="dijit.form.CheckBox" value="" /></td></tr> -->
+		<tr configkey="preferences.siteCollapsing" messagekey="prompt.advanced.siteCollapsing" configtype="yesno"><td></td><td><input dojoType="dijit.form.CheckBox" value="" /></td></tr>
+<!-- 	<tr configkey="preferences.extendedHighlighting" configtype="bool"><td></td><td><input dojoType="dijit.form.CheckBox" value="" /></td></tr> -->
+		<tr configkey="preferences.resultsRange" messagekey="customizer.prompt.advanced.numRequestedResults"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<tr configkey="date.fields"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>				
+		<tr configkey="preferences.resultColumns" messagekey="preferences.resultsColumns"><td></td><td><input type="text" value="" class="dijitComboBox" dojoAttachPoint="resultsColumns" dojoAttachEvent="onchange: onResultsColumnsChange"/></td></tr>				
+	</tbody>
+</table>
+</div>
+<hr />
+<div>${messages_titles}:
+<table>
+	<tbody>
+		<tr configkey="titles.clean"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<tr configkey="titles.truncatePrefix"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+	</tbody>
+</table>
+</div>
+<hr />
+<div>${messages_clientViewer}:
+<table>
+	<tbody>
+		<tr configkey="clientViewer.show" configtype="bool"><td></td><td><input dojoType="dijit.form.CheckBox" value="" /></td></tr>
+		<tr configkey="client.notes.icon"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<tr configkey="client.dominodoc.icon"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+	</tbody>
+</table>
+</div>
+<!-- <hr />
+<div>${messages_fields}:
+<table>
+	<thead>
+		<tr><th>${messages_fieldProtocol}</th><th>${messages_fieldShow}</th></tr>
+	</thead>
+	<tbody dojoAttachPoint="fieldProtocolBody">
+	</tbody>
+</table>
+<button dojoType="dijit.form.Button" dojoAttachEvent="onClick: _addFieldRow">${messages_button_addRow}</button>
+</div> -->
+
+</div>

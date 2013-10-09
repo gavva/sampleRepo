@@ -1,0 +1,35 @@
+<div class="searchPane">
+	<div dojoAttachPoint="queryArea" style="display:block;min-height:100px;">
+		<div dojoAttachPoint="leftSpace" class="leftSpace">
+			&nbsp;
+		</div>
+		<div dojoAttachPoint="middleSpace" class="middleSpace">
+			<div dojoType="widgets.QueryTextBox" class="queryTextBox"></div>
+			<div dojoAttachPoint="containerNode" class="middleSpaceContainer">
+			</div>
+			<input dojoAttachPoint="paramFilterBy" type="hidden" name="paramFilterBy" value="all" />
+		</div>
+		<div dojoAttachPoint="rightSpace" class="rightSpace">
+			<div class="rightSpaceContainer">
+					<div dojoType="widgets.Button" class="buttonWidget" label="${search_label}"
+						dojoAttachEvent="onClick: onSearchButtonClicked" title="${messages_tooltip_searchpane_search}"></div>
+					<div dojoType="widgets.Button" class="buttonWidget" label="${clear_label}"
+						dojoAttachEvent="onClick: onClearButtonClicked" title="${messages_tooltip_searchpane_clear}"></div>
+			</div>
+			<div dojoAttachPoint="withResultContainer" class="withinSearchContainer" title="${messages_tooltip_searchpane_addsearch_link}">
+				<div id="${prefix}withinResultsChkbox" dojoType="dijit.form.CheckBox" disabled="true">
+				</div><label dojoAttachPoint="withinResultsLabel"
+							for="${prefix}withinResultsChkbox" style="color:gray;">${search_within_result}</label>
+			</div>
+		</div>
+		<div dojoAttachPoint="helpLink" class="helplink">
+			<a href="javascript:;" title="${tooltip_help_general}" onclick="EDR.viewHelp('iiysutmall.htm?noframes=true')">
+				<img src="${imgBasePath}help_16.png" alt="${tooltip_help_general}" />
+			</a>
+		</div>
+	</div>
+	<div dojoAttachPoint="noQueryArea" style="display:none;width:100%;height:20px;padding-top:3px;padding-left:20px;">
+		<a dojoAttachPoint="showQueryLink" dojoAttachEvent="onclick: showQueryArea" 
+			href="javascript:;" style="color:#003063;">${showarea_label}</a>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+Release:   ica30
+Level:     189
+VRCF:      3.0.0.3
+Time:      Fri Jul 19 10:29:28 PDT 2013
+Host:      donald
+bld_mode:  rios_aix_5_xlC10-32bit
+OS:        AIX 5.3.0.0
+bld_type:  production

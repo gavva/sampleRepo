@@ -1,0 +1,23 @@
+<div>
+	<div dojoAttachPoint="leftSpace" style="float:left;">
+		&nbsp;
+	</div>
+	<div dojoAttachPoint="middleSpace" style="float:left;">
+		<div dojoType="widgets.QueryTextBox" style="width:100%;height:60px"
+			url="/search.do?action=getFullQuery"></div>
+		<div dojoAttachPoint="containerNode" style="width:100%;">
+		</div>
+	</div>
+	<div dojoAttachPoint="rightSpace" style="float:left;padding-top:35px;">
+		<div style="padding-left:15px;">
+			<div dojoType="widgets.Button" style="height:20px;" label="Search"
+				dojoAttachEvent="onClick: onSearchButtonClicked"></div>
+			<div dojoType="widgets.Button" style="height:20px;" label="Clear"
+				dojoAttachEvent="onClick: onClearButtonClicked"></div>
+		</div>
+		<div style="padding-top:5px;padding-left:20px;">
+			<div dojoType="dijit.form.CheckBox" dojoAttachEvent="onChange: onCheckBoxToggled">
+			</div><label>Search Within Results</label>
+		</div>
+	</div>
+</div>

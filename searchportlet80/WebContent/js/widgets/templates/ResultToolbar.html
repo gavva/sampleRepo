@@ -1,0 +1,188 @@
+<div class="dijit dijitToolbar ToolbarContainer results-toolbar" waiRole="toolbar">
+	<div class="ToolbarContainerTop">	
+		<div class="ToolbarContainerTopLeft"></div>
+		<div class="ToolbarContainerTopMiddle"></div>
+	</div>
+	<div class="ToolbarContainerMiddle" style="position:relative;">
+		<div class="ToolbarContainerMiddleLeft"></div>
+		<div class="ToolbarContainerMiddleMiddle" dojoAttachPoint="toolbarContainerMiddleMiddleNode" style="position:relative;">											
+			<div class="ToolbarContent">
+				<div dojoAttachPoint="containerNode" style="position:relative;">
+					<!-- Toolbar Content Start -->
+	
+					<table class="ResultToolbarTable" cellpadding="0">
+						<tr dojoAttachPoint="toolbarInfo" class="ResultToolbarInfo">
+							<td colspan="3" dojoAttachPoint="toolbarPrompt"></td>
+						</tr>
+						<tr dojoAttachPoint="toolbarBody">
+							<td class="ResultToolbarCount">
+								<div dojoAttachPoint="resultCountDiv">
+									<div dojoAttachPoint="resultCountRangeDiv"></div>
+									<div dojoAttachPoint="resultCountAllDiv"><span dojoAttachPoint="resultCountLeftParen">(</span><span dojoAttachPoint="resultCountAllSpan"></span><span dojoAttachPoint="resultCountRightParen">)</span></div>
+								</div>
+							</td> 
+							
+							<td dojoAttachPoint="toolbarButtonNode" class="ResultToolbarButtons">
+								<div dojoType="dijit.form.Button"
+									iconClass="resetSearchButtonIcon" 
+									name="resetSearchButton" 
+									style="display: none;"
+							   		alt="${messages_resulttoolbar_button_label_reset}"
+							   		title="${messages_resulttoolbar_button_tooltip_reset}"
+							   		dojoAttachPoint="resetSearchButton"
+							   		dojoAttachEvent="onClick: _resetButtonClicked"></div>							
+								<div dojoType="dijit.form.Button"
+									iconClass="showSearchAreaButtonIcon" 
+									style="display: none;"
+									name="showHideSearchAreaButton"
+							   		alt="${messages_tooltip_hide_queryarea}"
+							   		title="${messages_tooltip_hide_queryarea}"
+							   		dojoAttachPoint="showHideSearchAreaButton"
+							   		dojoAttachEvent="onClick: _showHideSearchAreaClicked"></div>							
+								<div dojoType="dijit.form.Button"
+									iconClass="saveSearchDialogIcon" 
+									name="saveSearchDialogButton"
+							   		alt="${messages_tooltip_saveSearchDialogButton}"
+							   		title="${messages_tooltip_saveSearchDialogButton}"
+							   		dojoAttachEvent="onClick: openSaveDialog"></div>						
+								<div dojoType="dijit.form.Button"
+									iconClass="exportSearchDialogIcon" 
+									name="exportSearchDialogButton"
+									dojoAttachPoint="exportSearchDialogButton"
+							   		alt="${messages_tooltip_exportButton}"
+							   		title="${messages_tooltip_exportButton}"
+							   		dojoAttachEvent="onClick: openExportDialog"
+							   		style="display:none;"
+							   		></div>
+								<div dojoType="dijit.form.Button"
+									style="display:none;"
+									iconClass="deepInspectionDialogIcon" 
+									name="deepInspectionDialogButton" 
+									dojoAttachPoint="deepInspectionDialogButton"
+							   		alt="${messages_tooltip_deepInspectionButton}"
+							   		title="${messages_tooltip_deepInspectionButton}"
+							   		dojoAttachEvent="onClick: openDeepInspectionDialog"
+							   		></div>
+								<div dojoType="dijit.form.Button"
+									style="display:none;"
+									iconClass="cognosIntegrationDialogIcon" 
+									name="cognosIntegrationDialogButton"
+									dojoAttachPoint="cognosIntegrationDialogButton"
+							   		alt=""
+							   		title=""
+							   		dojoAttachEvent="onClick: openCognosIntegrationDialog"
+							   		></div>
+								<div dojoType="dijit.ToolbarSeparator"></div>
+								<div dojoType="dijit.form.Button" 
+							   		iconClass="searchBackwardIcon" 
+						       		name="searcBackwardButton" 
+						       		dojoAttachPoint="searchBackwardButton"
+						       		disabled="disabled"
+							   		alt="${messages_tooltip_searcBackwardButton}"
+							   		title="${messages_tooltip_searcBackwardButton}"></div>
+						   		<div dojoType="dijit.form.Button" 
+							   		iconClass="searchForwardIcon" 
+						       		name="searcForwardButton"
+						       		dojoAttachPoint="searchForwardButton"
+						       		disabled="disabled"
+							   		alt="${messages_tooltip_searcForwardButton}"
+							   		title="${messages_tooltip_searcForwardButton}"></div>
+								<div dojoType="dijit.ToolbarSeparator"></div>
+						       	<div dojoType="dijit.form.Button" 
+							   		iconClass="expandResultsIcon" 
+						       		name="expandResultsButton" 
+						       		dojoAttachPoint="expandResultsButton"
+							   		alt="${messages_tooltip_expandResults_open}"
+							   		title="${messages_tooltip_expandResults_open}"></div>
+							   	<div dojoType="dijit.ToolbarSeparator"></div>
+							   	<div dojoType="dijit.form.Button" 
+							   		iconClass="openConfigDialogIcon" 
+						       		name="openConfigDialogButton" 
+						       		dojoAttachPoint="openConfigDialogButton"
+							   		alt="${messages_tooltip_openConfigDialogButton}"
+							   		title="${messages_tooltip_openConfigDialogButton}"></div>
+							   	
+							</td>
+							<td class="ResultToolbarDocumentButtons">
+								<table dojoAttachPoint="documentButtons">
+									<tr>
+										<!-- Filter by -->
+										<td class="ResultToolbarFilterByParent">
+											<div dojoAttachPoint="resultsFilterByDiv" class="ResultToolbarContent"
+											 title="${messages_tooltip_resultsFilterBy}" alt="${messages_tooltip_resultsFilterBy}">
+											<label dojoAttachPoint="resultsFilterByLabel" for="${prefix}resultsFilterBy" class="results-filter-by-msg">${messages_toolbars_document_type_show}:</label>
+											<select id="${prefix}resultsFilterBy" dojoAttachPoint="resultsFilterByNode"></select>
+											</div>
+										</td>					
+										<!-- Results per page -->
+										<td class="ResultToolbarPerPageParent">
+											<div dojoAttachPoint="resultsPerPageDiv" class="results-per-page" class="ResultToolbarContent"
+											 title="${messages_tooltip_resultsPerPage}" alt="${messages_tooltip_resultsPerPage}">
+												<label dojoAttachPoint="resultsPerPageLabel" for="${prefix}resultsPerPage" dojoAttachPoint="resultsPerPageLabel">${messages_resulttoolbar_label_resultsPerPage}:</label>
+	<!--  											<select dojoType="dojox.form.DropDownSelect" id="${prefix}resultsPerPage" 
+													onchange="EDR.bean.Email.switchResultsPerPage">														
+													<option value="10">10</option>
+													<option value="25">25</option>
+													<option value="50">50</option>
+													<option  value="100">100</option>
+												</select>-->
+												<select id="${prefix}resultsPerPage" dojoAttachPoint="resultsPerPageNode"></select>
+											</div>
+										</td>						
+										<td class="ResultToolbarPaginationParent">
+										<!-- Pagination -->
+											<div dojoAttachPoint="resultsPagination" class="ResultToolbarContent" dir="ltr">
+												<!-- Previous More -->
+								  		    	<a href="javascript:;" tabindex="0"
+													title="${messages_tooltip_documents_first}"
+								    		    	onclick="">
+									    		    <img dojoAttachPoint="previousMoreImg" buttonType="previous" amount="more" alt="${messages_tooltip_documents_first}"  />
+												</a>
+												<!-- Previous -->
+								    		    <a href="javascript:;" tabindex="0" 
+								   		    	    title="${messages_tooltip_documents_previous}"
+								   		    	    onclick="">
+									    		    <img dojoAttachPoint="previousImg" alt="${messages_tooltip_documents_previous}" buttonType="previous" amount="one" />   
+											    </a>
+											    <!-- Page Numbers -->
+												<span dojoAttachPoint="pageNumbers"></span>
+															
+												<!-- Next -->
+								    		    <a href="javascript:;" tabindex="0"
+													title="${messages_tooltip_documents_next}"
+								   			    	onclick="">
+									    		    <img dojoAttachPoint="nextImg" alt="${messages_tooltip_documents_next}" buttonType="next" amount="one" />		    		    
+									    		</a>
+												<!-- Next More-->
+								   		    	<a href="javascript:;" tabindex="0"
+									    		    title="${messages_tooltip_documents_last}"
+										    		onclick="">
+											    	<img dojoAttachPoint="nextMoreImg" buttonType="next" amount="more" alt="${messages_tooltip_documents_last}" />
+											    </a>
+											</div>
+											<!-- Pagination end -->
+										</td>
+									</tr>
+								</table>
+							</td>			
+							<!-- help -->
+							<td class="ResultToolbarHelp" dojoAttachPoint="helpContainer">
+								<div>
+									<a dojoAttachPoint="eachTabHelp" href="javascript:;" style="text-decoration:none;" onclick="EDR.viewHelp('iiysutmdoc.htm?noframes=true')">
+										<img src="${imgBasePath}help_16.png" style="vertical-align:top;" title="${messages_tooltip_help}" alt="${messages_tooltip_help}" />
+									</a>
+								</div>					
+							</td>
+							<!-- help end -->
+						</tr>
+					</table>
+				<!-- Toolbar Content End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ToolbarContainerBottom">	
+		<div class="ToolbarContainerBottomLeft"></div>
+		<div class="ToolbarContainerBottomMiddle"></div>
+	</div>
+</div>

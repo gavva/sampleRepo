@@ -1,0 +1,71 @@
+<div style="width:315px;">
+	<form dojoAttachPoint="deepInspectionForm" onSubmit="return false;">
+		<div><label for="${prefix}deepInspectionName">${message_name}:</label></div>
+		<div style="margin-bottom:5px;">
+			<input type="text" name="deepInspectionId" style="width:100%;" id="${prefix}deepInspectionName" title="${message_name}" dojoAttachPoint="deepInspectName"/>
+		</div>
+		<div style="margin-bottom:5px;">
+			<label for="${prefix}numOfRecord">${message_maxresult}:</label><br/>
+			<select dojoAttachPoint="numOfRecordWidget" id="${prefix}numOfRecord" name="max_results" style="width:100%;"
+					dojoType="dijit.form.ComboBox" title="${message_tooltip_maxresult}">
+				<option value="10">10</option>
+				<option value="25">25</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+				<option value="250">250</option>
+				<option value="500">500</option>
+			</select>
+		</div>
+		<div style="margin-bottom:5px;">
+			<label for="${prefix}numOfPrimary">${message_maxrow}:</label><br/>
+			<select dojoAttachPoint="numOfPrimaryWidget" id="${prefix}numOfPrimary" name="max_returned_primary" style="width:100%;"
+					dojoType="dijit.form.ComboBox" title="${message_tooltip_maxrow}">
+				<option value="100">100</option>
+				<option value="1000">1000</option>
+				<option value="5000">5000</option>
+				<option value="10000">10000</option>
+				<option value="25000">25000</option>
+				<option value="50000">50000</option>
+			</select>
+		</div>
+		<div style="margin-bottom:5px;">
+			<label for="${prefix}numOfSecondary">${message_maxcolumn}:</label><br/>
+			<select dojoAttachPoint="numOfSecondaryWidget" id="${prefix}numOfSecondary" name="max_returned_secondary" style="width:100%;"
+					dojoType="dijit.form.ComboBox" title="${message_tooltip_maxcolumn}">
+				<option value="100">100</option>
+				<option value="1000">1000</option>
+				<option value="5000">5000</option>
+				<option value="10000">10000</option>
+				<option value="25000">25000</option>
+				<option value="50000">50000</option>
+			</select>
+		</div>
+		<div style="margin-bottom:5px;" role="radiogroup">
+			<label title="${message_sortresult}">${message_sortresult}:</label><br/>
+			<input id="${prefix}sortFreq" type="radio" name="sortType" title="${message_sortresult_frequency}" value="frequency" checked="">&nbsp;<label for="${prefix}sortFreq">${message_sortresult_frequency}</label>&nbsp;
+			<input id="${prefix}sortIndex" type="radio" name="sortType" title="${message_sortresult_indexcol}" value="index">&nbsp;<label for="${prefix}sortIndex">${message_sortresult_indexcol}</label>			
+		</div>
+		<div style="margin-bottom:5px;">
+			<label for="${prefix}threshold">${message_threshhold}:</label><br/>
+			<select dojoAttachPoint="thresholdWidget" id="${prefix}threshold" name="threshold" style="width:100%;"
+					dojoType="dijit.form.ComboBox" title="${message_tooltip_threshhold}">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="5">5</option>
+				<option value="10">10</option>
+			</select>
+		</div>
+		<div style="margin-bottom:5px;" role="radiogroup">
+			<label title="${message_tooltip_schedulable}">${message_schedulable}:</label><br/>
+			<input id="${prefix}dScheduleYes" type="radio" name="schedulable" title="${message_tooltip_schedulable}" value="true">&nbsp;<label for="${prefix}dScheduleYes">${message_yes}</label>&nbsp;
+			<input id="${prefix}dScheduleNo" type="radio" name="schedulable" title="${message_tooltip_schedulable}" value="false" checked="">&nbsp;<label for="${prefix}dScheduleNo">${message_no}</label>
+		</div>
+		<div style="margin-bottom:5px;">
+			<label for="${prefix}deepInspectionDescription">${message_description}:</label><br/>
+			<textarea dojoAttachPoint="description" name="description" id="${prefix}deepInspectionDescription"
+				title="${message_tooltip_description}" rows="3" cols="56"></textarea>
+		</div>
+	</form>
+	<div dojoAttachPoint="messageDiv" style="width:100%;height:100%;">
+	</div>
+</div>

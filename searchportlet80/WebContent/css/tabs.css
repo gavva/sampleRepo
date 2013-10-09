@@ -1,0 +1,436 @@
+/*********************** ES COPYRIGHT START  *********************************
+  @copyright(disclaimer)
+  
+  Licensed Materials - Property of IBM
+  5724-Z21
+  (C) Copyright IBM Corp. 2003, 2012
+  
+  US Government Users Restricted Rights
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+  
+  DISCLAIMER OF WARRANTIES :
+  
+  Permission is granted to copy and modify this Sample code, and to
+  distribute modified versions provided that both the copyright
+  notice, and this permission notice and warranty disclaimer appear
+  in all copies and modified versions.
+  
+  THIS SAMPLE CODE IS LICENSED TO YOU "AS-IS".
+  IBM  AND ITS SUPPLIERS AND LICENSORS  DISCLAIM
+  ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, IN SUCH SAMPLE CODE,
+  INCLUDING THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+  WILL IBM OR ITS LICENSORS OR SUPPLIERS BE LIABLE FOR ANY DAMAGES ARISING
+  OUT OF THE USE OF  OR INABILITY TO USE THE SAMPLE CODE, DISTRIBUTION OF
+  THE SAMPLE CODE, OR COMBINATION OF THE SAMPLE CODE WITH ANY OTHER CODE.
+  IN NO EVENT SHALL IBM OR ITS LICENSORS AND SUPPLIERS BE LIABLE FOR ANY
+  LOST REVENUE, LOST PROFITS OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+  CONSEQUENTIAL,INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS
+  OF THE THEORY OF LIABILITY, EVEN IF IBM OR ITS LICENSORS OR SUPPLIERS
+  HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  
+  @endCopyright
+ *********************** ES COPYRIGHT END  ***********************************/
+
+/*-----------------------------------------
+	SEARCH TABS BEGIN
+------------------------------------------*/
+
+.edr .tabContainer {
+	height: 100%;
+	width: 100%;
+}
+
+.edr #tabContent {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;	
+}
+
+.edr .tabContainerTop {
+	background-image: url("../images/edisc_container_top_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 9px;
+	position: absolute;
+	top: 0;
+}
+
+.edr .tabContainerTopLeft {
+	width: 9px;
+	height: 9px;
+	background-image: url("../images/edisc_container_top_left.png");
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .tabContainerTopLeft {
+	margin-right: -9px;
+}
+
+.edr .tabContainerTopMiddle {
+	height: 9px;
+	margin: 0px 9px;
+	background-image: url("../images/edisc_container_top_center.png");
+	background-repeat: repeat-x;
+	position: relative;
+}
+
+.dj_ie .edr .tabContainerTopMiddle {
+	margin: 0px 9px 0px 9px;
+}
+
+.edr .tabContainerBottom {
+	background-image: url("../images/edisc_container_bottom_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 9px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.edr .tabContainerBottomLeft {
+	width: 9px;
+	height: 9px;
+	background-image: url("../images/edisc_container_bottom_left.png");
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .tabContainerBottomLeft {
+	margin-right: -9px;
+}
+
+.edr .tabContainerBottomMiddle {
+	height: 9px;
+	margin: 0px 9px;
+	background-image: url("../images/edisc_container_bottom_center.png");
+	background-repeat: repeat-x;
+	position: relative;
+}
+
+.dj_ie .edr .tabContainerBottomMiddle {
+	margin: 0px 9px 0px 9px;
+}
+	
+.edr .tabContainerMiddle {
+	width: 100%;
+	position: absolute;
+	top: 9px;
+	bottom: 9px;
+}
+
+.edr .tabContainerMiddleLeft {
+	background-image: url("../images/edisc_container_left_center.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	position: absolute;
+	left: 0px;
+	width: 9px;
+	height: 100%;
+}
+
+.edr .tabContainerMiddleMiddle {
+	background-color: #FFF;
+	position: absolute;
+	left: 9px;
+	right: 9px;
+	height: 100%;	
+}
+
+.edr .tabContainerMiddleRight {
+	background-image: url("../images/edisc_container_right_center.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	position: absolute;
+	right: 0px;
+	width: 9px;
+	height: 100%;
+}
+	
+.edr .tabSearchIconActive {
+	background: url(../images/search23.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin-top: 3px;
+}
+
+.edr .tabSearchIconInactive {
+	background: url(../images/search16_d.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 5px;
+}
+	
+.edr .tabAdministrationIconActive {
+	background: url(../images/admin23.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin-top: 3px;
+}
+
+.edr .tabAdministrationIconInactive {
+	background: url(../images/admin16_d.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 5px;
+}
+
+.edr .tabCaseInfoIconActive {
+	background: url(../images/info23.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin-top: 3px;
+}
+	
+.edr .tabCaseInfoIconInactive {
+	background: url(../images/info16_d.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 5px;
+}
+
+.edr .tabContent {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.edr .tabText {
+	padding-left: 5px;
+	float: left;
+	cursor: pointer;
+}
+	
+.edr .tabActive {
+	height: 27px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #005596;
+	padding: 0px;
+	float:left;
+	margin-right: 3px;
+}
+
+.edr .tabActive .tabActiveMiddle {
+	background-image: url("../images/edisc_tab_active_center.png");	
+	background-repeat: repeat-x;
+	height: 27px;	
+	line-height: 27px;	
+	float: left;	
+	padding: 0px 10px;
+}
+
+.edr .tabActive .tabActiveLeft {
+	background-image: url("../images/edisc_tab_active_left.png");	
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 3px;
+	height: 27px;
+	float: left;
+	position: relative;
+}
+
+.edr .tabActive .tabActiveRight {
+	background-image: url("../images/edisc_tab_active_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	width:3px;
+	height: 27px;
+	float: left;
+	position: relative;
+}
+
+.edr .tabInactive {
+	height: 27px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #FFF;
+	padding: 0px;
+	float: left;
+	margin-right: 3px;
+}
+
+/*-----------------------------------------
+	SEARCH TABS END
+------------------------------------------*/
+
+/*-----------------------------------------
+	GRAPH TABS BEGIN
+------------------------------------------*/
+
+.edr .greyPortlet .tabButtonContainer {	
+	margin-left: 0px;
+}
+
+.edr #tabButtonContainerRight {
+	float: right; 
+	margin-right: 6px
+	height: 27px;
+	line-height: 27px;
+}
+
+.edr #timelineContainer {
+	margin-top: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.edr .graphTabs {
+	margin-left: 3px; 
+}
+
+.edr .graphTabs .tabText {
+	color: black;
+}
+
+.edr .graphTabs .tabActive, .graphTabs .tabInactive {
+	margin-top: 4px; 
+	margin-right: 3px; 
+}	
+
+.edr .graphTabs .tabActive .tabActiveLeft {
+	background-image: url(../images/edisc_tab2a_left.png);
+}
+.edr .graphTabs .tabActive .tabActiveMiddle {
+	background-image: url(../images/edisc_tab2a_center.png);
+}	
+.edr .graphTabs .tabActive .tabActiveRight {
+	background-image: url(../images/edisc_tab2a_right.png);
+}
+
+.edr .graphTabs .tabInactive .tabInactiveLeft {
+	background-image: url(../images/edisc_tab2n_left.png);
+}
+.edr .graphTabs .tabInactive .tabInactiveMiddle {
+	background-image: url(../images/edisc_tab2n_center.png);
+}	
+.edr .graphTabs .tabInactive .tabInactiveRight {
+	background-image: url(../images/edisc_tab2n_right.png);
+}
+
+.edr .tabGraphTimelineIconActive {
+	background: url(../images/timeline16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+
+.edr .tabGraphTimelineIconInactive {
+	background: url(../images/timeline16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+	
+.edr .tabGraphNetworkIconActive {
+	background: url(../images/network16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+	
+.edr .tabGraphNetworkIconInactive {
+	background: url(../images/network16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+/*-----------------------------------------
+	GRAPH TABS END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	EMAIL PREVIEW TABS BEGIN
+------------------------------------------*/
+
+.edr .tabEmailIconActive {
+	background: url(../images/email16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+	
+.edr .tabEmailIconInactive {									    
+	background: url(../images/email16_d.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+
+.edr .tabAttachmentIconActive {
+	background: url(../images/attachment_16.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+	
+.edr .tabAttachmentIconInactive {									    
+	background: url(../images/attachment16_d.png);
+	background-repeat: no-repeat; 
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+
+.edr .tabCloseLink { 
+	margin-left: 5px;
+}
+
+/*-----------------------------------------
+	EMAIL PREVIEW TABS BEGIN
+------------------------------------------*/

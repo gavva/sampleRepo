@@ -1,0 +1,240 @@
+/*********************** ES COPYRIGHT START  *********************************
+  @copyright(disclaimer)
+  
+  Licensed Materials - Property of IBM
+  5724-Z21
+  (C) Copyright IBM Corp. 2003, 2012
+  
+  US Government Users Restricted Rights
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+  
+  DISCLAIMER OF WARRANTIES :
+  
+  Permission is granted to copy and modify this Sample code, and to
+  distribute modified versions provided that both the copyright
+  notice, and this permission notice and warranty disclaimer appear
+  in all copies and modified versions.
+  
+  THIS SAMPLE CODE IS LICENSED TO YOU "AS-IS".
+  IBM  AND ITS SUPPLIERS AND LICENSORS  DISCLAIM
+  ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, IN SUCH SAMPLE CODE,
+  INCLUDING THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+  WILL IBM OR ITS LICENSORS OR SUPPLIERS BE LIABLE FOR ANY DAMAGES ARISING
+  OUT OF THE USE OF  OR INABILITY TO USE THE SAMPLE CODE, DISTRIBUTION OF
+  THE SAMPLE CODE, OR COMBINATION OF THE SAMPLE CODE WITH ANY OTHER CODE.
+  IN NO EVENT SHALL IBM OR ITS LICENSORS AND SUPPLIERS BE LIABLE FOR ANY
+  LOST REVENUE, LOST PROFITS OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+  CONSEQUENTIAL,INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS
+  OF THE THEORY OF LIABILITY, EVEN IF IBM OR ITS LICENSORS OR SUPPLIERS
+  HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  
+  @endCopyright
+ *********************** ES COPYRIGHT END  ***********************************/
+
+.edr .dijitTab {
+	cursor: pointer;
+	color: #000000;
+	font-size: 13px;
+	font-weight: normal;
+	height: 24px;
+	padding: 0px;
+	border-style: none;
+}
+
+.dijitRtl .edr .dijitTab {
+	float: right;
+}
+
+.edr .dijitTab .tabIcon {
+	width: 16px;
+	height: 16px;
+	vertical-align: text-bottom;
+}
+
+.edr .dijitTab .tabInactiveLeft {
+	background-image: url(../images/edisc_tab2n_left.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	float: left;
+	height: 24px;
+	width: 3px;
+}
+
+.edr .dijitTab .tabInactiveMiddle {
+	background-image: url(../images/edisc_tab2n_center.png);
+	background-repeat: repeat-x;
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	padding: 0px 10px;
+	vertical-align: middle;
+	border-left-style: none;
+}
+
+.edr .dijitTab .tabInactiveRight {
+	background-image: url(../images/edisc_tab2n_right.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	float: left;
+	height: 24px;
+	width: 3px;
+}
+
+.edr .dijitTabChecked {
+	cursor: pointer;
+	color: #000000;
+	font-size: 13px;
+	font-weight: normal;
+	height: 24px;
+	padding: 0px;
+	border-style: none;
+}
+
+.edr .dijitTabChecked .tabActiveLeft {
+	background-image: url(../images/edisc_tab2a_left.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	float: left;
+	height: 24px;
+	width: 3px;
+}
+
+.edr .dijitTabChecked .tabActiveMiddle {
+	background-image: url(../images/edisc_tab2a_center.png);
+	background-repeat: repeat-x;
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	padding: 0px 10px;
+	vertical-align: middle;
+	border-left-style: none;
+}
+
+.edr .dijitTabChecked .tabActiveRight {
+	background-image: url(../images/edisc_tab2a_right.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	float: left;
+	height: 24px;
+	width: 3px;
+}
+
+.edr .tabWindowRight {
+	background-image: url(../images/edisc_messages_right2.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	width: 3px;
+	height: 29px;
+	top: 1px;
+	position:absolute;
+}
+
+.edr .tabWindowLeft {
+	background-image: url(../images/edisc_messages_left2.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	width: 3px;
+	height: 29px;
+	top: 1px;
+	left: 0px;
+	position:absolute;
+}
+
+.edr .tabWindowMiddle {
+	background-image: url(../images/edisc_messages_center.png);
+	background-position: top;
+	background-repeat: repeat-x;
+	height: 24px;
+	padding-top: 5px;
+}
+
+.edr .tabWindowBottomRight {
+	background-color:transparent;
+	background-image:url(../images/edisc_rounded_light_bottom_right.png);
+	background-position:right top;
+	background-repeat:no-repeat;
+	height:3px;
+	right: 0px;
+	bottom: 1px;
+	width:3px;
+	position: absolute;
+}
+
+.edr .tabWindowBottomRight_rtl {
+	background-color:transparent;
+	background-image:url(../images/edisc_rounded_light_bottom_left.png);
+	background-position:right top;
+	background-repeat:no-repeat;
+	height:3px;
+	left: 0px;
+	bottom: 1px;
+	width:3px;
+	position: absolute;
+}
+
+.edr .tabWindowBottomLeft {
+	background-color:transparent;
+	background-image:url(../images/edisc_rounded_light_bottom_left.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	height:3px;
+	width:3px;
+	bottom: 1px;
+	position: absolute;
+}
+
+.edr .tabWindowBottomLeft_rtl {
+	background-color:transparent;
+	background-image:url(../images/edisc_rounded_light_bottom_right.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	height:3px;
+	width:3px;
+	bottom: 1px;
+	position: absolute;
+}
+
+.edr .tabWindowBottomMiddle {
+	background-color:#FFFFFF;
+	border-bottom:1px solid #CCCCCC;
+	height:3px;
+	left: 0px;
+	bottom: 0px;
+	margin:0 3px;
+	position: absolute;
+}
+
+.dijitRtl .edr .tabWindowBottomMiddle {
+	background-color:#FFFFFF;
+	border-bottom:1px solid #CCCCCC;
+	height:3px;
+	left: auto;
+	right: 0px;
+	bottom: 0px;
+	margin:0 3px;
+	position: absolute;
+}
+
+.dijitRtl .edr .dijitTab .dijitTabInnerDiv {
+	border-left:none;
+	border-right:none;
+	padding: 0px 10px; 
+}
+
+.dj_ie-rtl .tundra.edr .dijitTab .dijitTabInnerDiv {
+	width: auto !important;
+}
+
+.widgetsLtr .edr .dijitTab {
+	float: left;
+}
+
+.widgetsLtr .edr DIV.dijitArrowButton, .dijitRtl .edr .dijitValidationIcon, .dijitRtl .dijitValidationIconText {
+	float: right;
+}
+
+.widgetsLtr .edr .dijitInputField * {
+	direction: ltr;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib PUBLIC
+  "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+  "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+  <tlibversion>1.0</tlibversion>
+  <jspversion>1.1</jspversion>
+  <shortname>Tags for Enterprise Search</shortname>
+  <tag>
+    <name>dojo</name>
+    <tagclass>com.ibm.es.oze.searchui.tags.DojoObjectTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+  </tag>
+  <tag>
+    <name>dijit</name>
+    <tagclass>com.ibm.es.oze.searchui.tags.DijitObjectTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+  </tag>
+  <tag>
+    <name>dojox</name>
+    <tagclass>com.ibm.es.oze.searchui.tags.DojoxObjectTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+  </tag>
+  <tag>
+    <name>dojoType</name>
+    <tagclass>com.ibm.es.oze.searchui.tags.DojoTypeAttr</tagclass>
+    <bodycontent>JSP</bodycontent>
+  </tag>  
+</taglib>

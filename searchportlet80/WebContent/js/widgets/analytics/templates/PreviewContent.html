@@ -1,0 +1,59 @@
+<div style="width:800px;height:100%;">	
+	<!-- main toolbar -->
+	<div dojoType="widgets.Toolbar">
+		<div style="">
+			<div dojoType="dijit.form.Button"
+				iconClass="previousHighlightButton" 
+		   		alt="${messages_tooltip_preview_previous}"
+		   		title="${messages_tooltip_preview_previous}"></div>						
+			<div dojoType="dijit.form.Button"
+				iconClass="nextHighlightButtonIcon" 
+		   		alt="${messages_tooltip_preview_next}"
+		   		title="${messages_tooltip_preview_next}"></div>
+		</div>
+		<div class="previewDialogTitleMessage">
+			<div>
+				<span>${messages_preview_document_title}&nbsp;</span><span dojoAttachPoint="documentTitle"></span>
+			</div>
+			<div>
+				<span>${messages_preview_document_date}&nbsp;</span><span dojoAttachPoint="documentDate"></span>
+			</div>
+		</div>
+		<span dojoAttachPoint="hiddenSpan" style="${fontStyle}visibility:hidden;position:absolute;"></span>
+	</div>
+    <div dojoAttachPoint="previewSplitContainer" dojoType="dijit.layout.SplitContainer" orientation="horizontal" sizerWidth="5" activeSizing="true"
+        	    style="position:absolute; top:55px; left:10px; width: 780px; height: 100%;">
+		<div dojoType="dijit.layout.ContentPane" sizeMin="10" sizeShare="20" style="overflow:auto;position:absolute;top:40px;bottom:5px;">
+			<div>
+				<div style="text-align:center; background-color:#DDEBFB;">${messages_analytics_preview_keywordInfoLabel}</div>
+				<table class="detailViewTable" style="width:100%;">
+					<thead>
+						<tr><th scope="col">${messages_analytics_preview_nameLabel}</th>
+						<th scope="col">${messages_analytics_preview_valueLabel}</th></tr>
+					</thead>
+					<tbody dojoAttachPoint="keywordInfoBody">
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div dojoType="dijit.layout.ContentPane" sizeMin="10" sizeShare="70" style="overflow:auto;position:absolute;top:40px;bottom:5px;padding-left:5px;padding-top:5px;">
+	    <div dojoAttachPoint="previewInnerSplitContainer" dojoType="dijit.layout.SplitContainer" orientation="vertical" sizerWidth="5" activeSizing="true">
+			<div dojoType="dijit.layout.ContentPane" sizeMin="10" sizeShare="20" style="overflow:auto;">
+				<div>
+					<div style="text-align:center; background-color:#F5F5F5;">${messages_analytics_preview_standardInfoLabel}</div>
+					<table class="standardInfoTable" style="width:100%;">
+						<thead>
+							<tr><th scope="col">${messages_analytics_preview_nameLabel}</th>
+							<th scope="col">${messages_analytics_preview_valueLabel}</th></tr>
+						</thead>
+						<tbody dojoAttachPoint="standardInfoBody">
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div dojoAttachPoint="previewDisplay" dojoType="dijit.layout.ContentPane" sizeMin="10" sizeShare="70" style="overflow:auto;">
+				<div dojoAttachPoint="previewBody"></div>
+			</div>
+		</div>
+	</div>
+</div>

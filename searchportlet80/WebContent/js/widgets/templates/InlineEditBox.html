@@ -1,0 +1,8 @@
+<fieldset dojoAttachPoint="editNode" waiRole="presentation" style="width: 100%; position: absolute; visibility:hidden" class="dijitReset dijitInline"
+	dojoAttachEvent="onkeypress: _onKeyPress">
+	<div class="inlineEditBox"><textarea dojoAttachPoint="editorPlaceholder"></textarea></div>
+	<div class="inlineEditButtons" dojoAttachPoint="buttonContainer">
+		<div class="inlineEditButton"><button class='saveButton' dojoAttachPoint="saveButton" dojoType="dijit.form.Button" dojoAttachEvent="onClick:save">${buttonSave}</button></div>
+		<div class="inlineEditButton"><button class='cancelButton' dojoAttachPoint="cancelButton" dojoType="dijit.form.Button" dojoAttachEvent="onClick:cancel">${buttonCancel}</button></div>
+	</div>
+</fieldset>

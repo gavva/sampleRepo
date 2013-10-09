@@ -1,0 +1,42 @@
+<div class="refinement">
+	<div dojoAttachPoint="facetTreeContainer" style="overflow:hidden; padding:5px;">
+		<label for="${prefix}categoryTreeFilter">${message_filter}:</label><br/>
+		<input type="text" style="width:150px;height:16px;" title="${message_tooltip_filter}"
+			dojoAttachPoint="filterInput" dojoAttachEvent="onkeyup: onFilterChanged" id="${prefix}categoryTreeFilter"></input>
+		<div dojoType="widgets.Button" title="${message_tooltip_clear}" label="${message_clear}"
+			dojoAttachPoint="clearBtn" dojoAttachEvent="onClick: onFilterClearClicked"></div>
+		<form dojoAttachPoint="facetForm" style="overflow:hidden;" onSubmit="return false;">
+		</form>
+	</div>
+	<div dojoAttachPoint="buttonContainer" style="padding-top:7px;padding-left:5px;">
+		<form dojoAttachPoint="facetSearchForm" onSubmit="return false;">
+			<div style="padding-left:2px;padding-bottom:4px;">
+				<label for="${prefix}categoryTreeSearchType">${message_searchtype}:</label><br/>
+				<select id="${prefix}categoryTreeSearchType" name="searchType" style="width:90%" title="${message_tooltip_searchtype}" dojoAttachPoint="searchType" dojoAttachEvent="onchange: onSearchTypeChanged">
+					<option value="keywordSearch">${message_keywordsearch}</option>
+					<option value="facetSearch">${message_subfacetsearch}</option>
+				</select>
+			</div>
+			<div style="padding-left:2px;padding-bottom:4px;">
+				<label for="${prefix}searchFacetPath">${message_facetpath}:</label><br/>
+				<input dojoAttachPoint="pathInput" title="${message_tooltip_facetpath}" readonly="" id="${prefix}searchFacetPath" style="width:90%" title="${message_facetpath}" name="pathValue"></input>
+			</div>
+			<div style="padding-left:2px;padding-bottom:4px;">
+				<label for="${prefix}searchFacetKeyword">${message_keyword}:</label><br/>
+				<input dojoAttachPoint="keywordInput" title="${message_tooltip_keyword}" id="${prefix}searchFacetKeyword" style="width:90%" title="${message_keyword}" name="keywordValue"></input>
+			</div>
+			<div style="padding-left:2px;padding-bottom:2px;" role="radiogroup">
+				<div style="overflow:left;">
+					<input id="${prefix}categoryNewSearch" dojoType="dijit.form.RadioButton" title="${message_newsearch}" name="queryType"/>
+					<label for="${prefix}categoryNewSearch">${message_newsearch}</label>
+				</div>
+				<div style="overflow:left;">
+					<input id="${prefix}categoryRefineSearch" dojoType="dijit.form.RadioButton" title="${message_addsearch}" checked="true" name="queryType"/>
+					<label for="${prefix}categoryRefineSearch">${message_addsearch}</label>
+				</div>
+			</div>
+			<div dojoType="widgets.Button" style="height:20px;" label="${message_search}" disabled="true"
+					dojoAttachPoint="categorySearchBtn" dojoAttachEvent="onClick: onSearchButtonClicked"></div>
+		</form>
+	</div>	
+</div>

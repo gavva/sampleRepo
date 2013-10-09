@@ -1,0 +1,112 @@
+<div style="padding-top:8px;">
+	<form class="advSearchForm" dojoAttachPoint="advancedSearchForm" onSubmit="return false;">
+		<div style="width:100%;height:100%;">
+			<div dojoAttachPoint="leftPane" style="width:100%;height:100%;float:left;">
+				<div class="searchFormInput" style="margin-bottom:5px;">
+					<div class="inputRow" role="radiogroup">
+						<input id="${prefix}advancedNewSearch" dojoType="dijit.form.RadioButton" checked="true"
+								tabindex="0" dojoAttachEvent="onClick: onNewSearchClicked" name="searchType"/>
+						<label for="${prefix}advancedNewSearch" title="${messages_tooltip_searchpane_newsearch_link}">${label_newsearch}</label>
+						<input id="${prefix}advancedRefineSearch" dojoType="dijit.form.RadioButton" style="margin-left:5px;"
+							 tabindex="0" dojoAttachEvent="onClick: onRefineSearchClicked" name="searchType"/>
+						<label for="${prefix}advancedRefineSearch" title="${messages_tooltip_searchpane_addsearch_link}">${label_refinesearch}</label>
+					</div>
+				</div>
+				<div class="searchFormInput" title="${messages_tooltip_allWords}">
+					<div class="inputRow">
+						<label accesskey="l" for="${prefix}showResultsWithAllWords">${prompt_showResultsWith_allWords}:&nbsp;
+							<span class="noError"></span>
+						</label>
+						<br>
+						<input type="text" class="textbox" id="${prefix}showResultsWithAllWords" name="showResultsWithAllWords"
+							tabindex="0" dojoType="dijit.form.TextBox" trim="true" />			
+				    </div>	
+				</div>				
+				<div class="searchFormInput" title="${messages_tooltip_exactPhrase}">
+					<div class="inputRow">
+						<label accesskey="p" for="${prefix}showResultsWithPhrase">${prompt_showResultsWith_phrase}:&nbsp;
+							<span class="noError"></span>
+						</label>
+						<br>
+						<input type="text" class="textbox" id="${prefix}showResultsWithPhrase" name="showResultsWithPhrase"
+							tabindex="0" dojoType="dijit.form.TextBox" trim="true" />			
+				    </div>	
+				</div>				
+				<div class="searchFormInput" title="${messages_tooltip_anyWords}">
+					<div class="inputRow">
+						<label accesskey="a" for="${prefix}showResultsWithAnyWords">${prompt_showResultsWith_anyWords}:&nbsp;
+							<span class="noError"></span>
+						</label>
+						<br>
+						<input type="text" class="textbox" id="${prefix}showResultsWithAnyWords" name="showResultsWithAnyWords"
+							tabindex="0" dojoType="dijit.form.TextBox" trim="true" />			
+				    </div>	
+				</div>				
+				<div class="searchFormInput" title="${messages_tooltip_noneWords}">
+					<div class="inputRow">
+						<label accesskey="n" for="${prefix}showResultsWithNoneWords">${prompt_showResultsWith_noneWords}:&nbsp;
+							<span class="noError"></span>
+						</label>
+						<br>
+						<input type="text" class="textbox" id="${prefix}showResultsWithNoneWords" name="showResultsWithNoneWords"
+							tabindex="0" dojoType="dijit.form.TextBox" trim="true" />			
+				    </div>	
+				</div>				
+				<div class="searchFormInput" title="${messages_tooltip_dateRange}">						
+						<table cellspacing="0" cellpadding="0" border="0">
+							<thead class="inputRow">
+								<th style="padding-left:2px;"><span>${text_Search_dateStart}</span></th>
+								<th><span>&nbsp;:&nbsp;</span></th>
+								<th><span>&nbsp;${text_Search_dateEnd}</span></th>
+								<th><span dojoAttachPoint="dateError" class="noError"></span></th>		
+							</thead>
+							<tbody  class="date-row">						
+								<td>
+									<input dojoAttachPoint="fromToDate" type="text" name="fromdate" class="date-textbox"	
+										tabindex="0" dojoType="widgets.DateTextBox"
+										invalidMessage=""
+										style="width:86px"
+									 	title="${text_Search_dateStart}"/>				
+									<a href="javascript:;" style="margin-left:-5px;"  dojoAttachEvent="onclick: onFromDateRangeClicked">
+										<img src="${imageBaseDir}datepicker23.png" alt="${text_Search_dateStart}"/>
+									</a>
+								</td>
+								<td>																		
+									<span>&nbsp;:&nbsp;</span>		
+								</td>
+								<td>
+									<input dojoAttachPoint="toToDate" type="text" name="todate" class="date-textbox"														
+										tabindex="0" dojoType="widgets.DateTextBox"
+										invalidMessage=""
+										style="width:86px"
+										title="${text_Search_dateEnd}"/>					
+									<a href="javascript:;" style="margin-left:-5px;" dojoAttachEvent="onclick: onToDateRangeClicked">
+										<img src="${imageBaseDir}datepicker23.png" alt="${text_Search_dateEnd}"/>
+									</a>															
+								</td>
+							</tbody>
+						</table>
+				</div>
+				<div style="margin-top:10px;">
+					<div class="inputRow" style="overflow:hidden;height:50px;">
+						<div dojoType="widgets.Button" style="height:20px;float:left;" label="${label_search}"
+								tabindex="0" dojoAttachEvent="onClick: onSearchButtonClicked" title="${messages_tooltip_searchpane_search}"></div>
+						<div dojoType="widgets.Button" style="height:20px;float:left;" label="${label_clear}"
+								tabindex="0" dojoAttachEvent="onClick: onClearButtonClicked" title="${messages_tooltip_searchpane_clear}"></div>
+						<div dojoType="widgets.Button" style="height:20px;float:right;" title="${messages_tooltip_searchpane_showoptions_link}"
+								tabindex="0" dojoAttachEvent="onClick: toggleSearchOptions" label="<span style='position:relative;top:-4px;'>${show_options}</span>
+								<img src='${imageBaseDir}move-left23.png' style='position:relative;top:-2px;' alt=''/>">
+						</div>
+				    </div>
+				</div>
+			</div>
+			<div dojoAttachPoint="rightPane"
+				style="position:relative;width:${rightPaneWidth}px;height:238px;margin-left:10px;border:1px solid gray;float:left;display:none;">
+				<div class="dijitTitlePaneTitle dijitOpen" style="width:290px;height:15px;" title="${label_advoptions_title}">${label_advoptions_title}</div>
+				<div dojoAttachPoint="advOptions" dojoType="widgets.SearchOptions"
+					style="width:290px;height:205px;padding:5px;overflow:auto;background-color:white;">
+				</div>
+			</div>
+		</div>
+	</form>	
+</div>

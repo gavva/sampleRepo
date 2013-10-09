@@ -1,0 +1,15 @@
+<div class="dijitTabContainer">
+	<div dojoAttachPoint="tablistNode"></div>
+	<div dojoAttachPoint="tablistSpacer" class="dijitTabSpacer ${baseClass}-spacer"></div>
+			<div dojoAttachPoint="resultToolbar" dojoType="widgets.ResultToolbar" class="email-toolbar-cp" collectionsCount="1"></div>
+			<div dojoAttachPoint="resultBottomBar" dojoType="widgets.ResultBottomBar"></div>
+
+	<div dojoAttachPoint="resultsBodyContainer" dojoType="widgets.layout.BorderContainer" dojoAttachPoint="clientArea" style="width: 100%;" gutters="false">
+		<div dojoAttachPoint="leftContentPane" dojoType="dijit.layout.ContentPane" region="leading" splitter="true" style="background-color: white; width: 265px;">
+			<div dojoAttachPoint="leftContainerNode" style="width:100%;height:100%;padding:0px;"></div>
+		</div>
+		<div dojoAttachPoint="centerContentPane" dojoType="dijit.layout.ContentPane" region="center" style="overflow: hidden;">
+			<div class="${baseClass}-container" dojoAttachPoint="containerNode" style="overflow-x:auto; overflow-y: hidden; position: relative; width: 100%; height: 100%; padding: 0px;"></div>		
+		</div>
+	</div>
+</div>

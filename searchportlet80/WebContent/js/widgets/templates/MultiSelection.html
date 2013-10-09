@@ -1,0 +1,20 @@
+<div>
+	<div style="float:left;" role="presentation">
+		<label tabindex="0" dojoAttachPoint="availableListLabel" for="${prefix}availableListInput">${availableTitle}</label><br>
+		<select tabindex="0" dojoType="dijit.form.MultiSelect" dojoAttachPoint="availableList" id="${prefix}availableListInput"
+			multiple="true" size="7" name="availableList">
+		</select>
+	</div>
+	<div dojoAttachPoint="btnContainer" style="float:left;width:72px;padding-top:100px;" role="presentation">
+		<span>
+			<button tabindex="0" dojoAttachPoint="leftBtn" title="${addBtnTitle}">&lt;</button>
+			<button tabindex="0" dojoAttachPoint="rightBtn" title="${removeBtnTitle}">&gt;</button>
+		</span>
+	</div>	
+	<div style="float:left;" role="presentation">
+		<label tabindex="0" dojoAttachPoint="selectedListLabel" for="${prefix}selectedListInput">${selectedTitle}</label><br>
+		<select tabindex="0" dojoType="dijit.form.MultiSelect" dojoAttachPoint="selectedList" id="${prefix}selectedListInput"
+			multiple="true" name="selectedList">	
+		</select>
+	</div>
+</div>

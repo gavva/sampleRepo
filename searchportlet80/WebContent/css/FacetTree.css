@@ -1,0 +1,361 @@
+/*********************** ES COPYRIGHT START  *********************************
+  @copyright(disclaimer)
+  
+  Licensed Materials - Property of IBM
+  5724-Z21
+  (C) Copyright IBM Corp. 2003, 2012
+  
+  US Government Users Restricted Rights
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+  
+  DISCLAIMER OF WARRANTIES :
+  
+  Permission is granted to copy and modify this Sample code, and to
+  distribute modified versions provided that both the copyright
+  notice, and this permission notice and warranty disclaimer appear
+  in all copies and modified versions.
+  
+  THIS SAMPLE CODE IS LICENSED TO YOU "AS-IS".
+  IBM  AND ITS SUPPLIERS AND LICENSORS  DISCLAIM
+  ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, IN SUCH SAMPLE CODE,
+  INCLUDING THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+  WILL IBM OR ITS LICENSORS OR SUPPLIERS BE LIABLE FOR ANY DAMAGES ARISING
+  OUT OF THE USE OF  OR INABILITY TO USE THE SAMPLE CODE, DISTRIBUTION OF
+  THE SAMPLE CODE, OR COMBINATION OF THE SAMPLE CODE WITH ANY OTHER CODE.
+  IN NO EVENT SHALL IBM OR ITS LICENSORS AND SUPPLIERS BE LIABLE FOR ANY
+  LOST REVENUE, LOST PROFITS OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+  CONSEQUENTIAL,INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS
+  OF THE THEORY OF LIABILITY, EVEN IF IBM OR ITS LICENSORS OR SUPPLIERS
+  HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  
+  @endCopyright
+ *********************** ES COPYRIGHT END  ***********************************/
+
+/*-----------------------------------------
+	Style information for the facet refinement list
+------------------------------------------*/
+
+.edr .refinement {
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+.edr .refinement .selected-facet-container {
+	padding-left:5px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+.edr .refinement .selected-facet {
+	width:95%;
+	padding-top:3px;
+}
+
+.edr .refinement .selected-facet-img {
+	width:15px;
+	height:15px;
+	vertical-align:bottom;
+}
+
+.edr .refinement .selected-facet-label {
+	padding-left:5px;
+}
+
+.edr .refinement .refinement-group {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 0px;
+	font-size: 11px;
+}
+
+.dijitRtl .edr .refinement .refinement-group {
+	padding-left: 0px;
+	padding-right: 5px;
+}
+
+.edr .refinement .refinement-group-ica {
+	margin-top: 3px;
+}
+
+.edr .refinement .refinement-title {
+	cursor:pointer;
+	background: #d7d7d7;
+}
+
+.edr .refinement .refinement-title-ica {
+	cursor:pointer;
+/*	min-height: 20px; */
+	height: auto !important;
+/*	height: 20px; */
+	background: #d7d7d7;
+}
+
+.edr .refinement .refinement-title-ica-selected {
+	cursor:pointer;
+/*	min-height: 20px; */
+	height: auto !important;
+/*	height: 20px; */
+	background: #6E96C8;
+}
+
+.edr .refinement .refinement-title.hover {
+	background: #6E96C8;	
+}
+
+.edr .refinement .refinement-title-body {
+	padding: 0px 4px;
+	font-weight: bold;	
+	overflow:hidden;
+}
+
+.edr .refinement .refinement-title-body-ica {
+	padding: 0px 4px;
+	padding-left: 3px;
+	overflow:hidden;
+/*	font-weight: bold; */	
+/*	min-height: 20px; */
+/*	background: #d7d7d7; */
+	position:relative;
+}
+
+.dijitRtl .edr .refinement .refinement-title-body-ica {
+	padding-left: 0px;
+	padding-right: 3px;
+}
+
+.edr .refinement .arrow-img {
+	margin-top:3px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .arrow-img {
+	float: right;
+}
+
+.edr .refinement .arrow-img-hierarchical {
+	margin-top:3px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .arrow-img-hierarchical {
+	float: left;
+}
+
+.edr .refinement .arrow-container {
+	width:15px;
+	height:15px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .arrow-container {
+	float: right;
+}
+
+.edr .refinement .label {
+	padding-left: 8px;
+	overflow:hidden;
+	float: left;
+}
+
+.edr .refinement .maglink {
+	visibility: hidden;
+	padding-right:3px;
+	float: right;
+}
+
+.dijitRtl .edr .refinement .label {
+	padding-left: 0px;
+	padding-right: 8px;
+	float: right;
+}
+
+.dijitRtl .edr .refinement .maglink {
+	visibility: hidden;
+	padding-right:0px;
+	padding-left:3px;
+	float: left;
+}
+
+.edr .refinement .label-ica {
+	padding-left: 0px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .label-ica {
+	padding-right: 0px;
+	float: right;
+}
+
+.edr .refinement .pfacet {
+	padding-left: 5px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .pfacet {
+	padding-left: 0px;
+	padding-right: 5px;
+	float: right;
+}
+
+.edr .refinement .sfacet {
+	padding-left: 2px;
+	float: left;
+}
+
+.dijitRtl .edr .refinement .sfacet {
+	padding-left: 0px;
+	padding-right: 2px;
+	float: right;
+}
+
+.edr .refinement .refinement-title-top {
+	background: url('../images/facet_head_top_left.png') no-repeat top left; 
+}
+
+.edr .refinement .refinement-title-top-selected {
+	background: url('../images/facet_head_top_left_h.png') no-repeat top left; 
+}
+
+.edr .refinement .refinement-title-top div {
+	background: url('../images/facet_head_top_right.png') no-repeat top right;
+}
+
+.edr .refinement .refinement-title-top-selected div {
+	background: url('../images/facet_head_top_right_h.png') no-repeat top right;
+}
+
+.edr .refinement .refinement-title-bottom {
+	background: url('../images/facet_head_bottom_left.png') no-repeat bottom left;	
+}
+
+.edr .refinement .refinement-title-bottom-selected {
+	background: url('../images/facet_head_bottom_left_h.png') no-repeat bottom left;	
+}
+
+.edr .refinement .refinement-title-bottom div {
+	background: url('../images/facet_head_bottom_right.png') no-repeat bottom right;	
+}
+
+.edr .refinement .refinement-title-bottom-selected div {
+	background: url('../images/facet_head_bottom_right_h.png') no-repeat bottom right;	
+}
+
+.edr .refinement .hover .refinement-title-top {
+	background: url('../images/facet_head_top_left_h.png') no-repeat top left; 
+}
+
+.edr .refinement .hover .refinement-title-top div {
+	background: url('../images/facet_head_top_right_h.png') no-repeat top right;
+}
+
+.edr .refinement .hover .refinement-title-bottom {
+	background: url('../images/facet_head_bottom_left_h.png') no-repeat bottom left;	
+}
+
+.edr .refinement .hover .refinement-title-bottom div {
+	background: url('../images/facet_head_bottom_right_h.png') no-repeat bottom right;	
+}
+
+.edr .refinement .refinement-title-top,
+.edr .refinement .refinement-title-top-selected,
+.edr .refinement .refinement-title-top div, 
+.edr .refinement .refinement-title-top-selected div, 
+.edr .refinement .refinement-title-bottom,
+.edr .refinement .refinement-title-bottom-selected,
+.edr .refinement .refinement-title-bottom div,
+.edr .refinement .refinement-title-bottom-selected div {
+	height: 3px;
+	width: 100%;
+	padding: 0;
+	margin: 0;	
+}
+
+.edr .refinement .refinement-list {
+	padding-left:6px;
+}
+
+.dijitRtl .edr .refinement .refinement-list {
+	padding-left:0px;
+	padding-right:6px;
+}
+
+.edr .refinement .refinement-group-list {
+	margin-left: 10px;
+}
+
+.dijitRtl .edr .refinement .refinement-group-list {
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+.edr .refinement .facet-refine-link {
+	margin-left: -5px;
+}
+
+.dijitRtl .edr .refinement .facet-refine-link {
+	margin-left: 0px;
+	margin-right: -5px;
+}
+
+.edr .refinement .add-facet-img {
+	vertical-align:middle;
+	padding-right: 5px;
+}
+
+.dijitRtl .edr .refinement .add-facet-img {
+	padding-right: 0px;
+	padding-left: 5px;
+}
+
+.edr .refinement .not-facet-img {
+	vertical-align:middle;	
+	padding-right: 5px;
+}
+
+.dijitRtl .edr .refinement .not-facet-img {
+	vertical-align:middle;	
+	padding-right: 0px;
+	padding-left: 5px;
+}
+
+.edr .refinement .horizontal-category-img {
+	padding-left:5px;
+	float:left;
+}
+
+.dijitRtl .edr .refinement .horizontal-category-img {
+	padding-left:0px;
+	padding-right:5px;
+	float:right;
+}
+
+.edr .refinement .vertical-category-img {
+	padding-left:5px;
+	float:left;
+}
+
+.dijitRtl .edr .refinement .vertical-category-img {
+	padding-left:0px;
+	padding-right:5px;
+	float:right;
+}
+
+.edr .refinement .morelink {
+	padding-left:15px;
+}
+
+.dijitRtl .edr .refinement .morelink {
+	padding-left:0px;
+	padding-right:15px;
+}
+
+.edr .refinement .contentBody-ica {
+	padding-left:3px;
+}
+
+.dijitRtl .edr .refinement .contentBody-ica {
+	padding-left:0px;
+	padding-right:3px;
+}

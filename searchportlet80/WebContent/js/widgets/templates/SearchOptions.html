@@ -1,0 +1,98 @@
+<div style="overflow-y: auto; overflow-x: hidden;">
+	<form dojoAttachPoint="serchOptionsForm"
+		style="width:100%;" onSubmit="return false;"><!-- collection -->
+		<div style="margin-top: 5px; margin-left:5px; margin-bottom: 10px;" role="radiogroup">
+			<div style="margin-bottom: 5px;">
+				<label dojoAttachPoint="introLabel">${search_options_intro}${search_options_intro2}</label>
+				<a href="javascript:;"
+					onclick="EDR.viewHelp('iiysulcollext.htm?noframes=true')"> <img
+					src="${imgBasePath}help_16.png" alt="${collection_embedded_help}" title="${collection_embedded_help}"
+					style="vertical-align: top;" /></a>
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input id="${prefix}${id}-facetCollection" dojoType="dijit.form.RadioButton" value="facet" name="searchMode"></input>
+				&nbsp;<label for="${prefix}${id}-facetCollection">${label_facetcollection}</label>
+			</div>
+			<div dojoAttachPoint="facetContainer" style="margin-left: 10px; margin-bottom: 5px;" role="radiogroup"></div>
+			<div dojoAttachPoint="noFacetContainer"
+				style="margin-left: 10px; margin-bottom: 5px;"><label
+				for="federatorCollection">${label_nofacet}</label></div>
+			<div style="margin-bottom: 5px;" dojoAttachPoint="federatorMessages">
+				<input id="${prefix}${id}-federatorCollection" checked="true"
+				dojoType="dijit.form.RadioButton" value="federator" name="searchMode"></input>
+				&nbsp;<label for="${prefix}${id}-federatorCollection">${label_collection}</label>
+			</div>
+			<div dojoAttachPoint="federatorContainer"
+				style="margin-left: 10px; margin-bottom: 5px;"></div>
+			<div dojoAttachPoint="noFederatorContainer"
+				style="margin-left: 10px; margin-bottom: 5px;"><label>${label_nofederator}</label>
+			</div>
+		</div>
+		
+		<hr style="width: 100%; clear: both;" />
+		
+		<!-- source -->
+		<div style="margin-left:5px;margin-bottom: 10px;">
+			<div>
+				<div style=" margin-left:5px;margin-bottom: 5px;"><label
+					title="${tooltip_documentsource}">${label_source_specific}:</label> <img
+					style="display: none" src="${imgBasePath}/status_indicator_20_slow.gif" alt="${splash_loading}">
+				</div>
+				<div dojoAttachPoint="sourceContainer"></div>
+				<div dojoAttachPoint="noSourceContainer"><label
+					title="${tooltip_documentsource}">${label_nosource}</label>
+				</div>
+			</div>
+		</div>
+		
+		<!-- file -->
+		<div style=" margin-left:5px;margin-bottom: 10px;" role="radiogroup">
+			<div style="margin-bottom: 5px;"><label
+				title="${tooltip_documenttypes}">${label_file}:</label> <img
+				style="display: none" src="${imgBasePath}/status_indicator_20_slow.gif" alt="${splash_loading}">
+			</div>
+			<div>
+				<input id="${prefix}${id}-fileAll" dojoType="dijit.form.RadioButton"
+					value="all" name="filetype"></input> &nbsp;<label for="${prefix}${id}-fileAll"
+					title="${tooltip_documenttypes}">${label_file_all}</label>
+			</div>
+			<div>
+				<input id="${prefix}${id}-fileSpecific" dojoType="dijit.form.RadioButton" value="any" name="filetype"></input>
+				&nbsp;<label for="${prefix}${id}-fileSpecific" title="${tooltip_documenttypes}">${label_file_specific}:</label>
+				<input dojoType="widgets.Button" title="${tooltip_documenttypes}"
+					label="${button_select}"></input></div>
+		</div>
+		
+		<hr style="width: 100%; clear: both;" />
+		
+		<!-- lang -->
+		<div style="margin-left:5px;margin-bottom: 10px;" role="radiogroup">
+			<div style="margin-bottom: 5px;">
+				<label title="${tooltip_languages}">${label_lang}:</label> <img
+				style="display: none" src="${imgBasePath}/status_indicator_20_slow.gif" alt="${splash_loading}">
+			</div>
+			<div>
+				<input id="${prefix}${id}-langAll" dojoType="dijit.form.RadioButton"
+				value="all" name=langtype></input> &nbsp;<label for="${prefix}${id}-langAll"
+				title="${tooltip_languages}">${label_lang_all}</label>
+			</div>
+			<div>
+				<input id="${prefix}${id}-langSpecific" dojoType="dijit.form.RadioButton" value="any" name="langtype"></input>
+				&nbsp;<label for="${prefix}${id}-langSpecific" title="${tooltip_languages}">${label_lang_specific}:</label>
+				<input dojoType="widgets.Button" title="${tooltip_languages}"
+					label="${button_select}"></input>
+			</div>
+		</div>
+		
+		<!-- scope -->
+		<div style="margin-left:5px;margin-bottom: 10px;">
+			<div>
+				<div style="margin-bottom: 5px;"><label title="${tooltip_scopes}">${label_scope}:</label>
+				<img style="display: none" src="${imgBasePath}/status_indicator_20_slow.gif" alt="${splash_loading}">
+				</div>
+				<div dojoAttachPoint="scopeContainer"></div>
+				<div dojoAttachPoint="noScopeContainer"><label>${label_noscope}</label></div>
+			</div>
+		</div>
+	</form>
+</div>

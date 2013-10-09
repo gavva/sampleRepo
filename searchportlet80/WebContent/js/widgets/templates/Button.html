@@ -1,0 +1,27 @@
+<div class="dijit dijitLeft dijitInline dijitButton"
+	dojoAttachEvent="onclick:_onButtonClick,onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse">
+	<div class='dijitRight'>
+		<div dojoAttachPoint="btnCtr" class="ButtonContainer">
+			<div dojoAttachPoint="btnCtrTop" class="ButtonContainerTop">	
+				<div class="ButtonContainerTopLeft"></div>
+				<div class="ButtonContainerTopMiddle">
+					<div class="ButtonContent" dojoAttachPoint="ButtonContentNode">
+						<button class="dijitStretch dijitButtonNode dijitButtonContents" dojoAttachPoint="focusNode,titleNode"
+							type="${type}" title="${title}" tabindex="${tabindex}" waiRole="button" waiState="labelledby-${id}_label"
+							><span class="dijitInline ${iconClass}" dojoAttachPoint="iconNode" 
+				 				><span class="dijitToggleButtonIconChar">&#10003</span 
+							></span
+							><span class="dijitButtonText" id="${id}_label" dojoAttachPoint="containerNode">${label}</span
+							>
+						</button
+					>
+					</div>
+				</div>
+			</div>
+			<div dojoAttachPoint="btnCtrBottom" class="ButtonContainerBottom">	
+				<div dojoAttachPoint="btnCtrBottomLeft" class="ButtonContainerBottomLeft"></div>
+				<div class="ButtonContainerBottomMiddle"></div>
+			</div>
+		</div>
+	</div
+></div>

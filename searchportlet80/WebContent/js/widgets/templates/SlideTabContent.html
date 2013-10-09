@@ -1,0 +1,30 @@
+<div class="slideTabContainer">
+	<div dojoAttachPoint="tab" style="height:${tabContentHeight};" class="slideTabContainerTab">
+		<div dojoAttachPoint="tabLeft" style="height:${tabContentHeight};" class="slideTabContainerTabLeft"></div>
+		<div dojoAttachPoint="tabMiddle" style="height:${tabContentHeight};" class="slideTabContainerTabMiddle">
+			<div dojoAttachPoint="tabContainerNode" class="slideTabContainerTabMiddleMiddle">
+				<div dojoAttachPoint="titleNode" class="tabTitle" style="float:left;overflow:hidden;">${label}</div>
+				<div dojoAttachPoint="tabIconSpan" class="tabIcon" style="float:left;position:absolute;right:0px;">
+					<a href="javascript:;">
+						<img dojoAttachPoint="iconImg" style="width:20px;height:20px;position:relative;top:-3px"
+							src="${imgBasePath}${iconPath}"></img>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div dojoAttachPoint="tabRight" style="height:${tabContentHeight};" class="slideTabContainerTabRight"></div>
+	</div>		
+	<div dojoAttachPoint="middle" style="top:${tabContentHeight};" class="slideTabContainerMiddle">
+		<div dojoAttachPoint="middleLeft" class="slideTabContainerMiddleLeft"></div>
+		<div dojoAttachPoint="middleMiddle" class="slideTabContainerMiddleMiddle">
+			<div dojoAttachPoint="containerNode" style="width:100%;height:100%;overflow:hidden;visibility:hidden;">
+			</div>
+		</div>
+		<div dojoAttachPoint="middleRight" class="slideTabContainerMiddleRight"></div>
+	</div>		
+	<div dojoAttachPoint="bottom" class="slideTabContainerBottom">	
+		<div class="slideTabContainerBottomLeft"></div>
+		<div dojoAttachPoint="bottomMiddle" class="slideTabContainerBottomMiddle"></div>
+		<div class="slideTabContainerBottomRight"></div>
+	</div>
+</div>

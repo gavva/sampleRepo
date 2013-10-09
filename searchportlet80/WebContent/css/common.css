@@ -1,0 +1,1325 @@
+/*********************** ES COPYRIGHT START  *********************************
+  @copyright(disclaimer)
+  
+  Licensed Materials - Property of IBM
+  5724-Z21
+  (C) Copyright IBM Corp. 2003, 2012
+  
+  US Government Users Restricted Rights
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+  
+  DISCLAIMER OF WARRANTIES :
+  
+  Permission is granted to copy and modify this Sample code, and to
+  distribute modified versions provided that both the copyright
+  notice, and this permission notice and warranty disclaimer appear
+  in all copies and modified versions.
+  
+  THIS SAMPLE CODE IS LICENSED TO YOU "AS-IS".
+  IBM  AND ITS SUPPLIERS AND LICENSORS  DISCLAIM
+  ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, IN SUCH SAMPLE CODE,
+  INCLUDING THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+  WILL IBM OR ITS LICENSORS OR SUPPLIERS BE LIABLE FOR ANY DAMAGES ARISING
+  OUT OF THE USE OF  OR INABILITY TO USE THE SAMPLE CODE, DISTRIBUTION OF
+  THE SAMPLE CODE, OR COMBINATION OF THE SAMPLE CODE WITH ANY OTHER CODE.
+  IN NO EVENT SHALL IBM OR ITS LICENSORS AND SUPPLIERS BE LIABLE FOR ANY
+  LOST REVENUE, LOST PROFITS OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+  CONSEQUENTIAL,INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS
+  OF THE THEORY OF LIABILITY, EVEN IF IBM OR ITS LICENSORS OR SUPPLIERS
+  HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  
+  @endCopyright
+ *********************** ES COPYRIGHT END  ***********************************/
+
+/*-----------------------------------------
+	PAGE BODY BEGIN
+------------------------------------------*/
+
+.edr .dijitSplitter {
+	z-index: 0 !important;
+}
+
+.edr.portletOverallContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.edr .bannerHeader {
+	width: 100%;
+	height: 3em;
+	position: absolute;
+	top: 0;
+}
+
+.edr .topBorderContainer {
+	left: 10px;
+	right: 10px;
+	position: absolute;
+	top: 3em;
+	bottom: 9px;	
+	background: none;
+}
+
+.edr .queryContentPane {
+/*	min-height: 100px; */
+	background: none;
+}
+
+.edr .contentDiv {	
+	overflow:hidden;
+	background: none;
+}
+
+.edr .footerDiv {
+	width: 100%;
+	height: 9px;
+	position: absolute;
+	bottom: 0;	
+}
+
+.edr .searchPaneClass {
+	width: 100%;
+}
+
+.edr .horizontalSearchPanes {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	right: 0px;
+}
+
+/*-----------------------------------------
+	PAGE BODY END
+------------------------------------------*/
+
+/*-----------------------------------------
+	SWOOSH BEGIN
+------------------------------------------*/
+
+#swoosh {
+	background-image: url('../images/login_bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.defaultDistance {
+	width:1px;
+	height:50%;
+	margin-bottom:-179px; /* half of container's height (280px) plus banner height (39px) */
+	float:left;
+}
+
+/*-----------------------------------------
+	SWOOSH END
+------------------------------------------*/
+
+/*-----------------------------------------
+	SPLASH SCREEN BEGIN
+------------------------------------------*/
+
+.edr .Splash { 
+	background-image: url('../images/edisc_bg.png');
+	height: 100%;
+	width: 100%;
+	text-align: center;		
+	padding: 0;
+	margin: 0;
+	z-index: 999;
+	vertical-align: center; 
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: white;
+	background-repeat: repeat-x;
+}
+
+.edr .Splash .SplashDistance {
+	width: 1px;
+	height: 50%;
+	margin-bottom:-30px; /* half of container's height (60px) */
+	float: left;
+}
+
+.edr .Splash .SplashInner {
+	width: 190px; 	
+	height: 60px; 
+	line-height: 60px;
+	color: #000; 	
+	clear: left;
+	position: relative;
+	border: 1px solid #666666;
+	background-color: #FFF;
+	margin: 0 auto;
+	opacity: .85;
+	filter: alpha(opacity=85); 
+	-moz-opacity: 0.85;
+	padding: 0px;
+}
+
+.edr .Splash .SplashInner img {
+	vertical-align: middle;
+}	
+
+/*-----------------------------------------
+	SPLASH SCREEN END
+------------------------------------------*/
+		
+		
+/*-----------------------------------------
+	HTML ELEMENT STYLES BEGIN
+------------------------------------------*/
+
+/* General links within all pages. Changes to links are in table and tree classes */
+.edr a {
+	color: #003366;
+}
+.edr a:visited {
+    color: #660033;
+}    
+.edr a, a:active, a:visited, a:hover {
+	cursor: pointer;
+	font-weight: normal;
+}
+
+/* General color change for links when hovered over. */
+.edr a:hover {
+    color: #339999;
+	text-decoration: underline;
+}
+	
+.edr img {
+	border: 0px;
+}
+
+
+/*-----------------------------------------
+	HTML ELEMENT STYLES END
+------------------------------------------*/
+
+/*-----------------------------------------
+	FORM STYLES BEGIN
+------------------------------------------*/
+
+.edr form {
+	margin: 0;
+	padding: 0;
+}
+
+.edr input, .edr textarea,.edr select, .edr button {
+	font-family: Tahoma;
+	font-size: 12px;
+/*	width: auto;*/
+	color: #000;
+}
+.edr .dijitButtonNode {
+	color: #003366;
+}	
+
+.edr form label { 
+	padding: 0; 
+}
+
+.edr .dijitTextBoxFocused,
+.edr .dijitComboBoxFocused,
+.edr .dijitSpinnerFocused {
+	/* input field when focused (ie: typing affects it) */
+	border-color:#666666;
+}
+
+.dj_ie .edr INPUT.dijitTextBox,
+.dj_ie .edr TD.dijitInputField,
+.dj_ie .edr .dijitInputField INPUT {
+	height: 15px; /* needed since the INPUT is position:absolute */
+}
+
+/*-----------------------------------------
+	FORM STYLES END
+------------------------------------------*/
+
+/*-----------------------------------------
+	PORTLET BEGIN
+------------------------------------------*/
+	
+.edr .customDialog_portlet {
+	background-color: #FFF;
+	position: absolute;
+}
+
+.edr .customDialog_portlet .customDialog_header {
+	height: 23px;
+}
+
+.dj_ie.dijitRtl .edr .customDialog_portlet .customDialog_header {
+	position: relative;
+}
+
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top {
+	background-image: url("../images/edisc_titlebar_right.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_left {
+	width: 3px;
+	height: 20px;
+	background-image: url("../images/edisc_titlebar_left.png");
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_left {
+	margin-right: -3px;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle {
+	color: #000;
+	height: 20px;
+	line-height: 20px;
+	margin: 0px 3px;
+	background-image: url("../images/edisc_titlebar_center.png");
+	background-repeat: repeat-x;
+	font-size: 12px;
+	position: relative;
+}
+
+.dj_ie .edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle {
+	margin: 0px 3px 0px 3px;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle .customDialog_title {
+	padding: 0px 5px;
+	text-align: left;
+	float: left;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle .context-help {
+	padding: 0px 5px;
+	text-align: left;
+	float: right;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle .collapse {
+	float: right;
+	padding: 2px 5px;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_top .customDialog_middle .collapse a.link {
+	text-decoration: none;
+	height: 16px;
+	width: 16px;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_bottom {
+	height:3px;
+	background-color:#FFF;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	background-image: url("../images/edisc_titlebar_bottom_right.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_bottom .customDialog_middle {
+	height:3px;
+	background-color:#FFF;
+	border-top: 1px solid #666666;
+	margin: 0 3px;
+}
+
+.edr .customDialog_portlet .customDialog_header .customDialog_bottom .customDialog_left {
+	width: 3px;
+	height: 3px;
+	background-image: url("../images/edisc_titlebar_bottom_left.png");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top left;
+	float: left;
+	position: relative;
+}
+
+.edr .customDialog_portlet .customDialog_content {
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #FFF;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	position: absolute;
+	top: 23px;
+	bottom: 4px;
+	left: 0;
+	right: 0;
+	padding-top: 1px;
+	overflow: auto;
+}
+
+.edr .customDialog_portlet .customDialog_footer {
+	height: 4px; /* curved image height + 1 px border */
+	background-color: #FFF;
+	background-image: url("../images/edisc_portlet_bottom_right.png");	
+	background-color: transparent;
+	background-position: right top;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0px;
+	left: 1px;
+	right: 1px;
+}
+
+.edr .customDialog_portlet .customDialog_footer .customDialog_middle {
+	height: 3px;
+	background-color: #FFF;
+	border-bottom: 1px solid #666666;
+	margin: 0 3px;
+}
+
+.edr .customDialog_portlet .customDialog_footer .customDialog_left {
+	width: 3px;
+	height: 3px;
+	background-color: #FFF;
+	background-image: url("../images/edisc_portlet_bottom_left.png");	
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top left;
+	float: left;
+	position: relative;
+}
+
+.edr .customDialog_portlet .customDialog_buttonBar {
+	height: 35px;
+	background-image: url("../images/edisc_button_bar_right.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	border-top: 1px solid #666666;
+}
+
+.dj_ie .edr .customDialog_portlet .customDialog_buttonBar {
+	position: relative;
+}
+
+.edr .customDialog_portlet .customDialog_buttonBar .customDialog_middle {
+	height: 35px;
+	margin: 0px 3px;
+	background-image: url("../images/edisc_button_bar_center.png");
+	background-repeat: repeat-x;
+	background-position: right bottom;
+	position: relative;	
+}
+
+.edr .customDialog_portlet .customDialog_buttonBar .customDialog_buttons {
+	float: right;
+	padding-right: 5px;
+	margin-top: 5px;
+}
+
+.dijitRtl .edr .customDialog_portlet .customDialog_buttonBar .customDialog_buttons {
+	float: left;
+	padding-left: 5px;
+	margin-top: 5px;
+}	
+
+.edr .customDialog_portlet .customDialog_buttonBar .customDialog_left {
+	width: 3px;
+	height: 35px;
+	background-image: url("../images/edisc_button_bar_left.png");	
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	float: left;
+	position: relative;
+}
+
+/*-----------------------------------------
+	PORTLET END
+------------------------------------------*/
+
+/*-----------------------------------------
+	BANNER BEGIN
+------------------------------------------*/
+
+.edr .Banner {
+	color: #FFF;
+	height: 3.1em;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.edr .Banner .BannerLeft {
+	background-image: url("../images/edisc_banner_left.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	position: relative;
+	float: left;
+	width: 20px;
+	height: 3.1em;
+}
+
+.dj_ie .edr .Banner .BannerLeft {
+	margin-right: -20px;
+}
+
+.edr .Banner .BannerGroup {
+	background-image: url("../images/edisc_banner_right.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 100%;
+	height: 3.1em;
+}
+
+.edr .Banner .BannerCenter {
+	background-image: url("../images/edisc_banner_center.png");
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	position: relative;
+	margin: 0px 20px 0px 20px;
+	height: 3.1em;
+}
+
+.dj_ie .edr .Banner .BannerCenter {
+	margin: 0px 20px 0px 20px;
+}
+
+.edr .Banner .BannerContent {
+	padding: 0px 10px;
+	text-align: left;	
+}
+
+.edr .Banner .BannerContent .BannerLogo {
+	float: left;
+	margin-top: 3px;	
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerLogo {
+	float: right;
+}
+
+.edr .Banner .BannerContent .BannerProductName {
+	font-weight:bold;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 9px; /* (parent height - image height)/2 ; hack to vertically align the image */ 
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerProductName {
+	float: right;	
+}
+
+.edr .Banner .BannerContent .BannerNav {
+	height: 30px;
+	line-height: 30px;
+	float: right;
+	font-size: 12px;
+	color: #FFF;
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerNav {
+	float: left;
+}
+
+.edr .Banner .BannerContent .BannerNav a {
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerNav a {
+	
+}
+
+.edr .Banner .BannerContent .BannerNav a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.edr .Banner .BannerContent .BannerLoginId {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #FFF;
+	float:right;
+	margin-right:10px;
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerLoginId {
+	float: left;
+}
+
+.edr .Banner .BannerContent .BannerLoginId span {
+	font-weight:bold;
+}
+
+.edr .Banner .BannerContent .BannerCollections {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #FFF;
+	float:right;
+	margin-right:70px;
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerCollections {
+	float: left;
+}
+
+.edr .Banner .BannerContent .BannerCollections span {
+	font-weight:bold;
+}
+
+.edr .Banner .BannerContent .BannerCollections a {
+	font-size: 12px;
+	color: #FFF;
+}
+
+.dijitRtl .edr .Banner .BannerContent .BannerCollections a {
+	
+}
+
+.edr .Banner .BannerContent .BannerCollections a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+/* for portlet */
+.edr.portletOverallContainer .Banner {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerLeft {
+	background-image: none;
+}
+
+.edr.portletOverallContainer .Banner .BannerLogo {
+	display: none;
+}
+
+.edr.portletOverallContainer .Banner .BannerGroup {
+	background-image: none;
+}
+
+.edr.portletOverallContainer .Banner .BannerCenter {
+	background-image: none;
+}
+
+.edr.portletOverallContainer .Banner .BannerProductName {
+	visibility: hidden;
+}
+
+.edr.portletOverallContainer .Banner .BannerNav {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerNav a {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerNav a:hover {
+	color: #293E5F;
+}
+
+.edr.Portlet .Banner {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerContent .BannerCollections span {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerContent .BannerCollections a {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerContent .BannerCollections a:hover {
+	color: #293E5F;
+}
+
+.edr.portletOverallContainer .Banner .BannerLoginId {
+	display: none;
+}
+
+.edr.portletOverallContainer .separator_myProfile {
+	display: none;
+}
+
+.edr.portletOverallContainer .link_help {
+	display: none;
+}
+
+.edr.portletOverallContainer .separator_help {
+	display: none;
+}
+
+.edr.portletOverallContainer .link_about {
+	display: none;
+}
+
+.edr.portletOverallContainer .separator_about {
+	display: none;
+}
+
+.edr.portletOverallContainer .link_logOff {
+	display: none;
+}
+
+/*-----------------------------------------
+	BANNER END
+------------------------------------------*/
+
+/*-----------------------------------------
+	SEARCH FORM BEGIN
+------------------------------------------*/
+
+.edr .advSearchForm .searchFormInput {
+	margin-bottom: 4px;
+}
+
+/* override dojo's TitlePane style */
+.tundra.edr .dijitTitlePaneContentOuter {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;	
+}
+
+/* override dojo's TitlePane style */
+.tundra.edr .dijitTitlePane .dijitArrowNode {
+	height:14px;
+}
+
+.edr .advSearchForm label {	
+	color: #000;
+	padding: 0 0 0 1px;
+	font-size: 12px;
+}
+
+.edr .advSearchForm input.textbox {
+	width: 90%;
+}
+
+.edr .advSearchForm div.date-label {
+	float: left;
+	padding-right: 5px;
+	padding-left: 9px
+}
+
+.edr .advSearchForm .date-textbox {
+	width: 75px;
+}
+
+.edr .advSearchForm .date-row img {
+	vertical-align: middle;
+}	
+
+.edr .advSearchForm #concepts-more-link {
+	color: #000;
+	font-size: 10px;
+	font-style: italic;
+	margin-left: 35px;	
+}
+
+.edr .advSearchForm .noError, #searchForm .error {
+	padding-left: 2px;
+	font-size: 12px;
+}
+
+.edr .advSearchForm .noError {
+	visibility: hidden;
+}
+
+.edr .advSearchForm .error {
+	color: red;
+	visibility: visible;
+}
+
+.edr .advSearchForm .inputRow {
+	margin: 0px;
+}
+
+.edr .advSearchForm label {
+	margin: 0px;
+	border: none;
+}
+
+/* override Dojo TitlePane's background */
+
+.tundra.edr .dijitTitlePane {
+	margin-bottom: 5px;
+}
+
+.tundra.edr .dijitTitlePane .dijitTitlePaneTitle {
+	background-image: url(../images/edisc_messages_center.png);
+	background-position: center top;
+	backgournd-repeat: repat-x;
+	padding:2px 2px 1px;
+	font-size: 12;
+	position:relative;
+}
+
+.tundra.edr .dijitTitlePaneContentOuter {
+	background-color: #F5F5F5;
+	border-top: none;
+	border-left: 1px solid #BFBFBF;
+	border-right: 1px solid #BFBFBF;
+	border-bottom: 1px solid #BFBFBF;
+}
+
+.tundra.edr .dijitTitlePaneContentInner {
+	position: relative;
+	padding: 0px;
+}
+
+.edr .advSearchForm .facet-dialog-link {
+	margin-left: -5px;
+	vertical-align: middle; 	
+}
+
+/*-----------------------------------------
+	SEARCH FORM END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	FLASH BEGIN
+------------------------------------------*/
+
+.edr .flash-container {
+	border: 1px solid #666666;
+	width: 400px;
+	background-color: #FFF;
+	padding: 5px;
+	margin: 2px;
+}
+	
+.edr .flash-heading {
+	padding: 2px;
+}
+
+.edr .flash-heading-text {
+	font-weight: bold;
+	color: #000;
+	float: left;
+	padding-left: 10px;
+}
+
+.edr .flash-icon {
+	float: left;
+}
+
+.edr .flash-hr {
+	clear: left;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #000;
+}
+	
+.edr .info {
+	color: #000;
+}
+
+.edr .info .info-entry {
+}
+
+.edr .warn {
+	color: #000;
+}
+
+.edr .warn .warn-entry {
+}
+
+.edr .error {
+	color: red;
+}
+
+.edr .error .error-entry {
+}
+
+.edr .info, .warn, .error {	
+	clear: both;	
+}
+
+.edr .info .info-entry, .warn .warn-entry, .error .error-entry {
+	padding: 5px 0px 5px 20px;
+}
+
+/*-----------------------------------------
+	FLASH END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	TOOLTIPS BEGIN
+------------------------------------------*/
+
+.edr .dijitTooltip, .edr .dijitTooltipContents {
+	/*font-family: Helvetica, Arial, Verdana, Sans Serif;*/
+	font-size: 10px;
+	/* width: 300px;  <= this causes left tooltip's arrows to not display correctly */
+}
+
+/*-----------------------------------------
+	TOOLTIPS END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	PREVIEW DIALOG BEGIN
+------------------------------------------*/
+
+.edr .previewDialogTitleMessage {
+	position:absolute;
+	top:8px;
+	right:20px;
+}
+
+.dijitRtl .edr .previewDialogTitleMessage {
+	left: 8px;
+	right: auto;
+}
+
+/*-----------------------------------------
+	PREVIEW DIALOG END
+------------------------------------------*/
+
+/*-----------------------------------------
+	FACET DIALOG START
+------------------------------------------*/
+
+.edr .facet-dlg-counts {
+	float: left;
+}
+
+.edr .facet-dlg-content .facet-column {
+}
+
+.edr .facet-dlg-content td {
+   vertical-align: top;
+   white-space: nowrap;
+}
+
+.edr .facet-column .facet-row {
+}
+
+.edr .facet-row {
+  position: relative;
+}
+
+.edr .facet-column .facet-row.odd {
+	background-color: #ECF3FB;
+}
+
+.edr .facet-column .facet-row.even {
+	background-color: #FFFFFF;
+}
+
+.edr .facet-column .facet-row img.include {
+   margin-left: 36px;
+}
+
+.edr .correlation-container {
+  background-color: white;
+  border: 1px solid #000000;
+  width: 30px;
+  height: 8px; 
+  position:absolute;
+  left: 0px;
+  top: 3px;  
+  margin: 1px 5px 0 0
+}
+
+.edr .correlation-container .correlation-bar {
+  background-image:url(../images/correlation_bar.png);
+  background-repeat:repeat-x;
+  height: 8px;
+}
+
+.edr .facet-dlg-filter {
+	float: right;
+	margin: 5px;
+}
+
+.edr .facet-dlg-sort {
+	float: right;
+	margin-right: 5px;
+}
+
+.edr .facet-dlg-sort-values {
+	font-size: 10px;
+}
+
+.edr .facet-dlg-sort-values a img {
+	padding-left: 3px;
+}
+
+.edr .facet-dlg-show label, .edr .facet-dlg-sort label {
+	color: #666666;
+	font-size: 10px;
+}
+
+.edr .facet-dlg-show .label, .edr .facet-dlg-sort .label {
+	color: #666666;
+	font-size: 10px;
+}
+
+.edr .facet-dlg-show .facet-dlg-show-values {
+	font-size: 10px;
+}
+
+.edr .dlg-filter {
+  padding-right: 2px;
+  float:right;
+  margin-top: 0.2em;
+}
+
+/*-----------------------------------------
+	FACET DIALOG END
+------------------------------------------*/
+
+/*-----------------------------------------
+	LOADING BACKGROUND BEGIN
+------------------------------------------*/
+
+.edr .loadingBackground {
+	background-color: #EEEEEE;
+	opacity: 0.6;
+}
+
+.edr .resizingBackground {
+	background-color: #EEEEEE;
+	opacity: 0.6;
+}
+
+/*-----------------------------------------
+	LOADING BACKGROUND END
+------------------------------------------*/
+
+/*-----------------------------------------
+	(ACC) LINK TO MAIN CONTENT BEGIN
+------------------------------------------*/
+.edr .forSkipNavigation {
+	top: -3000px;
+	position: absolute;
+	width: 100px;
+}
+
+.edr .hiddenHeading {
+	top: -3000px;
+	position: absolute;
+	width: 100px;	
+}
+
+.edr .hiddenAccessible {
+	top: -3000px;
+	position: absolute;
+	width: 100px;	
+	height: 0px;
+	overflow: hidden;
+}
+/*-----------------------------------------
+	(ACC) LINK TO MAIN CONTENT END
+------------------------------------------*/
+
+.edr .resizableTable th {
+    background-image: url(../images/edisc_messages_center.png);
+}
+
+.edr .tableHeaderCell {
+    position: relative;
+/*    width: 220px; */
+    height: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+  
+.edr .tableHeaderCellContent {
+	margin-left: 3px;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 98%;
+}
+  
+.edr .columnResizer {
+    cursor: w-resize;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 5px;
+    display: block;
+}
+
+/*-----------------------------------------
+	Resizable Table Column Support End
+------------------------------------------*/
+
+/*------------------------------------------
+	Override Dojo's default Style
+------------------------------------------*/
+
+.tundra.edr .dijitSplitContainer-child,
+.tundra.edr .dijitBorderContainer-child {
+	border: none;
+	padding: 0px;
+}
+
+.tundra.edr .dijitCheckBox {
+	background-image:url(../images/check_kiso_unsel13.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitCheckBoxChecked {
+	background-image:url(../images/check_kiso_sel13.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitCheckBoxDisabled {
+	background-image:url(../images/check_kiso_unsel13_d.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitCheckBoxCheckedDisabled {
+	background-image:url(../images/check_kiso_sel13_d.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitRadio,
+.tundra.edr .dijitRadioIcon {
+	background-image:url(../images/radio_kiso_unsel13.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitRadioDisabled {
+	background-image:url(../images/radio_kiso_unsel13_d.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitRadioChecked,
+.tundra.edr .dijitRadioCheckedHover,
+.tundra.edr .dijitToggleButtonChecked .dijitRadioIcon  {
+	background-image:url(../images/radio_kiso_sel13.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitRadioCheckedDisabled {
+	background-image:url(../images/radio_kiso_sel13_d.png);
+	background-repeat:no-repeat;
+	background-position:0px 50%;
+}
+
+.tundra.edr .dijitTabContainerTop-dijitContentPane,
+.tundra.edr .dijitTabContainerLeft-dijitContentPane,
+.tundra.edr .dijitTabContainerBottom-dijitContentPane,
+.tundra.edr .dijitTabContainerRight-dijitContentPane,
+.tundra.edr .dijitAccordionContainer-dijitContentPane {
+	background-color: #fff;
+	padding: 0px;
+}
+
+.tundra.edr .dijitTabContainerTop-container {
+	border-style: none;
+}
+
+/*------------------------------------------
+	for Analytics Preview Style
+------------------------------------------*/
+.edr .OFHighlightTerm1 {
+	background-color: #FFF9AE;	
+}
+
+.edr .OFHighlightTerm2 {
+	background-color: #adff2f
+}
+
+.edr .OFHighlightTerm3 {
+	background-color: #00ffff
+}
+
+.edr .OFHighlightTerm4 {
+	background-color: #87ceeb
+}
+
+.edr .OFHighlightTerm5 {
+	background-color: #32cd32
+}
+
+.edr .selectedOFHighlightTerm {
+	background-color: #AAAAAA !important;
+}
+
+.edr .detailHighlight {
+	background-color: #00FF00;
+}
+.edr .detailViewTable th {
+	font-weight: bold;
+	text-align: center;	
+}
+
+.edr .detailViewTable tr.odd {
+	background-color: #FFFFFF;
+}
+
+.edr .detailViewTable tr.even {
+	background-color: #DDEBFB;
+}
+
+.edr .detailViewTable tr.even:hover td,
+.edr .detailViewTable tr.odd:hover td {
+	background-color : #99CCCC;
+}
+
+.edr .detailViewTable tr.selected td {
+	background-color: #6E96C8 !important;
+}
+
+.edr .standardInfoTable th {
+	font-weight: bold; 
+	text-align: center;	
+}
+
+.edr .standardInfoTable tr.odd {
+	background-color: #FFFFFF;
+}
+
+.edr .standardInfoTable tr.even {
+	background-color: #F5F5F5;
+}
+
+/*------------------------------------------
+	for Query Tree Style
+------------------------------------------*/
+
+.edr .conjunctionTable td {
+    border: 1px solid white;
+    background-color: #F5F5F5;
+    background-image : none;
+}
+
+.edr .conjunctionTable td.selected {
+    background-color: #6E96C8 !important;
+    border: 1px solid white;
+}
+
+.edr .conjunctionTable td.option {
+	color: #2D3238 !important;
+    background-color: #C6CFD1 !important;
+    border: 1px solid white;
+}
+
+.edr .conjunctionTable td.mouseOver {
+	background-image : url(../images/edisc_bg.png) !important;
+	background-repeat: repeat-x;
+	background-color : #FFFFFF;
+	cursor : pointer;
+}
+
+.edr .conjunctionTable td.leaf {
+    border: 1px solid white;
+    background-color: #E6E6FA;
+    background-image : none;
+}
+
+/*------------------------------------------
+	for Type Ahead Table Style
+------------------------------------------*/
+.edr .typeAheadDiv {
+	max-height: 310px;
+	overflow: auto;
+	border: 1px solid #7B9EBD;
+	visibility: hidden;
+}
+
+.edr .typeAheadTable {
+	border-collapse : collapse;
+	width: 100%;
+}
+
+.edr .typeAheadTable tr {
+	cursor: pointer;
+}
+
+.edr .typeAheadTable tr.odd {
+	background-color: #FFFFFF;
+}
+
+.edr .typeAheadTable tr.even {
+	background-color: #F5F5F5;
+}
+
+.edr .typeAheadTable td.hasSeparator {
+	border-top: 1px solid #999999;
+}	
+
+.edr .typeAheadTable tr.selected td{
+	color: #FFFFFF;
+	background-color: #6E96C8 !important;
+}
+
+.edr .typeAheadTable tr.selected span{
+	color: #FFFFFF;
+	background-color: #6E96C8 !important;
+}
+
+.edr .typeAheadCellQuery{
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.edr .typeAheadCellLabel{
+	color: #999999;	
+}
+	
+.edr .typeAheadCellType{
+	color: #999999;	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.edr .typeAheadCell{
+	width: 30px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+.edr .typeAheadCellChart{
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 120px;
+	height: 8px;
+}
+
+.edr .typeAheadBarChart{
+	background-color:#6666FF;
+	background-image: url(../images/typeAheadBarChart.png);
+	background-repeat:repeat-x;
+	background-position:0% 0%;
+	height:100%;
+}
+
+.edr .leftContentTitle{
+	font-size:120%;
+	width: 100%;
+	height: 18px;
+	border-top: 1px solid black;
+	background-image : url(../images/button_active_topcenter_reverse.png);
+	background-repeat: repeat-x;
+	background-color : #FFFFFF;
+	background-position : 0% 99% ;
+	margin-bottom: 1px;
+}

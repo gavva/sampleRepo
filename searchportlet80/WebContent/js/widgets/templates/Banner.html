@@ -1,0 +1,21 @@
+<div class="Banner">
+	<div class="BannerGroup">
+		<div class="BannerLeft"></div>
+		<div class="BannerCenter">
+			<div class="BannerContent">				
+				<div class="BannerLogo"><img src="${config_banner_file}" alt=""/></div>	
+				<div class="BannerProductName" dojoAttachPoint="productNameNode">${productName}</div>
+				<div class="BannerNav" dojoAttachPoint="containerNode"></div>
+				<div class="BannerLoginId" dojoAttachPoint="loginIdNode" style="display:none;">
+					<span>${loginIdLabel}</span>&nbsp;<span dojoAttachPoint="userNameNode">${loginId}</span>
+				</div>
+				<div class="BannerCollections" dojoAttachPoint="collectionNode"  style="display:none;">
+					<span>${messages_banner_collection}:&nbsp;</span><span dojoAttachPoint="bannerCollectionsDisplay">${collections}</span>
+					(<a dojoAttachPoint="changeLinkNode" href="javascript:;"
+						title="${messages_banner_collection_change_tooltip}">${messages_banner_collection_change}</a>)
+				</div>
+				<span dojoAttachPoint="hiddenSpan" style="${fontStyle}visibility:hidden;position:absolute;"></span>
+ 			</div>			
+		</div>
+	</div>
+</div>

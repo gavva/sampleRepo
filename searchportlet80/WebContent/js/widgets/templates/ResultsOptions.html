@@ -1,0 +1,145 @@
+<div>
+	<form dojoAttachPoint="resultsOptionsForm" style="width:100%;height:100%;">
+		<div dojoAttachPoint="topContainer" style="width:98%;padding:5px;">
+			<div><label>${label_intro1}${label_intro2}</label></div><br/>
+			<div dojoAttachPoint="topLeftContainer" style="width:32%;float:left;">
+				<div title="${tooltip_resultsOption_num_results}">
+					<label for="${prefix}numberOfResults">${label_number}:</label><br/>
+					<input id="${prefix}numberOfResults" dojoAttachPoint="resultsRange" dojoType="dijit.form.NumberSpinner" name="resultsRange"
+						value="10" smallDelta="5" largeDelta="25" constraints="{min:1,max:100,places:0}">
+					</input><br/><br/>
+				</div>
+				<div title="${tooltip_resultsOption_query_lang}">
+					<label for="${prefix}queryLang">${label_lang}:</label><br/>
+					<select id="${prefix}queryLang" dojoAttachPoint="queryLanguage" dojoType="dijit.form.FilteringSelect" name="queryLanguage" searchAttr="label" labelAttr="label">
+					</select><br/><br/>
+				</div>
+				<div title="${tooltip_resultsOption_mode}">
+					<label for="${prefix}queryMode">${label_mode}:</label>
+					<a href="javascript:;" onclick="EDR.viewHelp('iiysulprefqmode.htm?noframes=true')" title="${tooltip_help_querymode}">
+						<img src="${imgBasePath}help_16.png" alt="${tooltip_help_querymode}" style="vertical-align:top;">
+					</a>
+					<br/>
+					<select id="${prefix}queryMode" dojoAttachPoint="queryMode" dojoType="dijit.form.FilteringSelect" name="queryMode" searchAttr="label" labelAttr="label">
+					</select><br/><br/>
+				</div>
+			</div>
+			<div dojoAttachPoint="topRightContainer" style="width:21%;float:left;">
+				<div title="${tooltip_resultsOption_sort_by}">
+					<label for="${prefix}sortBy">${label_sortby}:</label><br/>
+					<select id="${prefix}sortBy" dojoAttachPoint="sortBy" dojoType="dijit.form.FilteringSelect" name="sortBy" searchAttr="label" labelAttr="label" style="width: 120px;">
+					</select><br/><br/>
+				</div>
+				<div title="${tooltip_resultsOption_sort_order}">
+					<label for="${prefix}sortOrder">${label_sortorder}:</label><br/>
+					<select id="${prefix}sortOrder" dojoAttachPoint="sortByOrder" dojoType="dijit.form.FilteringSelect" name="sortByOrder1" searchAttr="label" labelAttr="label" style="width: 120px;">
+					</select><br/><br/>
+				</div>
+			</div>
+
+			<div dojoAttachPoint="topRightContainer2" style="width:21%;float:left;">
+				<div title="${tooltip_resultsOption_sort_by}">
+					<label for="${prefix}sortBy2">${label_sortby2}:</label><br/>
+					<select id="${prefix}sortBy2" dojoAttachPoint="sortBy2" dojoType="dijit.form.FilteringSelect" name="sortBy2" searchAttr="label" labelAttr="label" style="width: 120px;">
+					</select><br/><br/>
+				</div>
+				<div title="${tooltip_resultsOption_sort_order}">
+					<label for="${prefix}sortOrder2">${label_sortorder2}:</label><br/>
+					<select id="${prefix}sortOrder2" dojoAttachPoint="sortByOrder2" dojoType="dijit.form.FilteringSelect" name="sortByOrder2" searchAttr="label" labelAttr="label" style="width: 120px;">
+					</select><br/><br/>
+				</div>
+			</div>
+			
+			<div dojoAttachPoint="topRightContainer3" style="width:21%;float:left;">
+				<div title="${tooltip_resultsOption_sort_by}">
+					<label for="${prefix}sortBy3">${label_sortby3}:</label><br/>
+					<select id="${prefix}sortBy3" dojoAttachPoint="sortBy3" dojoType="dijit.form.FilteringSelect" name="sortBy3" searchAttr="label" labelAttr="label" style="width: 120px;">
+					</select><br/><br/>
+				</div>
+				<div title="${tooltip_resultsOption_sort_order}">
+					<label for="${prefix}sortOrder3">${label_sortorder3}:</label><br/>
+					<select id="${prefix}sortOrder3" dojoAttachPoint="sortByOrder3" dojoType="dijit.form.FilteringSelect" name="sortByOrder3" searchAttr="label" labelAttr="label" style="width: 120px;">
+					</select><br/><br/>
+				</div>
+			</div>						
+			
+		</div>
+		<hr style="width:100%;clear:both;"/>
+		<div dojoAttachPoint="middleContainer" style="padding:5px;width:98%;" title="${tooltip_resultsOption_summary}">
+			<label for="${prefix}summaryLength">${label_summarylen}:</label>
+			<div style="text-align:center;">
+				<div dojoAttachPoint="summaryLength" dojoType="dijit.form.HorizontalSlider" name="summaryLength"
+					minimum="1" value="1" maximum="5"
+					discreteValues="5" showButtons="false" intermediateChanges="true" slideDuration="0"
+					style="width:70%;height:40px;margin-left:auto;margin-right:auto;" id="${prefix}summaryLength">
+						<div dojoType="dijit.form.HorizontalRule" container="bottomDecoration" count=5 style="height:5px;"></div>
+						<ol dojoType="dijit.form.HorizontalRuleLabels" container="bottomDecoration" style="height:1em;font-size:75%;">
+							<li><span style="white-space:nowrap;">${label_summarymin}</span></li>
+							<li><span style="white-space:nowrap;">${label_summarymax}</span></li>
+						</ol>
+				</div>
+			</div>
+		</div>
+		<hr style="width:100%;clear:both;"/>
+		<div style="width:98%;padding:5px;">
+			<div style="width:48%;float:left;">
+				<div title="${tooltip_resultsOption_typeAhead_numberOfResults}">
+					<label for="${prefix}typeAheadNumberOfResults">${label_resultsOption_typeAhead_numberOfResults}:</label><br/>
+					<input id="${prefix}typeAheadNumberOfResults" dojoAttachPoint="typeAheadNumberOfResults" dojoType="dijit.form.NumberSpinner" name="typeAheadNumberOfResults"
+						value="10" smallDelta="5" largeDelta="25" constraints="{min:1,max:100,places:0}">
+					</input><br/><br/>
+				</div>
+			</div>
+			<div style="width:48%;float:left;">
+				<div title="${tooltip_resultsOption_typeAhead_mode}">
+					<label for="${prefix}typeAheadMode">${label_resultsOption_typeAhead_mode}:</label>
+					<a href="javascript:;" onclick="EDR.viewHelp('iiysultypeahead.htm?noframes=true')" title="${tooltip_help_typeAheadMode}">
+						<img src="${imgBasePath}help_16.png" alt="${tooltip_help_typeAheadMode}" style="vertical-align:top;">
+					</a>
+					<br/>
+					<select id="${prefix}typeAheadMode" dojoAttachPoint="typeAheadMode" dojoType="dijit.form.FilteringSelect" name="typeAheadMode" searchAttr="label" labelAttr="label" style="width:295px;">
+					</select><br/><br/>
+				</div>
+			</div>
+		</div>
+		<hr style="width:100%;clear:both;"/>
+		<div dojoAttachPoint="bottomContainer" style="width:98%;padding:5px;">
+			<div dojoAttachPoint="bottomLeftContainer" style="width:49%;float:left;">
+				<div title="${tooltip_resultsOption_quick_links}" role="radiogroup">
+					<label>${label_quicklinks}:</label><br/>
+					<input id="${prefix}quickLinkYes" dojoAttachPoint="predefinedQueryYes" dojoType="dijit.form.RadioButton" value="Yes" name="predefinedResults"/>
+					<label for="${prefix}quickLinkYes">${label_yes}</label>&nbsp;
+					<input id="${prefix}quickLinkNo" dojoAttachPoint="predefinedQueryNo" dojoType="dijit.form.RadioButton" value="No" name="predefinedResults"/>
+					<label for="${prefix}quickLinkNo">${label_no}</label><br/><br/>
+				</div>
+				<div title="${tooltip_resultsOption_spell_correct}" role="radiogroup">
+					<label>${label_spell}:</label><br/>
+					<input id="${prefix}spellYes" dojoAttachPoint="spellCorrectionYes" dojoType="dijit.form.RadioButton" value="Yes" name="spellCorrections"/>
+					<label for="${prefix}spellYes">${label_yes}</label>&nbsp;
+					<input id="${prefix}spellNo" dojoAttachPoint="spellCorrectionNo" dojoType="dijit.form.RadioButton" value="No" name="spellCorrections"/>
+					<label for="${prefix}spellNo">${label_no}</label><br/><br/>
+				</div>
+			</div>
+			<div dojoAttachPoint="bottomRightContainer" style="width:49%;float:left;">
+				<div title="${tooltip_resultsOption_collapse_results}" role="radiogroup">
+					<label>${label_collapse}:</label><br/>
+					<input id="${prefix}collapseYes" dojoAttachPoint="siteCollapsingYes" dojoType="dijit.form.RadioButton" value="Yes" name="siteCollapsing"/>
+					<label for="${prefix}collapseYes">${label_yes}</label>&nbsp;
+					<input id="${prefix}collapseNo" dojoAttachPoint="siteCollapsingNo" dojoType="dijit.form.RadioButton" value="No" name="siteCollapsing"/>
+					<label for="${prefix}collapseNo">${label_no}</label><br/><br/>
+				</div>
+				<div title="${tooltip_resultsOption_search_synonyms}" role="radiogroup">
+					<label>${label_synonym}:</label><br/>
+					<input id="${prefix}synonymYes" dojoAttachPoint="synonymExpansionsAutomatic" dojoType="dijit.form.RadioButton" value="Automatic" name="synonymExpansions"/>
+					<label for="${prefix}synonymYes">${label_yes}</label>&nbsp;
+					<!-- div style="height:2px;">&nbsp;</div>
+					<input id="${prefix}semanticYes" dojoType="dijit.form.RadioButton" value="Semantic" name="synonymExpansions"/>
+					<label for="${prefix}semanticYes">${label_semanticyes}</label><br/>
+					<div style="height:2px;">&nbsp;</div-->
+					<input id="${prefix}synonymNo" dojoAttachPoint="synonymExpansionsOff" dojoType="dijit.form.RadioButton" value="Off" name="synonymExpansions"/>
+					<label for="${prefix}synonymNo">${label_no}</label><br/><br/>
+				</div>
+			</div>
+		</div>
+	</form>	
+</div>

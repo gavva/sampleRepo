@@ -1,0 +1,27 @@
+<div style="width:800px;height:510px;">	
+	<!-- main toolbar -->
+	<div dojoType="widgets.Toolbar">
+		<div style="">
+			<div dojoType="dijit.form.Button"
+				iconClass="previousHighlightButton" 
+		   		alt="${messages_tooltip_preview_previous}"
+		   		title="${messages_tooltip_preview_previous}"></div>						
+			<div dojoType="dijit.form.Button"
+				iconClass="nextHighlightButtonIcon" 
+		   		alt="${messages_tooltip_preview_next}"
+		   		title="${messages_tooltip_preview_next}"></div>						
+		</div>
+		<div class="previewDialogTitleMessage">
+			<div>
+				<span>${messages_preview_document_title}&nbsp;</span><span dojoAttachPoint="documentTitle"></span>
+			</div>
+			<div>
+				<span>${messages_preview_document_date}&nbsp;</span><span dojoAttachPoint="documentDate"></span>
+			</div>
+		</div>
+		<span dojoAttachPoint="hiddenSpan" style="${fontStyle}visibility:hidden;position:absolute;"></span>
+	</div>	
+	<div dojoAttachPoint="previewBody" style="overflow:auto;position:absolute;left:5px;right:5px;top:40px;bottom:5px;">
+	</div>
+	
+</div>

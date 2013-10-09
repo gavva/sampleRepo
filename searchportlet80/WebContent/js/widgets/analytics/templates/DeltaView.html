@@ -1,0 +1,37 @@
+<div style="width:100%;height:100%;">
+	<div dojoAttachPoint="toolbarNode"
+		style="height:20px;padding:5px;background-image:url(images/edisc_messages_center.png);">
+		<div style="float:left;padding-right:10px">
+			<label for="${prefix}deltaShowTarget">${label_show}</label>
+			<select id="${prefix}deltaShowTarget" dojoType="dijit.form.FilteringSelect" name="showTarget"
+				dojoAttachPoint="showTargetSelection" dojoAttachEvent="onChange: onShowTargetChanged">
+				<option value="keywords" selected="true">${label_keyword}</option>
+				<option value="subfacets">${label_subfacets}</option>
+			</select>
+			&nbsp;&nbsp;
+		</div>
+		<div style="float:left;padding-right:10px">
+			<label for="${prefix}deltaSort">${label_sort}</label>
+			<select id="${prefix}deltaSort" dojoType="dijit.form.FilteringSelect" name="sort"
+				dojoAttachPoint="sortSelection" dojoAttachEvent="onChange: onSortChanged">
+				<option value="frequency" selected="true">${label_sort_freq}</option>
+				<option value="index">${label_sort_index}</option>
+				<option value="latestindex">${label_sort_latest_index}</option>
+				<option value="ascending">${label_sort_ascending}</option>
+				<option value="descending">${label_sort_descending}</option>
+			</select>
+			&nbsp;&nbsp;
+		</div>
+		<div style="float:left;padding-right:10px;">
+			<label for="${prefix}deltaTimeScale">${label_timescale}</label>
+			<select id="${prefix}deltaTimeScale" dojoType="dijit.form.FilteringSelect" name="timeScale"
+				dojoAttachPoint="timeScaleSelection" dojoAttachEvent="onChange: onTimescaleChanged">
+				<option value="$.year">${label_year}</option>
+				<option value="$.month">${label_month}</option>
+				<option value="$.day">${label_day}</option>
+			</select>
+		</div>
+	</div>
+	<div dojoAttachPoint="containerNode" style="position: relative; width:100%; height: 100%; background-color:#F5F5F5">
+	</div>
+</div>

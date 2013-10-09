@@ -1,0 +1,25 @@
+<div class="refinement">
+	<a name="facettree"></a>
+	<div dojoAttachPoint="facetTreeContainer" role="tree">
+		<form dojoAttachPoint="facetForm" onSubmit="return false;">
+		</form>
+	</div>
+	<div dojoAttachPoint="buttonContainer" style="padding-top:7px;padding-left:5px;">
+		<div style="padding-left:2px;padding-bottom:2px;" role="radiogroup">
+			<form>
+				<div style="overflow:left;">
+					<input id="${prefix}facetNewSearch" dojoAttachPoint="newSearchChk" dojoType="dijit.form.RadioButton" checked="true" name="searchType"/>
+					<label for="${prefix}facetNewSearch" title="${messages_tooltip_searchpane_newsearch_link}">${label_newsearch}</label>
+				</div>
+				<div style="overflow:left;">
+					<input id="${prefix}facetRefineSearch" dojoAttachPoint="refineSearchChk" dojoType="dijit.form.RadioButton" name="searchType"/>
+					<label for="${prefix}facetRefineSearch" title="${messages_tooltip_searchpane_addsearch_link}">${label_refinesearch}</label>
+				</div>
+			</form>
+		</div>
+		<div dojoAttachPoint="facetSearchBtn" dojoType="widgets.Button" style="height:20px;" label="${label_search}"
+				dojoAttachEvent="onClick: onSearchButtonClicked"></div>
+		<div dojoAttachPoint="facetClearBtn" dojoType="widgets.Button" style="height:20px;" label="${label_clear}" disabled="true"
+				dojoAttachEvent="onClick: onClearButtonClicked"></div>
+	</div>	
+</div>

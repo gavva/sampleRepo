@@ -1,0 +1,46 @@
+<div class="dijitDialog customDialog_portlet">
+		
+	<div class="customDialog_header" dojoAttachPoint="titleBar" waiRole="dialog">
+
+		<div class="customDialog_top">
+			<div class="customDialog_left"></div>
+			<div class="customDialog_middle" dojoAttachPoint="titleNode">
+				<div class="customDialog_title" dojoAttachPoint="titleTextNode">${title}</div>				
+				<div dojoAttachPoint="closeButtonNode" class="closeIcon">
+					<a class="customDialog_link" href="javascript:;">
+						<img dojoAttachPoint="closeButtonImgNode" src="${imgBasePath}title_close16.png" alt="${messages_close}"/>
+					</a>
+					<span dojoAttachPoint="closeText" class="closeText">x</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="customDialog_bottom">
+			<div class="customDialog_left"></div>
+		 	<div class="customDialog_middle"></div>
+		</div>
+	
+	</div>
+	
+	<div class="contentOuter" dojoAttachPoint="containerOuter">
+		<div dojoAttachPoint="containerNode" style="position:relative;overflow:hidden;"></div>
+	</div>
+			
+	<div class="customDialog_buttonBar" dojoAttachPoint="buttonBarNode">	
+		<div class="customDialog_left"></div>
+		<div class="customDialog_middle">
+			<div class="customDialog_buttons" dojoAttachPoint="buttonNode">	
+				<span dojoAttachPoint="customButton2NodeParent"><div tabindex="0" dojoType="widgets.Button" showAsGray="false" dojoAttachPoint="customButton2Node"></div></span>	
+				<span dojoAttachPoint="customButtonNodeParent"><div tabindex="0" dojoType="widgets.Button" showAsGray="false" dojoAttachPoint="customButtonNode"></div></span>	
+				<span dojoAttachPoint="okButtonNodeParent"><div tabindex="0" dojoType="widgets.Button" showAsGray="false" dojoAttachPoint="okButtonNode"></div></span>	
+				<span dojoAttachPoint="cancelButtonNodeParent"><div tabindex="0" dojoType="widgets.Button" showAsGray="false" dojoAttachPoint="cancelButtonNode"></div></span>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="customDialog_footer" dojoAttachPoint="altFooterNode" style="display:none">	
+		<div class="customDialog_left"></div>
+		<div class="customDialog_middle"></div>
+	</div>
+	
+</div>

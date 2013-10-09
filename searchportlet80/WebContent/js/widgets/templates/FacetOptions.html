@@ -1,0 +1,34 @@
+<div>
+	<form dojoAttachPoint="facetOptionsForm" style="width:100%;height:100%;" onSubmit="return false;">
+		<div style="padding:5px;">
+			<label>${label_intro}&nbsp;</label>
+			<a href="javascript:;" onclick="EDR.viewHelp('iiysulfacets.htm?noframes=true')">
+				<img src="${imgBasePath}help_16.png" title="${label_tooltip_help}" alt="${label_tooltip_help}" style="vertical-align: top;" />
+			</a>
+			<br/><br/>
+			<label>${label_intro2}</label><br/><br/>
+			<label>${label_showfacet}:</label><br/>
+			<div style="height:4px;">&nbsp;</div>
+			<div role="radiogroup">
+				<input id="${prefix}showFacetYes" dojoType="dijit.form.RadioButton" value="Yes" checked="true" name="showFacet"/>
+				<label for="${prefix}showFacetYes">${label_yes}</label>&nbsp;
+				<input id="${prefix}showFacetNo" dojoType="dijit.form.RadioButton" value="No" name="showFacet"/>
+				<label for="${prefix}showFacetNo">${label_no}</label>
+			</div>
+		</div>
+		<div style="padding:5px;">
+			<label for="${prefix}facetTypeAheadNumberOfResultsId">${label_typeahead}:</label><br/>
+			<input id="${prefix}facetTypeAheadNumberOfResultsId" dojoAttachPoint="numberOfResults" dojoType="dijit.form.NumberSpinner" name="facetTypeAheadNumberOfResults"
+				title="${label_typeahead_tooltip}"
+				value="10" smallDelta="5" largeDelta="25" constraints="{min:1,max:100,places:0}">
+			</input>
+		</div>
+		<div style="padding:5px;">
+			<label for="${prefix}documentLabelTypeAheadNumberOfResults">${label_documentLabel_typeahead}:</label><br/>
+			<input id="documentLabelTypeAheadNumberOfResultsId" dojoAttachPoint="documentLabelNumberOfResults" dojoType="dijit.form.NumberSpinner" name="documentLabelTypeAheadNumberOfResults"
+				title="${label_documentLabel_typeahead_tooltip}"
+				value="10" smallDelta="5" largeDelta="25" constraints="{min:1,max:100,places:0}">
+			</input>
+		</div>
+	</form>	
+</div>

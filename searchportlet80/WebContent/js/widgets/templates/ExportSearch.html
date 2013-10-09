@@ -1,0 +1,24 @@
+<div style="width:315px;" class="ExportSearchDialog">
+	<form dojoAttachPoint="exportSearchForm" onSubmit="return false;">
+		<div><label for="${prefix}exportSearchName">${message_export_dialog_nameLabel}:</label></div>
+		<div style="margin-bottom:5px;">
+			<input type="text" name="exportId" style="width:100%;" id="${prefix}exportSearchName" dojoAttachPoint="exportSearchName"/>
+		</div>
+		<div style="margin-bottom:5px;">
+			<label for="${prefix}exportContentSource">${message_export_dialog_contentLabel}:</label><br/>
+			<select id="${prefix}exportContentSourceSelect" name="contentSource" style="width:100%;" title="${message_export_dialog_contentSource}">
+			</select>
+		</div>
+		<div style="margin-bottom:5px;" role="radiogroup">
+			<label>${message_export_dialog_schedulableLabel}:</label>&nbsp;
+			<input id="${prefix}eScheduleYes" type="radio" name="schedulable" value="true">&nbsp;<label for="${prefix}eScheduleYes">${message_yes}</label>
+			<input id="${prefix}eScheduleNo" type="radio" name="schedulable" value="false" checked="">&nbsp;<label for="${prefix}eScheduleNo">${message_no}</label>
+		</div>
+		<div style="margin-bottom:5px;">
+			<label for="${prefix}exportDescription">${message_export_dialog_descriptionLabel}:</label><br/>
+			<textarea id="${prefix}exportDescription" dojoAttachPoint="description" name="description" rows="6" cols="56"></textarea>
+		</div>
+	</form>
+	<div dojoAttachPoint="messageDiv" style="width:100%;height:100%;">
+	</div>
+</div>

@@ -1,0 +1,110 @@
+<!-- *********************** ES COPYRIGHT START  *********************************
+// @copyright(disclaimer)
+// 
+// Licensed Materials - Property of IBM
+// 5724-L31
+// (C) Copyright IBM Corp. 2003, 2010. All Rights Reserved.
+// 
+// US Government Users Restricted Rights
+// Use, duplication or disclosure restricted by GSA ADP Schedule
+// Contract with IBM Corp.
+// 
+// DISCLAIMER OF WARRANTIES :
+// 
+// Permission is granted to copy and modify this Sample code, and to
+// distribute modified versions provided that both the copyright
+// notice, and this permission notice and warranty disclaimer appear
+// in all copies and modified versions.
+// 
+// THIS SAMPLE CODE IS LICENSED TO YOU "AS-IS".
+// IBM  AND ITS SUPPLIERS AND LICENSORS  DISCLAIM
+// ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, IN SUCH SAMPLE CODE,
+// INCLUDING THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES
+// OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+// WILL IBM OR ITS LICENSORS OR SUPPLIERS BE LIABLE FOR ANY DAMAGES ARISING
+// OUT OF THE USE OF  OR INABILITY TO USE THE SAMPLE CODE, DISTRIBUTION OF
+// THE SAMPLE CODE, OR COMBINATION OF THE SAMPLE CODE WITH ANY OTHER CODE.
+// IN NO EVENT SHALL IBM OR ITS LICENSORS AND SUPPLIERS BE LIABLE FOR ANY
+// LOST REVENUE, LOST PROFITS OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+// CONSEQUENTIAL,INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS
+// OF THE THEORY OF LIABILITY, EVEN IF IBM OR ITS LICENSORS OR SUPPLIERS
+// HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+// 
+// @endCopyright
+//*********************** ES COPYRIGHT END  *********************************** -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="-1" />
+	
+	<title>test_FacetTree</title>	
+
+	<style type="text/css">
+		@import "../../dojo/dojo/resources/dojo.css";
+		@import "../../dojo/dijit/themes/tundra/tundra.css";
+		@import "../../dojo/dijit/themes/tundra/tundra_rtl.css";
+		@import "../../dojo/dojox/grid/_grid/Grid.css";
+		@import "../../dojo/dojox/grid/_grid/tundraGrid.css";
+	</style>
+	    
+    <link rel="stylesheet" type="text/css" href="../../css/common.css?" />
+	<link rel="stylesheet" type="text/css" href="../../css/facetTree.css?" />
+	
+	<script type="text/javascript" src="../../dojo/dojo/dojo.js" 
+		djConfig="parseOnLoad: true, isDebug: true">
+	</script>
+    <script type="text/javascript" src="../../js/application.js"></script>
+    <script type="text/javascript" src="../../js/ajax.js"></script>
+    <script type="text/javascript" src="../../js/util.js"></script>
+    <script type="text/javascript" src="../../js/dialog.js"></script>
+    <script type="text/javascript" src="../../js/constants.js"></script>
+	
+	<script type="text/javascript">		
+		// Dojo parser
+		dojo.require("dojo.parser");
+		
+		dojo.registerModulePath("widgets", "../../js/widgets");
+		dojo.require("dijit.Dialog");
+		dojo.require("dijit.layout.ContentPane");
+		dojo.require("widgets.SearchOptions");
+		dojo.require("widgets.MultiSelection");
+		dojo.require("widgets.customDialog");
+		dojo.require("widgets.Button");
+		dojo.require("widgets.TabContainer");
+		
+		EDR = {};
+		EDR.messages = {};
+
+        function init() {
+        }
+        dojo.addOnLoad(init);
+  	</script>
+      	
+</head>
+
+<body class="tundra edr">
+	<div style="padding:10px;">
+		<div class="dijitTitlePaneTitle dijitOpen" style="position:relative;left:-2px;width:292px;height:15px;">Specify advanced search options</div>
+		<div id="op" dojoType="widgets.SearchOptions"
+			style="width:300px;height:200px;overflow:auto;background-color:white;" _autoLoad="true" url="data/test_SearchOptions.json"
+			label_collection=		"Search only these collections and external sources (facet search is disabled)"
+			label_facetcollection=	"Search only single collection and external sources (facet search is enabled)"
+			label_scope=			"Search only these scopes"
+			label_noscope=			"No scopes are configured for the current collections."
+			label_source=			"Source types to search"
+			label_source_all=		"Search any source type"
+			label_source_specific=	"Search only these source types"
+			label_file=				"File types to search"
+			label_file_all=			"Search any file types"
+			label_file_specific=	"Search only these file types"
+			label_lang=				"Languages to search"
+			label_lang_all=			"Search documents in any language"
+			label_lang_specific=	"Search only documents that are written in these languages">
+		>
+		</div>
+	</div>
+</body>
+
+</html>

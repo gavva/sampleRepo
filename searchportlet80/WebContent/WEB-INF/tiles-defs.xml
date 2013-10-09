@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+  "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+
+  <!-- Base Layout Begin -->
+  <definition name="edr.main" page="/layouts/standard.jsp">      
+  	<put name="header" value="/common/header.jsp"/> 
+  	<put name="messages" value="/common/messages.jsp"/>
+  	<put name="banner" value="/common/banner.jsp"/>  
+  	<put name="accessibility" value=""/>
+    <put name="content" value=""/> 
+    <put name="common.dialogs" value="edr.dialogs"/>
+    <put name="specific.dialogs" value=""/>     
+    <put name="bootstrap" value=""/>  
+    <put name="splash" value="edr.splash" />   
+  	<put name="footer" value="/common/footer.jsp"/> 
+  </definition>
+  <!-- Base Layout End -->
+  
+  
+  <!-- Swoosh Layout Begin -->
+  <definition name="edr.swoosh" page="/layouts/swoosh.jsp">      
+  	<put name="header" value="/common/header.jsp"/> 
+  	<put name="messages" value="/common/messages.jsp"/>
+  	<put name="banner" value="/common/banner.jsp"/>  
+  	<put name="distanceCssClass" value="defaultDistance" /> 
+    <put name="content" value=""/> 
+    <put name="common.dialogs" value="edr.dialogs"/> 
+    <put name="specific.dialogs" value=""/>     
+    <put name="bootstrap" value=""/>  
+    <put name="splash" value="edr.splash" />   
+  	<put name="footer" value=""/> 
+  </definition>
+  <!-- Swoosh Layout End -->
+  
+  <!-- Splash Begin -->  
+  <definition name="edr.splash" page="/common/splash.jsp"/>
+  <!-- Splash End -->
+  
+  
+  <!-- Dialogs Begin -->  
+  <definition name="edr.dialogs" page="/layouts/dialog.jsp">  
+    <put name="progress.dialog" value="/dialogs/progress.jsp"/>  
+    <put name="about.dialog" value="/dialogs/about.jsp"/>
+    <put name="error.dialog" value="edr.error.dialog"/>  
+    <put name="alert.dialog" value="/dialogs/alert.jsp"/>
+    <put name="confirm.dialog" value="/dialogs/confirm.jsp"/>
+    <put name="common.dialog" value="/dialogs/common.jsp"/> 
+    <put name="ignore.dialog" value="/dialogs/ignore.jsp"/>
+    <put name="saveSearch.dialog" value="/dialogs/saveSearch.jsp"/>
+    <put name="manageSavedSearch.dialog" value="/dialogs/manageSavedSearch.jsp"/>
+  </definition>
+  <!-- Dialogs End -->
+  
+    
+  <!-- Login Layout Begin -->  
+  <definition name="edr.login" page="/login.jsp">  
+  </definition>
+  <!-- Login Layout End -->
+  
+  
+  <!-- Flash Begin -->  
+  <definition name="edr.flash" page="/flash/flash.jsp">  
+    <put name="flash.info" value="edr.flash.info"/>  
+    <put name="flash.warn" value="edr.flash.warn"/>  
+    <put name="flash.error" value="edr.flash.error"/> 
+  </definition>
+  
+  <definition name="edr.flash.info" page="/flash/info.jsp"/>
+  <definition name="edr.flash.warn" page="/flash/warn.jsp"/>
+  <definition name="edr.flash.error" page="/flash/error.jsp"/>
+  
+  <definition name="edr.flash.test" page="/sandbox/flash.jsp">  
+    <put name="flash" value="edr.flash"/>  
+  </definition>
+  <!-- Flash End -->
+  
+  
+  <!-- Admin Layout Begin -->
+  <definition name="edr.admin" extends="edr.main"> 
+  	<put name="accessibility" value="/layouts/admin/accessibilityNav.jsp"/>    
+    <put name="content" value="edr.admin.content"/>   
+    <put name="specific.dialogs" value="edr.admin.dialogs"/>    
+    <put name="bootstrap" value="/layouts/admin/bootstrap.jsp"/>
+  </definition>
+  
+  <definition name="edr.admin.content" page="/layouts/admin/content.jsp">
+    <put name="administration.left.pane" value="edr.administration.left"/>
+    <put name="administration.right.pane" value="edr.administration.right"/>
+  </definition>
+  
+  <definition name="edr.admin.toolbar" page="/layouts/admin/toolbar.jsp"/>
+  
+  <definition name="edr.admin.left" page="/layouts/admin/left.jsp">
+    <put name="adminMenu" value="edr.admin.mainmenu"/>
+  </definition>
+  
+  <definition name="edr.admin.right" page="/layouts/admin/right.jsp"/>
+  
+  <definition name="edr.admin.casemanagement" page="/admin/caseManagement.jsp"/>
+  <definition name="edr.admin.nodemanagement" page="/admin/nodeManagement.jsp"/>
+  <definition name="edr.admin.errorLog" page="/admin/systemLogPage.jsp"/>
+  <definition name="edr.admin.commitErrorLog" page="/admin/commitLogPage.jsp"/>
+  <definition name="edr.admin.mainpane" page="/admin/adminRightPane.jsp"/>
+  <definition name="edr.admin.dialogs" page="/layouts/admin/dialogs.jsp"/>
+  <definition name="edr.admin.repositorymanagement" page="/admin/repositoryManagement.jsp"/>
+  <definition name="edr.admin.ignoremanagement" page="/admin/ignoreTextManagement.jsp"/>
+  <definition name="edr.admin.timezone" page="/admin/caseTimezone.jsp"/>
+  <definition name="edr.admin.browsedirectory" page="/admin/directoryBrowser.jsp"/>  
+  <definition name="edr.admin.mainmenu" page="/admin/adminMenu.jsp"/>
+  <definition name="edr.admin.flagmanagement" page="/admin/flagManagement.jsp"/>
+  <definition name="edr.admin.globalflagmanagement" page="/admin/globalFlagManagement.jsp"/>
+  <definition name="edr.admin.allflagstable" page="/admin/activeFlagsTable.jsp" />
+  <definition name="edr.admin.showcopyflaglist" page="/admin/copyFlagList.jsp"/>
+  <definition name="edr.admin.showcommitcasepage" page="/admin/commitCasePage.jsp"/>
+  <definition name="edr.admin.showflagsforcommitpage" page="/admin/showFlagsForCommit.jsp"/>
+  <definition name="edr.admin.browseralfolders" page="/admin/ralFoldersBrowser.jsp"/>  
+	
+  <!-- Admin Layout End -->
+    
+    
+  <!-- Search Layout Begin -->
+  <definition name="edr.search" extends="edr.main">
+  	<put name="accessibility" value="/layouts/search/accessibilityNav.jsp"/>    
+    <put name="content" value="edr.search.content"/>
+    <put name="specific.dialogs" value="edr.search.dialogs"/>
+    <put name="bootstrap" value="/layouts/search/bootstrap.jsp"/>
+  </definition>
+  
+  <definition name="edr.search.content" page="/layouts/search/content.jsp">
+    <put name="search.case.select" value="edr.search.activecase" />
+    <put name="search.left.pane" value="edr.search.left"/>
+    <put name="search.right.pane" value="edr.search.right"/>
+    <put name="search.righttop.pane" value="edr.search.righttop"/>
+  </definition>
+  
+  <definition name="edr.administration.left" page="/layouts/admin/left.jsp">
+    <put name="adminMenu" value="/admin/administrationMenu.jsp"/>
+  </definition>
+  
+  <definition name="edr.administration.right" page="/layouts/admin/right.jsp">
+    <put name="casemanagement" value="edr.admin.casemanagement"/>
+  </definition>
+  
+  <definition name="edr.search.left" page="/layouts/search/left.jsp">
+    <put name="form" value="/search/form.jsp"/>
+  </definition>
+  
+  <definition name="edr.search.right" page="/layouts/search/right.jsp">
+    <put name="results" value="edr.search.results"/>
+    <put name="emails" value="edr.search.emails"/>
+    <put name="timeline" value="/search/results.jsp"/>
+  </definition>  
+
+  <definition name="edr.search.righttop" page="/layouts/search/righttop.jsp">
+    <put name="toolbar" value="edr.search.toolbar"/>
+    <put name="criteria" value="edr.search.criteria"/>
+  </definition>  
+  
+  <definition name="edr.search.dialogs" page="/layouts/search/dialogs.jsp">
+    <put name="email.preview.dialog" value="/search/components/preview.jsp"/>
+    <put name="case.select.data" value="edr.case.select.data"/>
+  </definition>  
+  
+  <definition name="edr.search.criteria" page="/search/criteria.jsp"/>  
+  
+  <definition name="edr.search.toolbar" page="/search/toolbar.jsp">
+  	<put name="filters" value="edr.search.filters"/>
+  </definition>
+  
+  <definition name="edr.search.results" page="/layouts/search/resultContent.jsp">
+	<!-- 
+    <put name="network" value="/search/network.jsp"/>
+   	-->
+  </definition>
+  <definition name="edr.search.activecase" page="/common/activeCaseHeader.jsp"/>
+  <definition name="edr.search.facets" page="/search/facetTrees.jsp"/>
+  <definition name="edr.search.filters" page="/search/searchFilters.jsp"/>
+  <definition name="edr.search.emails" page="/search/components/mainContainer.jsp">
+    <put name="toolbar" value="/search/components/toolbar.jsp"/>
+    <put name="emails" value="edr.search.emails.emails"/>
+  </definition>  
+  <definition name="edr.search.searchResults" page="/search/searchResults.jsp">
+          <put name="toolbar" value="/search/components/toolbar.jsp"/>
+  </definition>
+  
+  <definition name="edr.search.emails.emails" page="/search/components/emails.jsp">
+    <put name="groupemails" value="edr.search.groupemails"/>
+  </definition>
+	
+  <definition name="edr.search.groupemails" page="/search/components/groupEmails.jsp"/>
+
+  <!-- Search Layout End -->
+  
+  <!-- Printable Results Layout Begin -->
+  <definition name="edr.search.results.print" page="/layouts/printableResults.jsp">
+  	<put name="header" value="/search/printview/header.jsp"/> 
+  	<put name="titlePage" value="/search/printview/titlePage.jsp"/>
+  	<put name="resultsSummary" value="/search/printview/resultsSummary.jsp"/>
+  	<put name="results" value="/search/printview/results.jsp"/>
+  </definition>
+  <!-- Printable Results Layout End -->
+  
+  <!-- Error Layout Begin -->  
+  
+  <definition name="edr.error.standard" page="/error/standardError.jsp">      
+  	<put name="header" value="/common/header.jsp"/> 
+  	<put name="banner" value="/common/banner.jsp"/>   
+  	<put name="error.data" value="edr.error.data"/>    
+  	<put name="footer" value="/common/footer.jsp"/>  
+  </definition>  
+  
+  <definition name="edr.error.dialog" page="/dialogs/error.jsp"/>
+  
+  <definition name="edr.error.ajax" page="/error/ajaxError.jsp">
+  	<put name="error.data" value="edr.error.data"/>
+  </definition>      
+  
+  <definition name="edr.error.search" page="/error/searchError.jsp"/>
+  
+  <definition name="edr.error.data" page="/error/errorData.jsp"/>
+  
+  <!-- Error Layout End -->
+  
+  <!-- Emails Begin -->
+  
+  <definition name="edr.email.preview" page="/search/components/preview.jsp"/>
+  <definition name="edr.email.printpreview" page="/search/components/printablePreview.jsp"/>
+  <definition name="edr.email.setFlags" page="/search/components/setFlags.jsp"/>
+  <definition name="edr.attachment.show" page="/search/components/attachment.jsp"/>
+  
+  <!-- Emails End -->
+  
+  
+  <!-- Case Selection Begin -->
+  
+  <definition name="edr.initial.case.select" extends="edr.swoosh">
+      <put name="distanceCssClass" value="caseSelectDistance" />      
+      <put name="content" value="edr.case.select"/>
+  </definition>
+  
+  <definition name="edr.case.select" page="/search/selectCase.jsp">   
+      <put name="case.select.data" value="edr.case.select.data"/>
+  </definition>
+  
+  <definition name="edr.case.select.data" page="/search/selectCaseData.jsp"/>
+   
+  <!-- Case Selection End -->
+  
+  <definition name="edr.about" page="/common/about.jsp"/>
+  
+</tiles-definitions>

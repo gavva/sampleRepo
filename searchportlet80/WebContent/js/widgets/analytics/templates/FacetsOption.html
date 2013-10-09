@@ -1,0 +1,18 @@
+<div>
+	<form dojoAttachPoint="analytcsFacetsOptionsForm" style="width:100%;height:100%;">
+		<div style="padding:5px;width:98%;" title="">
+			<label for="${prefix}numberOfResultsIdForFacet">${messages_preferences_analytics_facets_numberOfResults}:</label>
+			<br/>
+			<select dojoAttachPoint="numberOfResults" id="${prefix}numberOfResultsIdForFacet" dojoType="dijit.form.ComboBox" name="facetsNumberOfResults">
+			</select><br/><br/>
+			<label for="${prefix}defaultSortByIdForFacet">${messages_preferences_analytics_facets_defaultSortBy}:</label>
+			<br/>
+			<select dojoAttachPoint="defaultSortBy" id="${prefix}defaultSortByIdForFacet" dojoType="dijit.form.FilteringSelect" name="facetsDefaultSortBy" searchAttr="label" labelAttr="label">
+			</select><br/><br/>
+			<label for="${prefix}defaultShowTargetIdForFacet">${messages_preferences_analytics_facets_defaultShowTarget}:</label>
+			<br/>
+			<select dojoAttachPoint="defaultShowTarget" id="${prefix}defaultShowTargetIdForFacet" dojoType="dijit.form.FilteringSelect" name="facetsDefaultShowTarget" searchAttr="label" labelAttr="label">
+			</select><br/><br/>			
+		</div>
+	</form>	
+</div>

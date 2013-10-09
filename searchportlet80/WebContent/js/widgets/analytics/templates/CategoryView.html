@@ -1,0 +1,31 @@
+<div class="AnalyticsPane CategoryView">
+	<div style="padding: 5px;" dojoAttachPoint="toolbarDiv">
+		<div style="float:left;">
+			<label for="${prefix}categoryViewTarget">${message_common_analytics_show}</label>
+			<select id="${prefix}categoryViewTarget" name="categoryViewTarget"
+				dojoType="dijit.form.FilteringSelect"
+				dojoAttachEvent="onChange: _onTargetChanged">
+				<option value="keywords" selected="selected">${message_listTarget_keyword}</option>
+				<option value="subfacets">${message_listTarget_subcategory}</option>
+			</select>
+
+			<label for="${prefix}categoryViewSortBy">${message_common_analytics_sort}</label>
+			<select id="${prefix}categoryViewSortBy" name="categoryViewSortBy"
+				dojoType="dijit.form.FilteringSelect"
+				dojoAttachEvent="onChange: _onSortByChanged">
+				<option value="alphabetical">${message_preferences_analytics_sortByAlphabetical}</option>
+				<option value="frequency" selected="selected">${message_preferences_analytics_sortByFrequency}</option>
+				<option value="correlation">${message_preferences_analytics_sortByCorrelation}</option>
+			</select>
+		</div>
+		<!-- 
+		<div style="float: right;">
+			<button dojoAttachPoint="searchBtn" dojoAttachEvent="onclick: addToSearch" title="search" disabled="disabled" style="width:28px;height:28px;">
+				<img dojoAttachPoint="searchBtnImg" src="images/tmp/chartsearch_d.png" style="position:relative;left:-2px;"/>
+			</button>
+		</div>
+		<div style="clear: both;"></div>
+		-->
+	</div>
+	<div dojoAttachPoint="containerNode" style="position: relative; width: 100%; height: 100%; clear: both; background-color:#F5F5F5"></div>
+</div>

@@ -1,0 +1,35 @@
+{
+	facetCollections: [
+		{ label: 'col1aaaaaaaaa', value: 'colid1', selected: true },
+		{ label: 'co2222222l1', value: 'colid2', selected: false }
+	],
+	collections: [
+		{ label: 'co3333333l1', value: 'colid1', selected: true },
+		{ label: 'col1', value: 'colid1', selected: true },
+		{ label: 'coccccccccl1', value: 'colid2', selected: true }
+	],
+	scopes: [
+		{ label: 'scope1', value: 'scopeid1', selected: false },
+		{ label: 'scope2', value: 'scopeid2', selected: false }
+	],
+	sourcetypes: [
+		{ label: 'src1', value: 'srcid1', selected: true },
+		{ label: 'src2', value: 'srcid2', selected: true }
+	], 
+	filetypes: {
+		all: true,
+		items:
+		[
+			{ label: 'fc1', value: 'fcid1', selected: true },
+			{ label: 'fc2', value: 'fcid2', selected: true }
+		]
+	},
+	languages: {
+		all: false,
+		items:
+		[
+			{ label: 'lan1', value: 'lanid1', selected: true },
+			{ label: 'lan2', value: 'lanid2', selected: true }
+		]
+	}
+}

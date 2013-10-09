@@ -1,0 +1,651 @@
+/*********************** ES COPYRIGHT START  *********************************
+  @copyright(disclaimer)
+  
+  Licensed Materials - Property of IBM
+  5724-Z21
+  (C) Copyright IBM Corp. 2003, 2012
+  
+  US Government Users Restricted Rights
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+  
+  DISCLAIMER OF WARRANTIES :
+  
+  Permission is granted to copy and modify this Sample code, and to
+  distribute modified versions provided that both the copyright
+  notice, and this permission notice and warranty disclaimer appear
+  in all copies and modified versions.
+  
+  THIS SAMPLE CODE IS LICENSED TO YOU "AS-IS".
+  IBM  AND ITS SUPPLIERS AND LICENSORS  DISCLAIM
+  ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, IN SUCH SAMPLE CODE,
+  INCLUDING THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+  WILL IBM OR ITS LICENSORS OR SUPPLIERS BE LIABLE FOR ANY DAMAGES ARISING
+  OUT OF THE USE OF  OR INABILITY TO USE THE SAMPLE CODE, DISTRIBUTION OF
+  THE SAMPLE CODE, OR COMBINATION OF THE SAMPLE CODE WITH ANY OTHER CODE.
+  IN NO EVENT SHALL IBM OR ITS LICENSORS AND SUPPLIERS BE LIABLE FOR ANY
+  LOST REVENUE, LOST PROFITS OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+  CONSEQUENTIAL,INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS
+  OF THE THEORY OF LIABILITY, EVEN IF IBM OR ITS LICENSORS OR SUPPLIERS
+  HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  
+  @endCopyright
+ *********************** ES COPYRIGHT END  ***********************************/
+   
+.edr .ToolbarContainer {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	width: 100%;
+	/*height: 100%;*/
+	border: none;
+	background-image: url("../images/edisc_toolbar.png");
+	background-position: center;
+	background-repeat: repeat-x;
+	background-color: #f5f5f5;
+}
+
+.edr .ToolbarContainerTop {
+	background-image: url("../images/edisc_rounded_light_top_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	/* height: 3px; */
+}
+
+.dj_ie .edr .ToolbarContainerTop {
+	height: 3px;
+}
+
+.edr .ToolbarContainerTopLeft {
+	width: 3px;
+	height: 3px;
+	background-image: url("../images/edisc_rounded_light_top_left.png");
+	/* background-color: #CCCCCC; */
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .ToolbarContainerTopLeft {
+	margin-right: -3px;
+}
+
+.edr .ToolbarContainerTopMiddle {
+	margin: 0px 3px;
+	border-top: 1px solid #CCCCCC;
+	position: relative;
+}
+
+.dj_ie .edr .ToolbarContainerTopMiddle {
+	margin: 0px 3px 0px 3px;
+}
+
+.edr .ToolbarContainerBottom {
+	background-image: url("../images/edisc_rounded_light_bottom_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.edr .ToolbarContainerBottomLeft {
+	width: 3px;
+	height: 3px;
+	background-image: url("../images/edisc_rounded_light_bottom_left.png");
+	/* background-color: #CCCCCC; */
+	background-position: top left;
+	background-repeat: no-repeat;
+	/* float: left; */
+	position: relative;
+}
+
+.dj_ie .edr .ToolbarContainerBottomLeft {
+	margin-right: -3px;
+}
+
+.edr .ToolbarContainerBottomMiddle {
+	margin-left: 3px;
+	margin-right: 3px;
+	border-bottom: 1px solid #CCCCCC;
+	position: relative;
+}
+
+.dj_ie .edr .ToolbarContainerBottomMiddle {
+	margin: 0px 3px 0px 3px; 
+}
+	
+.edr .ToolbarContainerMiddle {
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.edr .ToolbarContainerMiddleLeft {
+}
+
+.edr .ToolbarContainerMiddleMiddle {
+}
+
+.edr .ToolbarContent {
+	margin-left: 5px;
+}
+
+.edr .dijitToolbar .dijitButtonHover,
+.edr .dijitToolbar .dijitToggleButtonHover,
+.edr .dijitToolbar .dijitDropDownButtonHover {
+	background: transparent none;
+/*	border: 0px; @@tmp@@*/	
+}
+
+.edr .dijitToolbar .dijitButtonHover .dijitButtonNode,
+.edr .dijitToolbar .dijitToggleButtonHover .dijitButtonNode,
+.edr .dijitToolbar .dijitDropDownButtonHover .dijitButtonNode {
+	background: transparent none;
+	/* IE hackery */
+	_border: 0px;
+	_margin: -1px 0px 0px 0px;
+	_padding: 0px;
+}
+
+.edr .dijitToolbar .dijitDropDownButtonHover .dijitButtonText {
+	text-decoration: underline;
+}
+
+.edr .dijitToolbar .dijitButton, 
+.edr .dijitToolbar .dijitToggleButton, 
+.edr .dijitToolbar .dijitDropDownButton {
+	border: 0px;
+}
+
+.dj_ie .edr .dijitToolbar .dijitButton,
+.dj_ie .edr .dijitToolbar .dijitToggleButton, 
+.dj_ie .edr .dijitToolbar .dijitDropDownButton {
+	/*margin-right: 10px;*/
+	margin-right: 3px;
+}
+
+.dj_ie .edr .dijitToolbar .dijitButton {
+	margin-right: 3px;
+}
+
+
+.dj_ie .edr .dijitToolbar .dijitToolbarSeparator {
+	/*margin-right: 10px;*/
+	margin-right: 3px;
+}
+
+
+.edr .dijitToolbarSeparator {
+	height: 23px;
+}
+
+.edr .toolbarIcon {
+	width: 26px;
+	height: 26px;
+}
+
+.edr .downloadIcon {
+	background-image: url("../images/download23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .downloadIcon {
+	background-image: url("../images/download23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .downloadIcon {
+	background-image: url("../images/download26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .ignoreRulesIcon {
+	background-image: url("../images/ignore_rules23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .ignoreRulesIcon {
+	background-image: url("../images/ignore_rules23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .ignoreRulesIcon {
+	background-image: url("../images/ignore_rules26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .goBackIcon {
+	background-image: url("../images/backward23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .goBackIcon {
+	background-image: url("../images/backward23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .goBackIcon {
+	background-image: url("../images/backward26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .goForwardIcon {
+	background-image: url("../images/forward23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .goForwardIcon {
+	background-image: url("../images/forward23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .goForwardIcon {
+	background-image: url("../images/forward26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .loadSearchIcon {
+	background-image: url("../images/loadsearch23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .loadSearchIcon {
+	background-image: url("../images/loadsearch23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .loadSearchIcon {
+	background-image: url("../images/loadsearch26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .saveSearchIcon {
+	background-image: url("../images/save23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .saveSearchIcon {
+	background-image: url("../images/save23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .saveSearchIcon {
+	background-image: url("../images/save26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .manageSavedSearchIcon {
+	background-image: url("../images/savedsearches23.png");
+	background-repeat: no-repeat; 
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .manageSavedSearchIcon {
+	background-image: url("../images/savedsearches23_d.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .manageSavedSearchIcon {
+	background-image: url("../images/savedsearches26.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/*-----------------------------------------
+	EMAIL PREVIEW TOOLBAR START
+------------------------------------------*/
+.edr .ToolbarContainer.previewContentToolbar {
+	height: auto;
+	width: auto;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	margin-left: 6px;
+	margin-right: 6px;
+
+}
+/*-----------------------------------------
+	EMAIL PREVIEW TOOLBAR END
+------------------------------------------*/
+
+/*-----------------------------------------
+	EMAIL RESULTS TOOLBAR START
+------------------------------------------*/
+.edr #results-container .ToolbarContainerTop {
+	background-image: url("../images/edisc_rounded_top_right.png");
+}
+
+.edr #results-container .ToolbarContainerTopLeft {
+	border-color: #666666;
+	background-image: url("../images/edisc_rounded_top_left.png");
+}
+
+.edr #results-container .ToolbarContainerTopMiddle {
+	border-color: #666666;
+}
+
+.edr #results-container .ToolbarContainerBottom {
+	background-image: url("../images/edisc_rounded_bottom_right.png");
+}
+
+.edr #results-container .ToolbarContainerBottomLeft {
+	background-image: url("../images/edisc_rounded_bottom_left.png");
+	border-color: #666666;
+}
+
+.edr #results-container .ToolbarContainerBottomMiddle {
+	border-color: #666666;
+}
+
+.edr #results-container .ToolbarContainerMiddle {
+	border-right: 1px solid #666666;
+	border-left: 1px solid #666666;
+}
+/*-----------------------------------------
+	EMAIL RESULTS TOOLBAR END
+------------------------------------------*/
+
+/*-----------------------------------------
+	CRITERIA TOOLBAR START
+------------------------------------------*/
+.edr #toolbar-container {
+	overflow: hidden;
+}
+
+.dj_ie .edr #toolbar-container {
+	margin-bottom: 2px;	
+}
+
+.edr #criteria-toolbar-buttons {
+	float:left; 
+	padding-top: 2px; 
+	margin-bottom: 2px;	
+}
+
+/* Search Filters Tooltip Dialog */
+
+.edr #searchFiltersDialog .dijitTooltipConnector {
+	height: 0px;	
+}
+
+.edr #searchFiltersDropdown .dijitArrowButtonInner {
+	width: 0px;
+	display: none;
+}
+
+.edr #searchFiltersDropdown .dijitArrowButtonChar {
+	width: 0px;
+	display: none;	
+}
+
+.edr #searchFiltersDropdown .dijitButtonText {
+	padding: 0px;
+	margin: 0px;	
+}
+
+.edr #searchFiltersDropdown {
+	font-size:11px;
+}
+
+.edr #searchFiltersDropdownContainer {
+	bottom: 2px;
+	position: relative;	
+}
+
+.dj_ie .edr #searchFiltersDropdownContainer {
+	bottom: 0px;	
+}
+
+.edr #searchFiltersDialog {
+	width: 220px;
+	padding: 0px;	
+}
+
+.edr #searchFiltersDialog .progressDiv {
+	height: 200px;
+	width: 100%;
+	background-image: url(../images/status_indicator_20_slow.gif);
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+
+.edr #filtersDiv {
+	padding-top: 3px;
+	padding-bottom: 3px; 
+	padding-left: 10px; 
+	padding-right: 5px; 
+	border: 1px solid #CCCCCC; 
+	height: 120px; 
+	overflow: auto;
+	margin-bottom: 30px;	
+}
+
+.edr #searchFiltersButtonDiv {
+	position: absolute;
+	right: 15px;
+	bottom: 0px;
+}
+
+.edr #searchFiltersContainer {
+	padding: 5px;
+	position: relative;	
+}
+
+/* End Search Filters Tooltip Dialog */
+
+.dj_ie .edr #searchRightPane #criteria-toolbar #toolbar-container div div,
+.dj_ie .edr #searchRightPane #criteria-toolbar #toolbar-container div span {
+	margin-right: 2px;
+}
+
+.edr #criteria-toolbar {
+	background-color: #f5f5f5;
+	background-image: none;
+	margin-bottom: 7px;
+}
+
+.edr #criteria-toolbar #criteria-container .dijitButtonNode {
+	/* vertical-align: middle; */
+	/*
+	border: 1px solid #9b9b9b;
+	background:#e9e9e9 url("../images/buttonEnabled.png") repeat-x top; */
+}
+
+.edr #criteria-toolbar #criteria-container .dijitButton {
+	margin: 0.2em;
+}
+/*-----------------------------------------
+	CRITERIA TOOLBAR END
+------------------------------------------*/
+
+/*-----------------------------------------
+	CRITERIA TEXTAREA START
+------------------------------------------*/
+.edr div#query-string {
+	font: 12px; 
+	font-family: Tahoma;
+}
+/*
+.dj_ie .edr #criteria-container fieldset.dijitTextArea {
+ 	border: 1px gray solid;
+}
+
+.dj_ie .edr #criteria-container fieldset.dijitTextArea div {
+ 	border: none;   
+}
+
+.dj_ie #query-string {
+	padding: 3px 3px 0px 3px;  
+} */
+
+/*-----------------------------------------
+	CRITERIA TEXTAREA END
+------------------------------------------*/
+
+/*-----------------------------------------
+	TEXTAREA START
+------------------------------------------*/
+.edr .textareaContainer {
+	position:absolute;
+	left:5px;
+	right:5px;
+	top:5px;
+	bottom:5px;
+}
+
+.edr .textareaContainerTop {
+	background-image: url("../images/edisc_rounded_light_top_right.png");
+	/* background-image: url("../images/edisc_container_top_right.png"); */
+	background-position: top right;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	height: 3px;
+}
+
+.edr .textareaContainerTopLeft {
+	width: 3px;
+	height: 3px;
+	background-image: url("../images/edisc_rounded_light_top_left.png");
+	/* background-image: url("../images/edisc_container_top_left.png"); */
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .textareaContainerTopLeft {
+	margin-right: -3px;
+}
+
+.edr .textareaContainerTopMiddle {
+	height: 3px;
+	margin: 0px 3px;
+	/* background-image: url("../images/edisc_container_top_center.png"); 
+	background-repeat: repeat-x; */
+	background: #FFFFFF url("../images/validationInputBg.png") repeat-x scroll left top;
+	border-top: 1px solid #CCCCCC;
+	position: relative;
+}
+
+.dj_ie .edr .textareaContainerTopMiddle {
+	margin: 0px 3px 0px 3px;
+}
+
+.edr .textareaContainerBottom {
+	/* background-image: url("../images/edisc_container_bottom_right.png"); */
+	background-image: url("../images/edisc_rounded_light_bottom_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	position:absolute;
+	width: 100%;
+	bottom: 0px;
+	height: 3px;
+}
+
+.edr .textareaContainerBottomLeft {
+	width: 3px;
+	height: 3px;
+	/* background-image: url("../images/edisc_container_bottom_left.png"); */
+	background-image: url("../images/edisc_rounded_light_bottom_left.png");
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+
+.dj_ie .edr .textareaContainerBottomLeft {
+	margin-right: -3px;
+}
+
+.edr .textareaContainerBottomMiddle {
+	height: 3px;
+	margin: 0px 3px;
+	/* background-image: url("../images/edisc_container_bottom_center.png"); 
+	background-repeat: repeat-x;  */
+	border-bottom: 1px #CCCCCC solid;
+	position: relative;
+	background-color: #FFFFFF;
+}
+
+.dj_ie .edr .textareaContainerBottomMiddle {
+	margin: 0px 3px 0px 3px;
+}
+	
+.edr .textareaContainerMiddle {
+	background-color: #FFF;	
+	border-left: 1px #CCCCCC solid;
+	border-right: 1px #CCCCCC solid;
+	position: absolute;
+	top: 3px;
+	bottom: 3px;
+	left: 0px;
+	right: 0px;
+}
+
+.edr .textareaContainerMiddleLeft {
+	/* background-image: url("../images/edisc_container_left_center.png");
+	background-repeat: repeat-y;
+	background-color: transparent; */
+	float: left; 
+	height: 100%;
+	width: 3px;
+}
+
+.edr .textareaContainerMiddleMiddle {
+	float: left; 
+	width: 98%; 
+}
+
+.edr .textareaContainerMiddleRight {
+	width: 3px;
+	height: 100%;
+}
+	
+.edr .textareaContent {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	float: left; 
+	width: 100%; 	
+}
+
+.edr .textareaContent textarea {
+	border: none;
+}	
+
+/*-----------------------------------------
+	TEXTAREA END
+------------------------------------------*/
+
+
+/*
+override default theme style
+*/
+.tundra.edr .dijitToolbar .dijitButton,
+.tundra.edr .dijitToolbar .dijitToggleButton,
+.tundra.edr .dijitToolbar .dijitDropDownButton,
+.tundra.edr .dijitToolbar .dijitComboButton .dijitButtonContents,
+.tundra.edr .dijitToolbar .dijitComboButton .dijitDownArrowButton  {
+	padding: 0px;
+}

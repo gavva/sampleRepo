@@ -1,0 +1,22 @@
+<div class="MyProfileContent" style="padding-left: 10px; padding-right: 10px; padding-bottom: 10px;">
+	<h2 dojoAttachPoint="credentialsTitle"></h2>
+	<div dojoAttachPoint="errorDiv" style="color: #FF0000; display: none;">
+		<img src="${imgBasePath}error23.png" width="23" height="23" style="float: left;" alt="${messages_errors_dialog_information}" />
+		<span dojoAttachPoint="errorDescription"></span>
+	</div>
+	<div dojoAttachPoint="descriptionDiv" style="margin-bottom: 1em;"></div>
+	<div dojoAttachPoint="credentialsDiv">
+		<form dojoAttachPoint="promptsForm" name="myProfileForm" action="${imcUrl}">
+			<table dojoAttachPoint="credentialsTable" style="border: solid 1px black;">
+				<thead>
+					<tr>
+						<th>${messages_myProfile_column1}</th><th>${messages_myProfile_column2}</th><th>${messages_myProfile_column3}</th><th>${messages_myProfile_column4}</th>			
+					</tr>
+				</thead>
+				<tbody dojoAttachPoint="credentialsTableBody">
+				</tbody>
+			</table>
+			<input dojoAttachPoint="hiddenCount" type="hidden" name="count" value="0" />
+		</form>
+	</div>
+</div>

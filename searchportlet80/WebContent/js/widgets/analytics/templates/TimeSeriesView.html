@@ -1,0 +1,18 @@
+<div style="width:100%;height:100%;">
+	<div dojoAttachPoint="toolbarNode" style="height:20px;padding:5px;background-image:url(images/edisc_messages_center.png);">
+		<div style="float:left;padding-right:10px;">
+			<label for="${prefix}timeSeriesTimeScale">${label_timescale}</label>
+			<select id="${prefix}timeSeriesTimeScale" dojoType="dijit.form.FilteringSelect" name="timeSeriesTimeScale"
+				dojoAttachPoint="timeScaleSelection" dojoAttachEvent="onChange: onTimescaleChanged">
+				<option value="$.year">${label_year}</option>
+				<option value="$.month">${label_month}</option>
+				<option value="$.day">${label_day}</option>
+				<option value="$.month_of_year">${label_month_of_year}</option>
+				<option value="$.day_of_month">${label_day_of_month}</option>
+				<option value="$.day_of_week">${label_day_of_week}</option>				
+			</select>
+		</div>
+	</div>
+	<div dojoAttachPoint="containerNode" style="position: relative; width:100%; height: 100%; background-color:#F5F5F5">
+	</div>
+</div>

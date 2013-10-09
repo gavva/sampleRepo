@@ -1,0 +1,44 @@
+<div>
+	<form dojoAttachPoint="analytcsDeviationsOptionsForm" style="width:100%;height:100%;">
+		<div style="padding:5px;width:98%;" title="">
+		
+			<label for="${prefix}numberOfResultsForDeviationOption">${messages_preferences_analytics_deviations_numberOfResults}:</label><br/>
+			<select dojoAttachPoint="numberOfResults" id="${prefix}numberOfResultsForDeviationOption" dojoType="dijit.form.ComboBox" name="deviationsNumberOfResults">
+			</select><br/><br/>
+						
+			<label for="${prefix}numberOfChartsForDeviation">${messages_preferences_analytics_deviations_numberOfCharts}:</label><br/>
+			<input dojoAttachPoint="numberOfCharts" id="${prefix}numberOfChartsForDeviation" dojoType="dijit.form.NumberSpinner" name="deviationsNumberOfCharts"
+				value="3" smallDelta="1" largeDelta="5" constraints="{min:1,max:100,places:0}">
+			</input><br/><br/>
+			
+			<div role="radiogroup">
+				<label>${messages_preferences_analytics_deviations_showLineInChart}:</label><br/>
+				<input dojoAttachPoint="showLineInChartYes" id="${prefix}showLineInChartYesForDeviation" dojoType="dijit.form.RadioButton" value="true" name="deviationsShowLineInChart"/>
+				<label for="${prefix}showLineInChartYesForDeviation">${messages_preferences_analytics_label_yes}</label>&nbsp;
+				<input dojoAttachPoint="showLineInChartNo" id="${prefix}showLineInChartNoForDeviation" dojoType="dijit.form.RadioButton" value="false" name="deviationsShowLineInChart"/>
+				<label for="${prefix}showLineInChartNoForDeviation">${messages_preferences_analytics_label_no}</label><br/><br/>
+			</div>
+			
+			<label for="${prefix}defaultSortByIdForDeviation">${messages_preferences_analytics_deviations_defaultSortBy}:</label>
+			<br/>
+			<select dojoAttachPoint="defaultSortBy" id="${prefix}defaultSortByIdForDeviation" dojoType="dijit.form.FilteringSelect" name="deviationsDefaultSortBy" searchAttr="label" labelAttr="label">
+			</select><br/><br/>
+			
+			<label for="${prefix}defaultShowTargetIdForDeviation">${messages_preferences_analytics_deviations_defaultShowTarget}:</label>
+			<br/>
+			<select dojoAttachPoint="defaultShowTarget" id="${prefix}defaultShowTargetIdForDeviation" dojoType="dijit.form.FilteringSelect" name="deviationsDefaultShowTarget" searchAttr="label" labelAttr="label">
+			</select><br/><br/>
+			
+			<label for="${prefix}defaultTimeScaleIdForDeviation">${messages_preferences_analytics_deviations_defaultTimeScale}:</label>
+			<br/>
+			<select dojoAttachPoint="defaultTimeScale" id=${prefix}"defaultTimeScaleIdForDeviation" dojoType="dijit.form.FilteringSelect" name="deviationsDefaultTimeScale" searchAttr="label" labelAttr="label">
+			</select><br/><br/>
+			
+			<label for="${prefix}barColorOfMultiChartForDeviation">${messages_preferences_analytics_deviations_barColorOfMultiChart}:</label>
+			<br/>
+			<select dojoAttachPoint="barColorOfMultiChart" id="${prefix}barColorOfMultiChartForDeviation" dojoType="dijit.form.FilteringSelect" name="deviationsBarColorOfMultiChart" searchAttr="label" labelAttr="label">
+			</select><br/><br/>
+			
+		</div>
+	</form>	
+</div>

@@ -1,0 +1,95 @@
+<div class="ResultsColumns">
+	<div style="padding:5px;">
+		<div class="errorMsg" style="display: none;"></div>
+		
+		<div class="dialog-instructions" style="line-height: 1.5em;">${messages_preferences_resultsColumns_show}${label_intro2}</div>
+		<div class="setColumnData">
+			<div class="setColumnsHeader">
+				<table class="setColumnsHeaderTable">
+					<thead>
+					<th class="setColumnsHeaderShow">${messages_preferences_resultsColumns_header1}</th>
+					<th class="setColumnsHeaderHeader">${messages_preferences_resultsColumns_header2}</th>
+					</thead>
+				</table>
+			</div>
+			<div class="setColumnsValues"> 
+				<table width="100%">
+					<tbody dojoAttachPoint="columnsTableBody">
+					<!--
+					<tr class="odd selected focused" originalClass="odd">
+							<td class="columnCheckbox">
+								<img class="checked" alt="" title="" tabindex="0" width="13" height="13" />
+							</td>	
+							<td class="columnName">
+								<a href="javascript:;">Narrow Your Results</a>
+							</td>
+						</tr>
+						<tr class="odd selected focused" originalClass="odd">
+							<td class="columnCheckbox">
+								<img class="checked" alt="" title="" tabindex="0" />
+							</td>	
+							<td class="columnName">
+								<a href="javascript:;">File Type</a>
+							</td>
+						</tr>
+						<tr class="odd selected focused" originalClass="odd">
+							<td class="columnCheckbox">
+								<img src="images/check_kiso_sel13.png" style="cursor:pointer;" alt="" title="" tabindex="0" />
+							</td>	
+							<td class="columnName">
+								<a href="javascript:;">Relevance</a>
+							</td>
+						</tr>
+						<tr class="odd selected focused" originalClass="odd">
+							<td class="columnCheckbox">
+								<img src="images/check_kiso_sel13.png" style="cursor:pointer;" alt="" title="" tabindex="0" />
+							</td>	
+							<td class="columnName">
+								<a href="javascript:;">Date</a>
+							</td>
+						</tr>
+						<tr class="odd selected focused" originalClass="odd">
+							<td class="columnCheckbox">
+								<img src="images/check_kiso_sel13.png" style="cursor:pointer;" alt="" title="" tabindex="0" />
+							</td>	
+							<td class="columnName">
+								<a href="javascript:;">Thumbnail</a>
+							</td>
+						</tr>
+					-->				
+					</tbody>
+				</table>
+				<img src="${imgBasePath}blank.gif" alt="" style="display: none"/>
+			</div>
+			<div class="setColumnsValuesButtons">
+				<div>
+					<div dojoAttachPoint="setColumnsValuesMoveTop" style="width:200px;"
+					dojoType="widgets.Button"
+					dojoAttachEvent="onClick:onMoveTopClick"
+					disabled="disabled"
+					title="${messages_preferences_resultsColumns_moveToFirst}">${messages_preferences_resultsColumns_moveToFirst}</div>
+				</div>
+				<div>
+					<div dojoAttachPoint="setColumnsValuesMoveUp" style="width:200px;"
+								dojoType="widgets.Button"
+								dojoAttachEvent="onClick:onMoveUpClick"
+								disabled="disabled"
+								title="${messages_preferences_resultsColumns_moveBefore}">${messages_preferences_resultsColumns_moveBefore}</div>
+				</div>
+				<div>
+					<div dojoAttachPoint="setColumnsValuesMoveDown" style="width:200px;" 
+						dojoType="widgets.Button"
+						dojoAttachEvent="onClick:onMoveDownClick"
+						title="${messages_preferences_resultsColumns_moveAfter}">${messages_preferences_resultsColumns_moveAfter}</div>
+				</div>
+				<div>
+					<div dojoAttachPoint="setColumnsValuesMoveBottom" style="width:200px;" 
+								dojoType="widgets.Button"
+								dojoAttachEvent="onClick:onMoveBottomClick"
+								title="${messages_preferences_resultsColumns_moveToLast}">${messages_preferences_resultsColumns_moveToLast}</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+</div>

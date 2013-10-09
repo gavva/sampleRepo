@@ -1,0 +1,226 @@
+/*********************** ES COPYRIGHT START  *********************************
+  @copyright(disclaimer)
+  
+  Licensed Materials - Property of IBM
+  5724-Z21
+  (C) Copyright IBM Corp. 2003, 2012
+  
+  US Government Users Restricted Rights
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+  
+  DISCLAIMER OF WARRANTIES :
+  
+  Permission is granted to copy and modify this Sample code, and to
+  distribute modified versions provided that both the copyright
+  notice, and this permission notice and warranty disclaimer appear
+  in all copies and modified versions.
+  
+  THIS SAMPLE CODE IS LICENSED TO YOU "AS-IS".
+  IBM  AND ITS SUPPLIERS AND LICENSORS  DISCLAIM
+  ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, IN SUCH SAMPLE CODE,
+  INCLUDING THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+  WILL IBM OR ITS LICENSORS OR SUPPLIERS BE LIABLE FOR ANY DAMAGES ARISING
+  OUT OF THE USE OF  OR INABILITY TO USE THE SAMPLE CODE, DISTRIBUTION OF
+  THE SAMPLE CODE, OR COMBINATION OF THE SAMPLE CODE WITH ANY OTHER CODE.
+  IN NO EVENT SHALL IBM OR ITS LICENSORS AND SUPPLIERS BE LIABLE FOR ANY
+  LOST REVENUE, LOST PROFITS OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+  CONSEQUENTIAL,INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS
+  OF THE THEORY OF LIABILITY, EVEN IF IBM OR ITS LICENSORS OR SUPPLIERS
+  HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  
+  @endCopyright
+ *********************** ES COPYRIGHT END  ***********************************/
+   
+.edr .ButtonContainer {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	width: 100%;
+	/*height: 100%;*/
+	border: none;
+	background-image: none;
+}
+
+.edr .ButtonContainerTop {
+	background-image: url("../images/button_active_topright.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+
+.dj_ie .edr .ButtonContainerTop {
+	height: 17px; 
+} 
+
+.edr .ButtonContainerTopLeft {
+	width: 2px;
+	height: 17px; 
+	background-image: url("../images/button_active_topleft.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.dj_ie .edr .ButtonContainerTopLeft {
+	margin-right: -2px;
+}
+
+.edr .ButtonContainerTopMiddle {
+	margin: 0px 2px;
+	background-image: url("../images/button_active_topcenter.png");
+	background-repeat: repeat-x;
+	height: 17px; 
+}
+
+.dj_ie .edr .ButtonContainerTopMiddle {
+	margin: 0px 2px 0px 2px; 
+}
+
+.edr .ButtonContainerBottom {
+	background-image: url("../images/button_active_bottomright.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.dijitRtl .edr .ButtonContainerBottom {
+	background-image: url("../images/button_active_bottomleft.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.widgetsLtr .edr .ButtonContainerBottom {
+	background-image: url("../images/button_active_bottomright.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.edr .ButtonContainerBottomLeft {
+	width: 2px;
+	height: 4px;
+	background-image: url("../images/button_active_bottomleft.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.dijitRtl .edr .ButtonContainerBottomLeft {
+	width: 2px;
+	height: 4px;
+	background-image: url("../images/button_active_bottomright.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.widgetsLtr .edr .ButtonContainerBottomLeft {
+	width: 2px;
+	height: 4px;
+	background-image: url("../images/button_active_bottomleft.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.dj_ie .edr .ButtonContainerBottomLeft {
+	float: left;
+}
+
+.dj_ie.dijitRtl .edr .ButtonContainerBottomLeft {
+	float: right;
+}
+
+.edr .ButtonContainerBottomMiddle {
+	margin: -4px 2px 0px; 
+	background-image: url("../images/button_active_bottomcenter.png");
+	background-position: top center;
+	height: 4px;
+}
+
+.dj_ie .edr .ButtonContainerBottomMiddle {
+	margin: 0px 2px 0px 2px; 
+}
+	
+.edr .ButtonContainerMiddle {
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.edr .ButtonContainerMiddleLeft {
+}
+
+.edr .ButtonContainerMiddleMiddle {
+}
+
+.edr .ButtonContent {
+	margin: 0px 3px;
+}
+
+.edr .ButtonContainer .dijitButtonNode {
+	width:100%;
+	border: none;
+	background: none;
+	margin-top: -1px !important;
+}
+
+.edr .dijitButtonActive .dijitButtonNode {
+	/* border-color:#366dba;
+	background: #ededed url("images/buttonActive.png") bottom repeat-x; */
+/*	border: none; @@tmp@@*/
+}
+/*-----------------------------------------
+	DISABLED BUTTONS START
+------------------------------------------*/
+.edr .dijitButtonDisabled .ButtonContainerTop {
+	background-image: url("../images/button_disabled_topright.png");
+}
+
+.edr .dijitButtonDisabled .ButtonContainerTopLeft {
+	background-image: url("../images/button_disabled_topleft.png");
+}
+
+.edr .dijitButtonDisabled .ButtonContainerTopMiddle {
+	background-image: url("../images/button_disabled_topcenter.png");
+}
+
+.edr .dijitButtonDisabled .ButtonContainerBottom {
+	background-image: url("../images/button_disabled_bottomright.png");
+}
+
+.edr .dijitButtonDisabled .ButtonContainerBottomLeft {
+	background-image: url("../images/button_disabled_bottomleft.png");
+}
+
+.edr .dijitButtonDisabled .ButtonContainerBottomMiddle {
+	background-image: url("../images/button_disabled_bottomcenter.png");
+}
+/*-----------------------------------------
+	DISABLED BUTTONS START
+------------------------------------------*/
+/*-----------------------------------------
+	HOVERED BUTTONS START
+------------------------------------------*/
+.edr .dijitButtonHover .ButtonContainerTop {
+	background-image: url("../images/button_hover_topright.png");
+}
+
+.edr .dijitButtonHover .ButtonContainerTopLeft {
+	background-image: url("../images/button_hover_topleft.png");
+}
+
+.edr .dijitButtonHover .ButtonContainerTopMiddle {
+	background-image: url("../images/button_hover_topcenter.png");
+}
+
+.edr .dijitButtonHover .ButtonContainerBottom {
+	background-image: url("../images/button_hover_bottomright.png");
+}
+
+.edr .dijitButtonHover .ButtonContainerBottomLeft {
+	background-image: url("../images/button_hover_bottomleft.png");
+}
+
+.edr .dijitButtonHover .ButtonContainerBottomMiddle {
+	background-image: url("../images/button_hover_bottomcenter.png");
+}
+/*-----------------------------------------
+	HOVERED BUTTONS START
+------------------------------------------*/

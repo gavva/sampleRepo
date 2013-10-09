@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+ "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+       
+<struts-config>
+	<form-beans>
+		<form-bean name="renderActionForm" type="org.apache.struts.action.DynaActionForm">
+			<display-name>RenderActionForm</display-name>
+			<form-property name="q" type="java.lang.String"/>
+			<form-property name="query" type="java.lang.String"/>
+		</form-bean>
+	</form-beans>
+	
+	<global-forwards>
+		<forward name="initialize" path="/search.do?action=index"/>
+<!--		<forward name="search" path="/search.do?action=index"/>-->
+<!--		<forward name="searchRedirect" path="/search.do?action=index" redirect="true"/>-->
+	</global-forwards>
+
+	<action-mappings>
+		<action
+				path="/render"
+				type="com.ibm.es.oze.searchui.actions.RenderAction"
+				name="renderActionForm"
+		>
+			<forward name="showSearch" path="/layouts/standard.jsp" />
+			<forward name="showPortlet" path="/layouts/portlet.jsp" />
+		</action>
+		<action
+				path="/search"
+				type="com.ibm.es.oze.searchui.actions.ForwardAction"
+				name="renderActionForm"
+				parameter="action">
+			<forward name="renderPage" path="/render.do?command=render"/>
+		</action>
+		
+		<action
+				path="/login"
+				type="com.ibm.es.nuvo.ediscovery.ui.actions.LoginAction"
+				validate="false"
+				parameter="action">
+			<forward name="success" path="/login.jsp" />
+			<forward name="error" path="/login.jsp" />
+		</action>
+		
+		<action
+				path="/logout"
+				type="com.ibm.es.nuvo.ediscovery.ui.actions.LoginAction"
+				scope="request"
+				parameter="action">
+			<forward name="success" path="/login.jsp" redirect="true"/>
+		</action>
+		
+		<!-- Search Actions Begin -->
+<!--		<action-->
+<!--				path="/search"-->
+<!--				type="com.ibm.es.oze.searchui.actions.SearchAction"-->
+<!--				validate="false"-->
+<!--				parameter="action"-->
+<!--				scope="request">-->
+<!--			<forward name="index" path="/index.jsp" />-->
+<!--		</action>		     -->
+		
+		<!-- Customize Actions Begin -->
+		<action
+				path="/customize"
+				type="com.ibm.es.oze.searchui.actions.CustomizeAction"
+				validate="false"
+				parameter="action"
+				scope="request">
+			<forward name="config" path="/search/customize/config.jsp" />
+		</action>		     
+						     
+		<!-- Facet Actions Begin -->
+<!--		<action -->
+<!--				path="/facets"-->
+<!--				type="com.ibm.es.oze.searchui.actions.FacetAction"-->
+<!--				validate="false"-->
+<!--				parameter="action">-->
+<!--		</action>	     -->
+		
+		<!-- TopResultAnalysis Actions Begin -->
+<!--		<action-->
+<!--				path="/topResultsChart"-->
+<!--				type="com.ibm.es.oze.searchui.actions.TopResultsChartAction"-->
+<!--				validate="false"-->
+<!--				parameter="action">-->
+<!--		</action>-->
+		
+		<!-- Preferences Actions Begin -->
+<!--		<action-->
+<!--				path="/preferences"-->
+<!--				type="com.ibm.es.oze.searchui.actions.PreferencesAction"-->
+<!--				validate="false"-->
+<!--				parameter="action">-->
+<!--		</action>-->
+		
+		<!-- TextAnalytics Actions Begin -->
+<!--		<action-->
+<!--				path="/category"-->
+<!--				type="com.ibm.es.oze.searchui.actions.CategoryAction"-->
+<!--				validate="false"-->
+<!--				parameter="action">-->
+<!--		</action>-->
+		
+<!--		<action-->
+<!--				path="/analytics"-->
+<!--				type="com.ibm.es.oze.searchui.analytics.actions.ICAAction"-->
+<!--				validate="false"-->
+<!--				parameter="action">-->
+<!--		</action>		-->
+		
+<!--		 QueryTree Actions Begin -->
+<!--		<action-->
+<!--				path="/queryTree"-->
+<!--				type="com.ibm.es.oze.searchui.actions.QueryTreeAction"-->
+<!--				validate="false"-->
+<!--				parameter="action">-->
+<!--		</action>-->
+		
+		<!-- Preview Actions Begin -->
+<!--		<action-->
+<!--				path="/preview"-->
+<!--				type="com.ibm.es.oze.searchui.util.RetrievePreviewServlet"-->
+<!--				validate="false"-->
+<!--				parameter="action">-->
+<!--		</action>-->
+		
+		<!-- Type Ahead Actions Begin -->
+<!--		<action-->
+<!--				path="/typeAhead"-->
+<!--				type="com.ibm.es.oze.searchui.actions.TypeAheadAction"-->
+<!--				validate="false"-->
+<!--				parameter="action">-->
+<!--		</action>-->
+	</action-mappings>
+
+	<!-- for portlet start -->
+	<!--Controller-->
+	<controller processorClass="com.ibm.portal.struts.portlet.WpRequestProcessor">
+	</controller>	 	
+	<!-- for portlet end -->
+	
+<!--	<plug-in className="com.ibm.es.oze.searchui.actions.InitAction"></plug-in>  	-->
+</struts-config>

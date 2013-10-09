@@ -1,0 +1,38 @@
+<div class="SearchApplicationCustomizePane AnalyticsOptionsPane">
+<table style="margin-bottom: 1.5em;">
+	<tbody>
+		<tr><th></th><th>${messages_customizer_common_default}</th><th>${messages_customizer_common_available}</th></tr>
+		<tr configkey="analytics.deviations.numberOfResults" messagekey="customizer.preferences.analytics.deviations.numberOfResults" configtype="numberlist"><td></td><td><input type="text" value="" class="dijitComboBox" style="width: 60px;" /></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+	</tbody>
+</table>
+<table>
+	<tbody>
+		<tr configkey="analytics.deviations.numberOfCharts" messagekey="customizer.preferences.analytics.deviations.numberOfCharts" ><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<tr configkey="analytics.deviations.showLineInChart" messagekey="customizer.preferences.analytics.deviations.showLineInChart" ><td></td><td style="width: 180px;"><input dojoType="dijit.form.CheckBox" value="" /></td></tr>
+		<tr configkey="analytics.deviations.defaultSortBy" messagekey="customizer.preferences.analytics.deviations.defaultSortBy" configtype="select"><td></td><td><select dojoType="dijit.form.FilteringSelect"><option value="frequency">${messages_customizer_preferences_analytics_sortByFrequency}</option><option value="correlation">${messages_customizer_preferences_analytics_sortByCorrelation}</option></select></td></tr>
+		<tr configkey="analytics.deviations.defaultShowTarget" messagekey="customizer.preferences.analytics.deviations.defaultShowTarget" configtype="select"><td></td><td><select dojoType="dijit.form.FilteringSelect"><option value="keywords">${messages_customizer_analytics_common_listTarget_keyword}</option><option value="subfacets">${messages_customizer_analytics_common_listTarget_subcategory}</option></select></td></tr>
+		<tr configkey="analytics.deviations.defaultTimeScale" messagekey="customizer.preferences.analytics.deviations.defaultTimeScale" configtype="select">
+			<td></td>
+			<td>
+				<select dojoType="dijit.form.FilteringSelect">
+					<option value="year">${messages_customizer_$_year}</option>
+					<option value="month">${messages_customizer_$_month}</option>
+					<option value="day">${messages_customizer_$_day}</option>
+					<option value="month_of_year">${messages_customizer_$_month_of_year}</option>
+					<option value="day_of_month">${messages_customizer_$_day_of_month}</option>
+					<option value="day_of_week">${messages_customizer_$_day_of_week}</option>
+				</select>
+			</td>
+		</tr>	
+		<tr configkey="analytics.deviations.barColorOfMultiChart" messagekey="customizer.preferences.analytics.deviations.barColorOfMultiChart" configtype="select">
+			<td></td>
+			<td>
+				<select dojoType="dijit.form.FilteringSelect">
+					<option value="legend">${messages_customizer_preferences_analytics_barColorOfMultiChart_label_legend}</option>
+					<option value="index">index</option>
+				</select>
+			</td>
+		</tr>				
+	</tbody>
+</table>
+</div>

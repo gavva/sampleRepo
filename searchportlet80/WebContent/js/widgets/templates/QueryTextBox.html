@@ -1,0 +1,26 @@
+<div style="position:relative;">
+	<div dojoAttachPoint="queryArea" style="position:absolute;right:0px;width:100%;height:100%;">
+		<div style="width:300px;position:absolute;left:0px;top:8px;">
+			<a dojoAttachPoint="hideQueryLink"  dojoAttachEvent="onclick: hideQueryArea"
+				href="javascript:;" style="color:#003063;">${hidearea_label}</a>
+		</div>
+		<div dojoAttachPoint="queryHelp" style="width:200px;position:absolute;right:0px;bottom:25px;">
+			<a href="javascript:;" style="float:right;color:#003063;" onclick="EDR.viewHelp('iiysuqysyntx.htm?noframes=true')">${message_queryHelp}</a>
+		</div>
+		<div dojoAttachPoint="textInputContainer"
+			style="position:absolute;right:0px;bottom:0px;width:100%;height:22px;">
+			<label for="${prefix}mainTextInput" class="hiddenAccessible">${searchQueryInput}</label>
+			<input id="${prefix}mainTextInput" dojoAttachPoint="textInput" type="text" style="width:100%;height:20px;border:1px solid #7b9ebd" autocomplete="off" role="textbox" wairole="textbox" aria-haspopup="true" aria-autocomplete="list"></input>
+		</div>
+		<div dojoAttachPoint="textAreaContainer"
+		style="position:absolute;right:0px;bottom:0px;width:100%;height:38px;">
+			<label for="${prefix}mainTextArea" class="hiddenAccessible">${searchQueryInput}</label>
+			<textarea id="${prefix}mainTextArea" dojoAttachPoint="textArea" style="width:100%;height:36px;overflow:auto;border:1px solid #7b9ebd" role="textbox" wairole="textbox" aria-haspopup="true" aria-autocomplete="list"></textarea>
+		</div>
+	</div>
+	<!-- div dojoAttachPoint="showHideQueryArea" style="position:absolute;right:0px;width:100%;height:100%;">
+		<div style="width:200px;position:absolute;left:0px;top:8px;">
+			<a dojoAttachPoint="showQueryLink" href="javascript:;" style="color:#003063;">${message_queryHelp}</a>
+		</div>
+	</div -->
+</div>

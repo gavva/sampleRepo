@@ -1,0 +1,41 @@
+<div class="portlet" dojoAttachPoint="mainLayout">
+
+	<div class="header" dojoAttachPoint="headerNode">
+	
+		<div class="top">
+			<div class="left"></div>
+			<div class="middle" dojoAttachPoint="titleNode">
+				<div class="title" dojoAttachPoint="titleTextNode">${title}</div>
+				<div class="collapse" dojoAttachPoint="collapsableNode" style="display:none;">
+					<a class="link" href="javascript:;" dojoAttachEvent="onclick:minimize">
+						<img src="images/title_min16.png"/>
+					</a>
+					<a class="link" href="javascript:;" dojoAttachEvent="onclick:maximize">
+						<img src="images/title_max16.png"/>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		 <div class="bottom">
+		 	<div class="left"></div>
+		 	<div class="middle"></div>
+		 </div>
+		 
+	</div>	
+	
+	<div class="content" dojoAttachPoint="containerNode"></div>	
+			
+	<div class="buttonBar" dojoAttachPoint="buttonBarNode" style="display:none">	
+		<div class="left"></div>
+		<div class="middle">
+			<div class="buttons" dojoAttachPoint="buttonNode">&nbsp;</div>	
+		</div>
+	</div>
+	
+	<div class="footer" dojoAttachPoint="footerNode">	
+		<div class="left"></div>
+		<div class="middle"></div>
+	</div>
+	
+</div>

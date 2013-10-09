@@ -1,0 +1,20 @@
+<div>
+	<form dojoAttachPoint="tpaOptionsForm" style="width:100%;height:100%;" onSubmit="return false;">
+		<div style="padding:5px;">
+			<label>${label_intro}&nbsp;</label>
+			<a href="javascript:;" onclick="EDR.viewHelp('iiysultopresults.htm?noframes=true')">
+				<img src="${imgBasePath}help_16.png" title="${label_tooltip_help}" alt="${label_tooltip_help}" style="vertical-align: top;">
+			</a>
+			<br/><br/>
+			<label>${label_intro2}</label><br/><br/>
+			<label>${label_showtpa}:</label>
+			<div style="height:4px;">&nbsp;</div>
+			<div role="radiogroup">
+				<input id="${prefix}showTPAYes" dojoType="dijit.form.RadioButton" value="Yes" checked="true" name="showTPA"/>
+				<label for="${prefix}showTPAYes">${label_yes}</label>&nbsp;
+				<input id="${prefix}showTPANo" dojoType="dijit.form.RadioButton" value="No" name="showTPA"/>
+				<label for="${prefix}showTPANo">${label_no}</label>
+			</div>
+		</div>
+	</form>	
+</div>

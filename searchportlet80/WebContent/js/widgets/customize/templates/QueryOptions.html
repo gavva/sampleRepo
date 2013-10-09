@@ -1,0 +1,65 @@
+<div class="SearchApplicationCustomizePane QueryOptionsPane">
+<div style="width:98%;padding:5px;">
+<div style="width:48%;float:left;">
+${messages_customizer_query_section1}:
+<table>
+	<tbody>
+		<tr configkey="preferences.spellCorrections" messagekey="prompt.advanced.spellCorrections" configtype="yesno"><td></td><td><input dojoType="dijit.form.CheckBox" value="" /></td></tr>
+<!-- 	<tr configkey="builtQueryString.show" configtype="bool"><td></td><td><input dojoType="dijit.form.CheckBox" value="" /></td></tr> -->
+		<tr configkey="extraQueryData.show" configtype="bool"><td></td><td><input dojoType="dijit.form.CheckBox" value="" /></td></tr>
+<!--		<tr configkey="refineResults.show" configtype="bool"><td></td><td><input dojoType="dijit.form.CheckBox" value="" /></td></tr> -->
+<!-- 		<tr configkey="preferences.defaultCollections"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr> -->
+		<tr configkey="preferences.nearDuplicateDetection" messagekey="prompt.advanced.nearDuplicateDetection" configtype="yesno"><td></td><td><input dojoType="dijit.form.CheckBox" value="" /></td></tr>
+		<tr configkey="preferences.summaryLength" messagekey="prompt.advanced.summaryLength"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+	</tbody>
+</table>
+</div>
+<div style="width:48%;float:left;">
+<br />
+<table>
+	<tbody>
+		<tr configkey="preferences.summaryLength.level1" messagekey="prompt.advanced.summaryLength.level1"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<tr configkey="preferences.summaryLength.level2" messagekey="prompt.advanced.summaryLength.level2"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<tr configkey="preferences.summaryLength.level3" messagekey="prompt.advanced.summaryLength.level3"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<tr configkey="preferences.summaryLength.level4" messagekey="prompt.advanced.summaryLength.level4"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<tr configkey="preferences.summaryLength.level5" messagekey="prompt.advanced.summaryLength.level5"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+	</tbody>
+</table>
+</div>
+</div>
+<hr style="width:100%; clear: both;"/>
+<div>${messages_customizer_query_typeAhead_section}:
+<table>
+	<tbody>
+		<tr configkey="typeAhead.search.numberOfResults" messagekey="customizer.typeAhead.search.numberOfResults"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<tr configkey="typeAhead.search.mode" messagekey="customizer.typeAhead.search.mode"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<tr configkey="typeAhead.facet.numberOfResults" messagekey="customizer.typeAhead.facet.numberOfResults"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<tr configkey="typeAhead.documentlabel.numberOfResults" messagekey="customizer.typeAhead.category.numberOfResults"><td></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+	</tbody>
+</table>
+</div>
+<hr style="width:100%; clear: both;"/>
+<div>
+${messages_customizer_query_section2}:
+<table>
+	<thead>
+		<tr><th>${messages_filterBy_fileType_name}</th><th>${messages_filterBy_fileType_extensions}</th></tr>
+	</thead>
+	<tbody dojoAttachPoint="fileTypeFilterBody">
+	</tbody>
+</table>
+<div dojoType="widgets.Button"  dojoAttachEvent="onClick: _addFileTypeRow">${messages_button_addRow}</div>
+</div>
+<!-- <hr />
+<div>
+${messages_customizer_query_section3}:
+<table>
+	<thead>
+		<tr><th>${messages_filterBy_custom_name}</th><th>${messages_filterBy_custom_value}</th></tr>
+	</thead>
+	<tbody dojoAttachPoint="customFilterBody">
+	</tbody>
+</table>
+<button dojoType="dijit.form.Button" dojoAttachEvent="onClick: _addCustomFilterRow">${messages_button_addRow}</button>
+</div> -->
+</div>

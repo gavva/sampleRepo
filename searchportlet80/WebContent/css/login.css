@@ -1,0 +1,219 @@
+/*********************** ES COPYRIGHT START  *********************************
+  @copyright(disclaimer)
+  
+  Licensed Materials - Property of IBM
+  5724-Z21
+  (C) Copyright IBM Corp. 2003, 2012
+  
+  US Government Users Restricted Rights
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+  
+  DISCLAIMER OF WARRANTIES :
+  
+  Permission is granted to copy and modify this Sample code, and to
+  distribute modified versions provided that both the copyright
+  notice, and this permission notice and warranty disclaimer appear
+  in all copies and modified versions.
+  
+  THIS SAMPLE CODE IS LICENSED TO YOU "AS-IS".
+  IBM  AND ITS SUPPLIERS AND LICENSORS  DISCLAIM
+  ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, IN SUCH SAMPLE CODE,
+  INCLUDING THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+  WILL IBM OR ITS LICENSORS OR SUPPLIERS BE LIABLE FOR ANY DAMAGES ARISING
+  OUT OF THE USE OF  OR INABILITY TO USE THE SAMPLE CODE, DISTRIBUTION OF
+  THE SAMPLE CODE, OR COMBINATION OF THE SAMPLE CODE WITH ANY OTHER CODE.
+  IN NO EVENT SHALL IBM OR ITS LICENSORS AND SUPPLIERS BE LIABLE FOR ANY
+  LOST REVENUE, LOST PROFITS OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+  CONSEQUENTIAL,INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS
+  OF THE THEORY OF LIABILITY, EVEN IF IBM OR ITS LICENSORS OR SUPPLIERS
+  HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  
+  @endCopyright
+ *********************** ES COPYRIGHT END  ***********************************/
+
+/******************************************************/
+/* Log In classes */
+/******************************************************/
+
+.edr #login-distance {
+	width:1px;
+	height:50%;
+	margin-bottom:-179px; /* half of container's height (280px) plus banner height (39px) */
+	float:left;
+}
+
+.edr #box {
+	width: 300px;
+}
+
+.edr .white-box {
+	clear:left;
+	position: relative;
+	text-align:left;	
+	border: 1px solid #666666;
+	background-color: #FFF;
+	margin: 0 auto;
+	opacity:.85;
+	filter: alpha(opacity=85); 
+	-moz-opacity: 0.85;
+	padding: 10px;
+}
+
+.edr.login .error {
+	width: 250px;
+	margin-bottom: 10px;
+}
+
+.edr.login .text {
+	margin-bottom: 20px;
+}
+
+.edr.login form fieldset {
+	padding: 10px;
+	margin: 0;
+	border: 0;
+}
+
+.edr.login form fieldset legend {
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.edr.login form fieldset .ic {
+	margin-bottom: 10px;
+}
+	
+.edr.login form label {
+	color: #000;
+	margin: 0;
+	text-align: left;
+	padding: 0;
+}
+
+.edr.login form input {
+	margin: 0;
+	opacity: 1;
+}
+
+.edr.login form button {
+	float: left;
+}
+
+.edr.login #form-indicator {
+	display: none;
+}
+
+.edr.login .progress {
+	padding-left: 5px;
+	float: left;
+}
+
+.edr.login .copyright {
+	clear: both;
+	padding-top: 20px;
+	text-align: left;
+	font-size: 11px;
+}
+
+/*-----------------------------------------
+	Registration style information
+------------------------------------------*/
+
+.edr #registration-box {
+	height: 23em;
+	width: 40em;	
+}
+
+.dj_ie .edr #registration-box {
+	height: 27em;	
+}
+
+.edr #repository-radio-buttons {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.edr #registrationForm .input-text {
+	margin-bottom: 0.7em;
+	margin-top: 0.2em;
+	float: left;
+}
+
+.edr .register-fields label {
+	width: 10em;	
+	float: left;
+}
+
+.edr #registrationForm br {
+	clear: both;	
+}
+
+.edr #registrationForm p {
+	margin-top: 0;	
+}
+
+.edr #registrationForm p {
+	line-height: 1em;	
+}
+
+.edr #p8-registration-fields label,
+.edr #p8-registration-fields .input-text, 
+.edr #cm-registration-fields label,
+.edr #cm-registration-fields .input-text {
+	margin-left: 15%;
+	width: 70%;	
+}
+
+.dj_ie .edr .register-fields {
+	margin-left: 10%;
+	width: 80%;
+}
+
+.edr #registration-buttons {
+	margin-left: 40%;
+	position: absolute;
+	bottom: 1em;	
+}
+
+.edr #registration-buttons .dijitButtonNode {
+	margin-left: 1em;	
+}
+	
+/*-----------------------------------------
+	"REQUIRED" TOOLTIPS BEGIN
+------------------------------------------*/
+
+.edr.login .dijitTooltipContainer {
+	border: 0px;
+}
+
+.edr.login .dijitTooltip, .login .dijitTooltipContents {
+	color: red;	
+}
+
+.edr.login .dijitTooltipRight {
+	padding-left: 3px;
+}
+
+.edr.login .dijitTooltipRight .dijitTooltipConnector {
+	/* the arrow piece for tooltips to the right of an element, bottom borders aligned */
+	left: 0px;
+	bottom: 7px;
+	background-image: none;
+	width:16px;
+	height:14px;
+}
+
+.dj_ie6 .edr .login .dijitTooltipRight .dijitTooltipConnector {
+	background-image: none;
+}
+
+/*-----------------------------------------
+	"REQUIRED" TOOLTIPS END
+------------------------------------------*/
+

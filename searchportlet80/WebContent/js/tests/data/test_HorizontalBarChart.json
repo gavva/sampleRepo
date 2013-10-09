@@ -1,0 +1,20 @@
+{
+	maxCount:895,
+	items:[
+		{itemLabel:"1",itemId:"1",count:895},
+		{itemLabel:"2",itemId:"3",count:258},
+		{itemLabel:"3",itemId:"1",count:895},
+		{itemLabel:"4",itemId:"3",count:258},
+		{itemLabel:"5",itemId:"1",count:895},
+		{itemLabel:"6",itemId:"3",count:258},
+		{itemLabel:"7",itemId:"1",count:895},
+		{itemLabel:"8",itemId:"3",count:258},
+		{itemLabel:"9",itemId:"1",count:895},
+		{itemLabel:"10",itemId:"3",count:258},
+		{itemLabel:"11",itemId:"3",count:258},
+		{itemLabel:"12",itemId:"3",count:258},
+		{itemLabel:"13",itemId:"3",count:258},
+		{itemLabel:"14",itemId:"3",count:258},
+		{itemLabel:"end",itemId:"4",count:71}
+	]
+}

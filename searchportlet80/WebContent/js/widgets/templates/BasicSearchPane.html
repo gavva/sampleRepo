@@ -1,0 +1,21 @@
+<div>
+	<form dojoAttachPoint="basicSearchForm" onSubmit="return false;">
+		<div class="searchFormInput">
+			<div class="inputRow">
+				<label dojoAttachPoint="keyLabel" accesskey="k" for="${prefix}basicKeywords">${prompt_search}:&nbsp;
+					<span dojoAttachPoint="keywordErr" class="noError"></span>
+				</label>
+				<br>
+				<input type="text" class="textbox" name="basicKeywords" id="${prefix}basicKeywords" dojoAttachPoint="keywords"
+					dojoType="dijit.form.TextBox" trim="true" />			
+		    </div>	
+		</div>				
+		<div>
+			<div class="inputRow" style="overflow:hidden;">
+				<a dojoAttachPoint="searchOptionsLink" href="javascript:;" style="float:right;margin-bottom:0px;">
+					${prompt_searchOptions}
+				</a>
+		    </div>	
+		</div>		
+	</form>		
+</div>

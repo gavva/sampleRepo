@@ -1,0 +1,30 @@
+<div class="SearchApplicationCustomizePane AnalyticsOptionsPane">
+<table style="margin-bottom: 1.5em;">
+	<tbody>
+		<tr configkey="analytics.facetPairs.defaultView" messagekey="customizer.preferences.analytics.facetPairs.defaultView" configtype="select">
+			<td></td>
+			<td>
+				<select dojoType="dijit.form.FilteringSelect">
+					<option value="table">${messages_customizer_preferences_analytics_facetPairs_defaultView_flat}</option>
+					<option value="bird">${messages_customizer_preferences_analytics_facetPairs_defaultView_grid}</option>
+					<option value="grid">${messages_customizer_preferences_analytics_facetPairs_defaultView_table}</option>
+				</select>
+			</td>
+		</tr>
+		<tr configkey="analytics.facetPairs.defaultRowShowTarget" messagekey="customizer.preferences.analytics.facetPairs.defaultRowShowTarget" configtype="select"><td></td><td><select dojoType="dijit.form.FilteringSelect"><option value="keywords">${messages_customizer_analytics_common_listTarget_keyword}</option><option value="subfacets">${messages_customizer_analytics_common_listTarget_subcategory}</option></select></td></tr>	
+		<tr configkey="analytics.facetPairs.defaultColumnShowTarget" messagekey="customizer.preferences.analytics.facetPairs.defaultColumnShowTarget" configtype="select"><td></td><td><select dojoType="dijit.form.FilteringSelect"><option value="keywords">${messages_customizer_analytics_common_listTarget_keyword}</option><option value="subfacets">${messages_customizer_analytics_common_listTarget_subcategory}</option></select></td></tr>	
+		<tr configkey="analytics.facetPairs.defaultListSortBy" messagekey="customizer.preferences.analytics.facetPairs.defaultListSortBy" configtype="select"><td></td><td><select dojoType="dijit.form.FilteringSelect"><option value="frequency">${messages_customizer_preferences_analytics_sortByFrequency}</option><option value="correlation">${messages_customizer_preferences_analytics_sortByCorrelation}</option></select></td></tr>
+		<!-- <tr configkey="analytics.facetPairs.defaultRowSortBy" messagekey="customizer.preferences.analytics.facetPairs.defaultRowSortBy" configtype="select"><td></td><td><select dojoType="dijit.form.FilteringSelect"><option value="frequency">${messages_customizer_preferences_analytics_sortByFrequency}</option><option value="correlation">${messages_customizer_preferences_analytics_sortByCorrelation}</option></select></td></tr> -->
+		<!-- <tr configkey="analytics.facetPairs.defaultColumnSortBy" messagekey="customizer.preferences.analytics.facetPairs.defaultColumnSortBy" configtype="select"><td></td><td><select dojoType="dijit.form.FilteringSelect"><option value="frequency">${messages_customizer_preferences_analytics_sortByFrequency}</option><option value="correlation">${messages_customizer_preferences_analytics_sortByCorrelation}</option></select></td></tr> -->
+	</tbody>
+</table>
+<table>
+	<tbody>
+		<tr><th></th><th>${messages_customizer_common_default}</th><th>${messages_customizer_common_available}</th></tr>
+		<tr configkey="analytics.facetPairs.numberOfRowResults" messagekey="customizer.preferences.analytics.facetPairs.numberOfRowResults" configtype="numberlist"><td></td><td><input type="text" value="" class="dijitComboBox" style="width: 60px;" /></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<!-- <tr configkey="analytics.facetPairs.numberOfRowsInTable" messagekey="customizer.preferences.analytics.facetPairs.numberOfRowsInTable" configtype="numberlist"><td></td><td><input type="text" value="" class="dijitComboBox" style="width: 60px;" /></td><td><input type="text" value="" class="dijitComboBox" /></td></tr> -->
+		<tr configkey="analytics.facetPairs.numberOfColumnResults" messagekey="customizer.preferences.analytics.facetPairs.numberOfColumnResults" configtype="numberlist"><td></td><td><input type="text" value="" class="dijitComboBox" style="width: 60px;" /></td><td><input type="text" value="" class="dijitComboBox" /></td></tr>
+		<!--  <tr configkey="analytics.facetPairs.numberOfColumnsInTable" messagekey="customizer.preferences.analytics.facetPairs.numberOfColumnsInTable" configtype="numberlist"><td></td><td><input type="text" value="" class="dijitComboBox" style="width: 60px;" /></td><td><input type="text" value="" class="dijitComboBox" /></td></tr> -->						
+	</tbody>
+</table>
+</div>

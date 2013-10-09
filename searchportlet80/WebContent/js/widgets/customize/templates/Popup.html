@@ -1,0 +1,37 @@
+<div class="dijitDialog customDialog_portlet CustomizerPopup" style="position: absolute; right: 30px; bottom: 30px;">
+		
+	<div class="customDialog_header" dojoAttachPoint="titleBar" waiRole="dialog">
+
+		<div class="customDialog_top">
+			<div class="customDialog_left"></div>
+			<div class="customDialog_middle" dojoAttachPoint="titleNode">
+				<div class="customDialog_title" dojoAttachPoint="titleTextNode" style="color:white;">${messages_customizer_popup_label}</div>				
+			</div>
+		</div>
+
+		<div class="customDialog_bottom">
+			<div class="customDialog_left"></div>
+		 	<div class="customDialog_middle"></div>
+		</div>
+	
+	</div>
+	
+	<div class="customDialog_contentOuter" dojoAttachPoint="containerOuter">
+
+		<div style="background-color: #FDE8D7; opacity: 0.8; width: 480px;height: 56px;">
+			<div>
+				<span dojoType="widgets.Button" type="button" style="" dojoAttachEvent="onClick: onOpenClick" title="${messages_customizer_popup_button_open}">${messages_customizer_popup_button_open}</span>
+				<span dojoType="widgets.Button" type="button" style="" dojoAttachEvent="onClick: onRevertClick" title="${messages_customizer_popup_button_revert}">${messages_customizer_popup_button_revert}</span>
+				<span dojoType="widgets.Button" type="button" style="" dojoAttachPoint="saveButton" dojoAttachEvent="onClick: onSaveClick" title="${customizer_popup_button_save}">${customizer_popup_button_save}</span>
+				<span dojoType="widgets.Button" type="button" style="" dojoAttachEvent="onClick: onCancelClick" title="${customizer_popup_button_exit}">${customizer_popup_button_exit}</span>				
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="customDialog_footer" dojoAttachPoint="altFooterNode">	
+		<div class="customDialog_left"></div>
+		<div class="customDialog_middle"></div>
+	</div>	
+	
+</div>

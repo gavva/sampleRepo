@@ -1,0 +1,209 @@
+/*********************** ES COPYRIGHT START  *********************************
+  @copyright(disclaimer)
+  
+  Licensed Materials - Property of IBM
+  5724-Z21
+  (C) Copyright IBM Corp. 2003, 2012
+  
+  US Government Users Restricted Rights
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+  
+  DISCLAIMER OF WARRANTIES :
+  
+  Permission is granted to copy and modify this Sample code, and to
+  distribute modified versions provided that both the copyright
+  notice, and this permission notice and warranty disclaimer appear
+  in all copies and modified versions.
+  
+  THIS SAMPLE CODE IS LICENSED TO YOU "AS-IS".
+  IBM  AND ITS SUPPLIERS AND LICENSORS  DISCLAIM
+  ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, IN SUCH SAMPLE CODE,
+  INCLUDING THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+  WILL IBM OR ITS LICENSORS OR SUPPLIERS BE LIABLE FOR ANY DAMAGES ARISING
+  OUT OF THE USE OF  OR INABILITY TO USE THE SAMPLE CODE, DISTRIBUTION OF
+  THE SAMPLE CODE, OR COMBINATION OF THE SAMPLE CODE WITH ANY OTHER CODE.
+  IN NO EVENT SHALL IBM OR ITS LICENSORS AND SUPPLIERS BE LIABLE FOR ANY
+  LOST REVENUE, LOST PROFITS OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+  CONSEQUENTIAL,INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS
+  OF THE THEORY OF LIABILITY, EVEN IF IBM OR ITS LICENSORS OR SUPPLIERS
+  HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  
+  @endCopyright
+ *********************** ES COPYRIGHT END  ***********************************/
+   
+.edr .slidTabWidget {
+	float: right;
+}
+   
+.dijitRtl .edr .slidTabWidget {
+	float: left;
+}
+
+.edr .slideTabContainer {
+	position: relative;
+}
+
+.edr .slideTabContainer .tabTitle {
+	padding-left: 1px;
+	font-size: 12px;
+	font-weight: bold;
+	position:relative;
+	top:3px;
+}
+
+.dijitRtl .edr .slideTabContainer .tabTitle {
+	padding-left: 0px;
+	padding-right: 1px;
+}
+
+.edr .slideTabContainer .tabIcon {
+	width: 20px;
+	height: 20px;
+	position:absolute;
+/*	right:0; */
+	top:2px;
+}
+
+.dijitRtl .edr .slideTabContainer .tabIcon {
+/*	left:0;	*/
+}
+
+.edr .slideTabContainerTab {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 21px;
+}
+
+.edr .slideTabContainerTabLeft {
+/*	background-image: url("../images/edisc_container_left_center.png"); */
+	background-image: url("../images/slide_left2.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 9px;
+	height: 21px;
+}
+
+.edr .slideTabContainerTabMiddle {
+/*	background-color: #FFF; */
+	background-repeat: repeat-x;
+	background-image: url('../images/slidetab_bg2.png');
+	background-color: #FFF;
+	position: absolute;
+	left: 9px;
+	right: 9px;
+	top: 0px;
+	height: 21px;
+}
+
+.edr .slideTabContainerTabMiddleMiddle {
+	overflow:hidden;
+	cursor: pointer;
+	height: 21px;
+}
+
+.edr .slideTabContainerTabRight {
+/*	background-image: url("../images/edisc_container_right_center.png"); */
+	background-image: url("../images/slide_right2.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 9px;
+	height: 21px;
+}
+
+.edr .slideTabContainerMiddle {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 21px;
+	bottom: 9px;
+}
+
+.edr .slideTabContainerMiddleLeft {
+/*	background-image: url("../images/edisc_container_left_center.png"); */
+	background-image: url("../images/slide_left2.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	background-position: 0px -21px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 9px;
+}
+
+.edr .slideTabContainerMiddleMiddle {
+	background-repeat: repeat-x;
+	background-image: url('../images/slidetab_bg2.png');
+	background-color: #FFF;
+	background-position: 0px -21px;
+	position: absolute;
+	left: 9px;
+	right: 9px;
+	top: 0px;
+	bottom: 0px;
+	overflow:hidden;
+}
+
+.edr .slideTabContainerMiddleRight {
+/*	background-image: url("../images/edisc_container_right_center.png"); */
+	background-image: url("../images/slide_right2.png");
+	background-repeat: repeat-y;
+	background-color: transparent;
+	background-position: 0px -21px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 9px;
+}
+
+.edr .slideTabContainerBottom {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 9px;
+}
+
+.edr .slideTabContainerBottomLeft {
+	background-image: url("../images/slide_bottom_left.png");
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 9px;
+	height: 9px;
+}
+
+.edr .slideTabContainerBottomMiddle {
+	background-image: url("../images/slide_bottom_center.png");
+	background-repeat: repeat-x;
+	position: absolute;
+	left: 9px;
+	right: 9px;
+	top: 0px;
+	height: 9px;
+}
+
+.edr .slideTabContainerBottomRight {
+	background-image: url("../images/slide_bottom_right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 9px;
+	height: 9px;
+}

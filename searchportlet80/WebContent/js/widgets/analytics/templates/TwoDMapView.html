@@ -1,0 +1,24 @@
+<div class="AnalyticsPane TwoDMapView" style="background-image:url(images/edisc_messages_center.png); ">
+	<div style="padding: 5px;" dojoAttachPoint="toolbarDiv">
+		<div style="float:left;">
+			<label for="${prefix}twodmapVerticalTarget">${messages_rowTarget}</label>
+			<select id="${prefix}twodmapVerticalTarget" name="twodmapVerticalTarget"
+				dojoType="dijit.form.FilteringSelect"
+				dojoAttachEvent="onChange: _onVerticalTargetChanged">
+				<option value="keywords">${messages_keywords}</option>
+				<option value="subfacets">${messages_subfacets}</option>
+			</select>
+			
+			<label for="${prefix}twodmapHorizontalTarget">${messages_colTarget}</label>
+			<select id="${prefix}twodmapHorizontalTarget" name="twodmapHorizontalTarget"
+				dojoType="dijit.form.FilteringSelect"
+				dojoAttachEvent="onChange: _onHorizontalTargetChanged">
+				<option value="keywords">${messages_keywords}</option>
+				<option value="subfacets">${messages_subfacets}</option>
+			</select>
+			
+		</div>
+	</div>
+	<div style="width: 100%; height: 100%; position: relative; background-color: #F5F5F5; clear: both;" dojoAttachPoint="containerNode">
+	</div>
+</div>

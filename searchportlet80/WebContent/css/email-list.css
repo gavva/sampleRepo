@@ -1,0 +1,1291 @@
+/*********************** ES COPYRIGHT START  *********************************
+  @copyright(disclaimer)
+  
+  Licensed Materials - Property of IBM
+  5724-Z21
+  (C) Copyright IBM Corp. 2003, 2012
+  
+  US Government Users Restricted Rights
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+  
+  DISCLAIMER OF WARRANTIES :
+  
+  Permission is granted to copy and modify this Sample code, and to
+  distribute modified versions provided that both the copyright
+  notice, and this permission notice and warranty disclaimer appear
+  in all copies and modified versions.
+  
+  THIS SAMPLE CODE IS LICENSED TO YOU "AS-IS".
+  IBM  AND ITS SUPPLIERS AND LICENSORS  DISCLAIM
+  ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, IN SUCH SAMPLE CODE,
+  INCLUDING THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT
+  WILL IBM OR ITS LICENSORS OR SUPPLIERS BE LIABLE FOR ANY DAMAGES ARISING
+  OUT OF THE USE OF  OR INABILITY TO USE THE SAMPLE CODE, DISTRIBUTION OF
+  THE SAMPLE CODE, OR COMBINATION OF THE SAMPLE CODE WITH ANY OTHER CODE.
+  IN NO EVENT SHALL IBM OR ITS LICENSORS AND SUPPLIERS BE LIABLE FOR ANY
+  LOST REVENUE, LOST PROFITS OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+  CONSEQUENTIAL,INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS
+  OF THE THEORY OF LIABILITY, EVEN IF IBM OR ITS LICENSORS OR SUPPLIERS
+  HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  
+  @endCopyright
+ *********************** ES COPYRIGHT END  ***********************************/
+/*-----------------------------------------
+	SEARCH SYNTAX ERROR BEGIN
+------------------------------------------*/
+
+.edr .searchResultsHeaderTable { 
+	width: 100%;
+}
+
+.edr .email-search-error {
+	background-color: #ECF3FB;	
+	padding:9px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	overflow: auto;
+}
+
+.edr .query-error {
+	color: red;	
+}
+
+/*-----------------------------------------
+	SEARCH SYNTAX ERROR END
+------------------------------------------*/
+
+/*-----------------------------------------
+	NO RESULTS BEGIN
+------------------------------------------*/
+
+/*.edr #email-entry-empty-container {
+	width: 100%; 
+	background-color: #ECF3FB;
+}
+
+.edr #email-entry-empty {
+	width: 400px; 
+	margin: 0 auto; 
+	padding: 10px 0;	
+}*/
+
+/*-----------------------------------------
+	NO RESULTS END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	TOOLBAR BEGIN
+------------------------------------------*/
+
+/*
+.edr .results-toolbar-container {
+	margin: 0px;
+}
+
+.edr .results-toolbar {
+	background-color: #EBEBEB;
+	padding: 0px; 
+}
+.edr .results-toolbar.dijitToolbar {
+	height: 36px; 
+	line-height: 18px;
+	padding: 0px 4px;
+}
+*/
+/*
+.edr .results-toolbar.ToolbarContainer { 
+	height: 44px; 
+	line-height: 15px;
+} */
+
+/*.edr #results-container {
+	overflow: hidden;	
+	padding: 0px;
+}*/
+
+/*.edr .results-toolbar .ToolbarContainerMiddle {
+	height: 30px;  
+}*/
+
+.edr .results-toolbar .ToolbarContainerMiddleMiddle {
+	padding-top: 0px;
+	overflow:hidden;
+}
+
+/*.edr .dj_ie .results-toolbar #selectAllDiv {
+	margin-top: -3px;
+}*/
+
+.edr .results-toolbar .dijitButton {
+}
+
+/*.edr #results-middle {
+	margin-right: 10px;  
+}*/
+
+/*.edr #results-right {
+	text-align: right;
+	margin-right: 10px; 
+}*/
+
+/*.edr #results-count {
+	color: #000;
+	font-size: 1em;
+}
+
+.edr #results-count-1 {
+	display: inline;
+	width: 400px;
+	height: 35px;
+	margin-right: 15px;
+}
+
+.edr #results-count-1 label {
+	color: #666666;
+}
+
+.edr #results-selected {
+	color: #666666;
+}*/
+
+.edr .results-pagination {
+	color: #000;/*#4664A2;*/
+}
+
+.edr .results-pagination span.current {
+	color: #000;/*#4664A2;*/
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+.edr .results-pagination span.inactive {
+	color: #000;/*#4664A2;*/
+	font-weight: normal;
+	font-size: 10pt;
+}
+
+.edr .results-pagination a.active {
+	/*color: blue;*/ /*#000;*/
+	/*#4664A2;*/
+	font-weight: normal;
+	font-size: 10pt;
+	cursor: hand;
+}
+
+.edr .results-per-page {
+	/*padding-right: 10px;
+	position:relative;
+	top:-3px;
+	padding-top:2px; */
+}
+
+.edr .results-per-page-msg {
+/*	position:relative;
+	top:1px;
+	padding:0pt; */
+}
+
+.dj_ie .edr .results-per-page-msg {
+	top:2px;
+}
+
+.edr .results-per-page .dijitArrowButtonInner {
+	background-image: url("../images/arrow_down_blue_small.png");
+	width: 6px;
+	height: 5px; 
+}
+
+.edr .results-per-page .dojoxDropDownSelect{
+	position:relative;
+	top:-2px;
+}
+
+.dj_ie7 .edr .results-per-page .dojoxDropDownSelect{
+	position:relative;
+	top:3px;
+}
+
+.edr .ResultToolbarContent {
+	/*padding-right: 10px;
+	position:relative;
+	top:-3px;
+	padding-top:2px;
+	vertical-align:top*/
+}
+
+.edr .results-filter-by-msg {
+/*	position:relative;
+	top:1px;
+	padding:0pt; */
+}
+
+.dj_ie .edr .results-filter-by-msg {
+	top:2px;
+}
+
+.edr .ResultToolbarContent .dijitArrowButtonInner {
+	background-image: url("../images/arrow_down_blue_small.png");
+	width: 6px;
+	height: 5px; 
+}
+
+.edr .ResultToolbarContent .dojoxDropDownSelect{
+	position:relative;
+	top:-2px;
+}
+
+.dj_ie7 .edr .ResultToolbarContent .dojoxDropDownSelect{
+	position:relative;
+	top:3px;
+}
+
+/*.edr #results-displayed {
+	color: #000;
+}*/
+
+.edr .results-per-page div.drop-down {
+	padding: 0px 9px 0px 9px;
+}
+
+/* Lower email results toolbar */
+/*.edr #searchRightPaneDiv .results-toolbar .dijitToolbar#lowerEmailResultToolbarContainer {
+	background-image: none; 
+}
+
+.edr .results-toolbar #lowerEmailResultToolbarContainer .ToolbarContainerMiddle {
+}
+
+.edr #email-results-container #lowerEmailResultToolbarContainer .ToolbarContainerMiddle {
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.edr #email-results-container #lowerEmailResultToolbarContainer .ToolbarContainerBottom {
+	background-image: url("../images/edisc_rounded_light_bottom_right.png");
+}
+
+.edr #email-results-container #lowerEmailResultToolbarContainer .ToolbarContainerBottom .ToolbarContainerBottomLeft {
+	background-image: url("../images/edisc_rounded_light_bottom_left.png");
+	border-color: #CCCCCC;
+}
+
+.edr #email-results-container #lowerEmailResultToolbarContainer .ToolbarContainerBottom .ToolbarContainerBottomMiddle {
+	border-color: #CCCCCC;
+}*/
+
+/* preview button */
+/*.edr .previewEmailIcon {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background-image: url(../images/preview_23.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .previewEmailIcon {
+	background-image: url(../images/preview_u_23.gif);
+}*/
+
+/* move to folder button */
+/*.edr .moveEmailIcon {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background-image: url(../images/folder_copyto_23.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .moveEmailIcon {
+	background-image: url(../images/folder_copyto_u_23.gif);
+}
+
+.edr #email_set_flag_disabled_icon {
+	color: #666666; 
+	text-align: center;
+}
+
+.edr #email_set_flag_icon {
+	text-decoration: none; 
+	text-align: center;
+	cursor: pointer;
+}*/
+
+/* set flag button */
+.edr .setEmailFlagIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/flag23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/* IE only */
+.dj_ie .edr .setEmailFlagIcon {
+}
+
+.edr .dijitButtonDisabled .setEmailFlagIcon {
+	background-image: url(../images/flag23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonHover .setEmailFlagIcon {
+	background-image: url(../images/flag26.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/* expand/collapse results */
+
+.edr .expandResultsIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/expand23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .expandResultsIcon {
+	background-image: url(../images/expand23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .searchBackwardIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/backward23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .searchBackwardIcon {
+	background-image: url(../images/backward23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+.edr .searchForwardIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/forward23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .searchForwardIcon {
+	background-image: url(../images/forward23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+.edr .openConfigDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/edit_display23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .openConfigDialogIcon {
+	background-image: url(../images/edit_display_d23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+.edr .saveSearchDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/save_flat23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .resetSearchButtonIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/reset23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .showSearchAreaButtonIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/query_text23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .hideSearchAreaButtonIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/refreshicon.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .exportSearchDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/export23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .exportSearchDialogIcon {
+	background-image: url(../images/export23_d.png);
+}
+
+.edr .deepInspectionDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/inspection-report23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .deepInspectionDialogIcon {
+	background-image: url(../images/inspection-report23_d.png);
+}
+
+.edr .cognosIntegrationDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/cognos_intg.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	position: relative;
+	top: 3px;	
+}
+
+.edr .facetSearchDialogIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/search23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .facetSearchDialogIcon {
+	background-image: url(../images/search23_d.png);
+}
+
+.edr .previousHighlightButton {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/prev_match23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .nextHighlightButtonIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/next_match23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+/*
+.edr .dijitButtonDisabled .saveSearchDialogIcon {
+	background-image: url(../images/save16t_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+*/
+
+.edr .ResultBottomBar .dijitButtonNode {
+	border: 0 none;
+}
+.edr .ResultButtomBar span.dijitButton {
+	margin: 0px 0px 0px 0px;
+}
+
+
+/*
+.edr .dijitButtonHover .printResultsIcon {
+	background-image: url(../images/expand26.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+*/
+.edr .collapseResultsIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/collapse23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .collapseResultsIcon {
+	background-image: url(../images/collapse23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+/* set flag button */
+.edr .printResultsIcon {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background-image: url(../images/print23.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .dijitButtonDisabled .printResultsIcon {
+	background-image: url(../images/print23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonHover .printResultsIcon {
+	background-image: url(../images/print26.png);
+	background-repeat: no-repeat;
+	background-color: transparent;	
+}
+
+.edr .dijitButtonDisabled .exportEmailIcon {
+	background-image: url(../images/export23_d.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/* layout buttons */
+.edr .layout1Icon {
+	margin-top: 2px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	background-image: url(../images/layout1.PNG);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .layout2Icon {
+	margin-top: 2px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	background-image: url(../images/layout2.PNG);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .layout3Icon {
+	margin-top: 2px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	background-image: url(../images/layout3.PNG);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.edr .layout4Icon {
+	margin-top: 2px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	background-image: url(../images/layout4.PNG);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/*
+.edr .disabledAppearance {
+    filter: alpha(opacity=20);  
+    -moz-opacity: 0.2;          
+    opacity: 0.2;               
+}
+
+.edr .normalAppearance {
+    filter: alpha(opacity=100); 
+    -moz-opacity: 1;            
+    opacity: 1;                 
+}
+*/
+
+.dj_ie .edr .mixedCheckbox {
+	margin-left: 4px;
+	margin-top: 3px;
+}
+
+/*.edr #lowerEmailResultToolbarContainer {
+	display: none;
+}*/
+
+.edr .headerColumnSplitter {
+	display: inline;	
+}
+
+.edr .ResultToolbarContent {
+	display: inline-block;
+}
+
+.dj_ie .edr .ResultToolbarContent {
+	display: inline;
+	zoom: 1;
+}
+
+.edr .ResultToolbarTable {
+	color: #293e5f;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.edr .ResultToolbarTable .disabledInfo {
+	visibility: hidden;
+}
+	
+/*-----------------------------------------
+	TOOLBAR END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	EMAIL RESULTS HEADER BEGIN
+------------------------------------------*/
+
+.edr .email-toolbar-cp {
+	/* height: 67px; *//* fixed height for the header */ 
+}
+	
+/*.edr #email-results-heading {
+	border-bottom: 1px inset #9b9b9b;
+	clear:both;
+}
+	
+.edr #email-list-header {
+	height: 20px;
+	color: #000;
+	font-weight: normal;
+	table-layout:fixed;
+}*/
+
+.edr .result-column-default {
+	width: 160px;
+	padding-top: 5px;
+}
+
+.edr .result-column-info {
+	background-color: #FFF;
+	width: 220px;
+}
+
+.edr .result-column-filetype {
+	padding-top: 5px;
+	width: 160px;
+	cursor: pointer;
+}
+
+.edr .result-column-score {
+	padding-top: 5px;	
+	width: 100px;
+}
+
+.edr .result-column-date {
+	padding-top: 5px;	
+	width: 120px;
+}
+
+.edr .result-column-title {
+	width: 340px;
+	font-size: medium;
+/*	font-style: italic; */
+}
+
+.edr .email-list td.result-column-thumbnail {
+	vertical-align: middle;
+}
+
+.edr .email-list .result-column-thumbnail img {
+	margin-left: 3px;
+}
+
+.edr .result-column-description-container {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.edr .result-column-description-container-forcebr {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	word-break: break-all;
+}
+
+.edr .result-column-description {
+	padding-bottom: 0.5em;
+}
+
+/*-----------------------------------------
+	EMAIL RESULTS HEADER END
+------------------------------------------*/
+
+
+/*-----------------------------------------
+	EMAIL RESULTS BEGIN
+------------------------------------------*/
+/*.edr .dj_ie #email-results-border-div {
+	top: 55px;
+}
+
+.edr #email-results-border-div {
+	border-left: solid 1px #CCCCCC;
+	border-right: solid 1px #CCCCCC;
+	border-bottom: solid 1px #CCCCCC;	
+	position: absolute;
+	top: 53px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	overflow-x: hidden;
+	overflow-y: auto;	
+}
+
+.edr #email-results-cp {
+	overflow:auto;
+	overflow-x: hidden; 
+}*/
+	
+/*.edr #email-results-data {
+	overflow:auto;
+	overflow-x: hidden;
+}
+
+.edr .email-list {	
+}*/
+	
+/*.edr #results-sort-by label {
+	font-size: 10px;
+}
+
+.edr #results-sort-by label {
+	color: #666666;
+}
+
+.edr #results-sort-by #sortKeySelect {
+	font-size: 10px;
+}
+
+.edr #results-sort-by .currentKey {
+}
+
+.edr #results-sort-by a.sortKey {
+	font-size: 10px;
+	cursor: hand;
+}
+
+.edr #results-sort-by a img {
+	padding-left: 3px;
+}*/
+/*
+.edr #results-sort-by .sort-asc {
+	background-image: url(../images/sort_up8.png);	
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+
+.edr #results-sort-by .sort-desc {
+	background-image: url(../images/sort_down8.png);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;	
+} */
+
+/*.edr #results-group-by {
+	margin-right: 15px;
+	font-size: 10px;
+	padding-top:2px;
+}
+
+.edr #results-group-by label {
+	color: #666666;
+}
+
+.edr #results-group-by .currentKey {
+	font-weight: bold;
+}
+
+.edr #results-group-by a.groupKey {
+	font-weight: normal;
+	cursor: hand;
+}*/
+
+.edr .email-list td {
+	vertical-align: top;
+}
+	
+.edr .email-list th.actions, td.actions {
+	width: 10%;
+}
+
+.edr .email-list th.togglegroup, td.togglegroup {
+	width: 1%;
+	text-align: center;
+	align: center;
+	vertical-align: bottom;
+}
+
+.edr .email-list th.date, td.date {
+	width: 16%;
+	padding-left: 10px
+}
+
+.edr .email-list-date {
+	margin-left: 5px;
+}
+
+.edr .email-list th.subject, td.subject {
+	width: 27%;
+}
+
+.edr .email-list th.from, td.from {
+	width: 57%;
+}
+
+.edr .email-list th.to, td.to {
+	width: 20%;
+}
+
+.edr .email-list td.from label,
+.edr .email-list td.to label,
+.edr .email-list td.subject label {
+	color: #666666;
+}
+
+.edr .email-list td.to {
+	 padding-bottom: 4px; /*9px; */
+}
+
+.dj_ie .edr .email-list td.to {
+	 padding-bottom: 9px; 
+}
+
+
+.edr .email-list th.flag, td.flag {
+	width: 5%;
+	padding-left: 10px
+}
+
+.edr .email-list td.flag .flagLabel {
+	text-decoration: underline;
+	/*color: blue;*/
+	margin-left: 5px;
+}
+
+.edr .email-list td.description {
+	padding-left: 10px
+}
+	
+.edr .email-list td.description fieldset {
+	border: 1px solid #666666;
+	position: relative;
+	margin: 0 1.5em .5em 0; 
+}
+
+.edr .email-list td.description fieldset legend {
+	color: #003366;
+	font-size: 8pt; /*11px; */
+	margin-left: 7px;
+	
+	position: absolute;
+	top: -.5em;
+	left: .2em;
+}
+
+.edr .email-list td.description fieldset .email-description {
+	padding: 7px;
+	/* margin-top: -6px; */ /* Works in mozilla, but not IE */
+}
+
+.edr .email-list .email-entry-description-hover { 
+/*
+	background-color: #99cccc;	
+	cursor: pointer; cursor: hand;  /* ORDER IS IMPORTANT! */
+*/
+}
+
+.edr .email-list .email-entry-description { 
+	cursor: arrow;
+}
+
+.edr .email-list .email-entry-togglegroup {
+	padding-top: 3px;
+	padding-bottom: 3px;
+    cursor: pointer;
+    background: #99ccff;
+    text-align: center;
+	align: center;
+	vertical-align: center;
+}
+
+.edr .email-list .groupresult {
+	padding-left: 10px;
+}
+
+.edr .email-list .groupresultbar {
+    background: #99ccff;
+}
+
+.edr .email-list tr.odd {
+  	/*background-color: #EBEBEB; light grey */
+  	/*background-color: #DEEAF7;  light blue */
+  	background-color: #ECF3FB; /* rob's blue */
+}
+
+.edr .email-list tr.even {
+	background-color: #FFF; 		
+}
+.edr .email-list tr.email-entry-row-body {
+  	height: 3em;
+	cursor: arrow;
+}
+.edr .email-list tr.email-entry-row-header {
+  	height: 2em;
+	cursor: arrow;
+}
+
+/*
+.edr .email-list tr .email-entry-row-hover {
+	background-color: #99cccc;	
+	cursor: pointer; cursor: hand; 
+}
+*/
+/*
+.edr .email-list .dijitTooltip .highlight{
+	font-weight: bold;
+}
+*/
+
+/*.edr .dijitTooltip, .edr .dijitTooltipContents { */
+
+/*
+.edr .to .dijitTooltip, .edr .to .dijitTooltipContents {
+	width: 250px;	
+	color: red;
+}
+*/
+
+.edr .email-list td.email-entry {
+	padding: 9px 5px 5px 5px;
+}
+
+.edr .email-list a.more-link {
+	font-size: 8pt;
+	color: #000;
+}
+
+.edr .email-list span.viewthread-link {
+	font-size: 8pt;
+	margin-left: 5px;
+}
+
+.edr .email-list span.viewthread-link a {
+	/*color: blue;*/ /* #000; */
+}
+
+.edr .email-list .results-document-details {
+	margin-bottom: 1em;
+}
+
+.edr .email-list .result-column-description {
+	margin-top: 0.2em;
+	margin-bottom: 0.8em;
+}
+
+/*-----------------------------------------
+	EMAIL RESULTS END
+------------------------------------------*/
+
+/*-----------------------------------------
+	EMAIL RESULT TO ADDRESS BEGIN
+------------------------------------------*/
+/*.edr #displayEmailToAddressData, #displayEmailFlagsData {
+	height: 200px;
+	background-color: white;
+	overflow: auto;	
+}
+
+.edr #setEmailFlagsValues {
+	height: 200px;
+	background-color: white;
+	overflow: auto;	
+	border: 1px solid #666666;
+	padding: 5px;
+}*/
+
+.edr .setEmailFlagCheckbox {
+	margin-top: 1px;
+}
+
+.edr .setEmailFlagCheckbox .disabled {
+	color: gray;
+}
+/*-----------------------------------------
+	EMAIL RESULT TO ADDRESS END
+------------------------------------------*/
+
+.edr .clearfix:after {
+     content: "."; 
+     display: block; 
+     height: 0; 
+     clear: both; 
+     visibility: hidden;
+}
+/* Hides from IE-mac \*/
+* html .edr .clearfix {height: 1%;}
+/* End hide from IE-mac */
+
+
+
+.edr .setColumnData {
+	height: 230px;
+}
+
+/*-----------------------------------------
+	SET COLUMN DIALOG START
+------------------------------------------*/
+/*.edr #resultSummaryData {
+	height: 340px; 
+	position: relative;
+}
+.edr #resultSummaryData .gpHeader {
+	overflow: visible;
+}
+.edr #resultSummaryData .tabContentBorder {
+	padding: 20px 10px 0px 10px;
+}
+.edr #resultSummaryData hr {
+	margin: 30px 0px;
+}
+.edr #resultSummaryData .dialog-instructions {
+	padding-bottom: 20px;
+}
+.edr #resultSummaryData #formatDisplaySummarySlider {
+	margin-left: 50px; 
+	margin-top: 20px; 
+	width: 300px; 
+	height: 40px;
+}*/
+
+.edr .setColumnData .setColumnsHeader {
+	float: left;
+	width: 100%;
+	height: 20px;
+}
+
+.edr .setColumnData .setColumnsHeader .setColumnsHeaderTable {
+	width: 300px;
+}
+
+.edr .setColumnData .setColumnsHeader .setColumnsHeaderShow {
+	width: 65px;
+	padding-left: 5px;
+}
+.edr .setColumnData .setColumnsHeader .setColumnsHeaderHeader {
+	padding-left: 5px
+}
+
+.dijitRtl .edr .setColumnData .setColumnsHeader {
+	float: right;
+}
+
+.dijitRtl .edr .setColumnData .setColumnsHeader .setColumnsHeaderShow {
+	padding-left: 0px;
+	padding-right: 5px;
+	text-align: right;
+}
+.dijitRtl .edr .setColumnData .setColumnsHeader .setColumnsHeaderHeader {
+	padding-left: 0px;
+	padding-right: 5px;
+	text-align: right;
+}
+
+.edr .setColumnData .setColumnsValues {
+	float: left;
+	margin-right: 10px;
+	height: 200px;
+	width: 300px;
+	overflow: auto;
+	border: 1px solid #666666;
+}
+
+.dijitRtl .edr .setColumnData .setColumnsValues {
+	float:right;
+}
+
+.edr .setColumnData .setColumnsValues table {
+	border-collapse: collapse;
+}
+.edr .setColumnData .setColumnsValues .odd {
+  	background-color: #DDEBFB; 
+}
+.edr .setColumnData .setColumnsValues .even {
+  	background-color: #FFF;
+}
+.edr .setColumnData .setColumnsValues tr.even:hover td, 
+.edr .setColumnData .setColumnsValues tr.odd:hover td {
+	background-color: #99cccc;
+}
+.edr .setColumnData .setColumnsValues tr.selected td {
+	background-color: #D5D5AC !important;
+}
+.edr .setColumnData .setColumnsValues tr.focused td {
+	background-color: #add682;
+}
+
+.edr .setColumnData .setColumnsValues td.columnCheckbox {
+	padding: 5px 0px 5px 15px;
+}
+
+.edr .setColumnData .setColumnsValues td.columnName {
+	padding-left: 5px;
+}
+.edr .setColumnData .setColumnsValues td.columnName a:active,
+.edr .setColumnData .setColumnsValues td.columnName a:hover {
+	color: black;
+	text-decoration: underline;
+}
+.edr .setColumnData .setColumnsValues td.columnName a:link {
+	color: black;
+	text-decoration: none;
+}
+
+.edr .setColumnData .setColumnsValuesButtons {
+	float: left;
+}
+
+.dijitRtl .edr .setColumnData .setColumnsValuesButtons {
+	float: right;
+}
+/*
+.edr .setColumnData .setColumnsValuesButtons .dijitButtonNode {
+	width: 10em;
+}
+*/
+/*-----------------------------------------
+	SET COLUMN DIALOG END
+------------------------------------------*/
+
+
+/*
+Result Toolbar
+*/
+
+
+.edr .ResultToolbarButtons button {
+	width: 30px;
+}
+
+.edr td.ResultToolbarButtons {
+	min-width: 335px;
+}
+
+.dj_ie .edr td.ResultToolbarButtons {
+	width: auto;
+}
+
+.edr table.ResultToolbarTable {
+	width: 100%;
+}
+
+.edr tr.ResultToolbarInfo {
+	display: none;
+	height: 30px;
+}
+
+.edr td.ResultToolbarCount {
+	text-align: left;
+	width: 225px;
+	padding-right: 10px;
+	white-space: nowrap;
+}
+
+.dijitRtl .edr td.ResultToolbarCount {
+	text-align: right;
+	width: 225px;
+	padding-left: 10px;
+	white-space: nowrap;
+}
+
+.edr tr.ResultToolbarButtons {
+	text-align:left;
+	white-space: nowrap;
+}
+
+.dijitRtl .edr tr.ResultToolbarButtons {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.edr td.ResultToolbarDocumentButtons {
+	text-align:left;
+}
+
+.dijitRtl .edr td.ResultToolbarDocumentButtons {
+	text-align: right;
+}
+
+.edr .ResultToolbarDocumentButtons > table {
+	width: 100%;
+}
+
+.edr td.ResultToolbarFilterByParent {
+	width: 200px;
+	vertical-align:top;
+}
+
+.edr td.ResultToolbarPerPageParent {
+	width: 170px;
+	vertical-align:top;
+}
+
+.edr td.ResultToolbarPaginationParent {
+	white-space: nowrap;
+	text-align:right;
+}
+
+.dijitRtl .edr td.ResultToolbarPaginationParent {
+	white-space: nowrap;
+	text-align: left;
+}
+
+.edr .ResultToolbarPaginationParent a {
+	text-decoration: none;
+}
+
+.edr .ResultToolbarHelp {
+	text-align: right;
+	white-space: nowrap;
+	padding-right: 5px;
+	padding-bottom:2px;
+}
+
+.dijitRtl .edr .ResultToolbarHelp {
+	text-align: left;
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-bottom:2px;
+}
+

@@ -1,0 +1,61 @@
+<div>
+	<form dojoAttachPoint="analytcsFacetPairsOptionsForm" style="width:100%;height:100%;">
+		<div style="width:98%;padding:5px;">
+			<div dojoAttachPoint="topLeftContainer" style="width:48%;float:left;">
+				<label for="${prefix}defaultViewIdForFacetPair">${messages_preferences_analytics_facetPairs_defaultView}:</label>
+				<br/>
+				<select dojoAttachPoint="defaultView" id="${prefix}defaultViewIdForFacetPair" dojoType="dijit.form.FilteringSelect" name="facetPairsDefaultView" searchAttr="label" labelAttr="label">
+				</select><br/><br/>
+				
+				<label for="${prefix}numberOfRowResultsIdForFacetPair">${messages_preferences_analytics_facetPairs_numberOfRowResults}:</label>
+				<br/>
+				<select dojoAttachPoint="numberOfRowResults" id="${prefix}numberOfRowResultsIdForFacetPair" dojoType="dijit.form.ComboBox" name="facetPairsNumberOfRowResults">
+				</select><br/><br/>
+				
+				<!-- 
+				<label for="${prefix}numberOfRowsInTableForFacetPair">${messages_preferences_analytics_facetPairs_numberOfRowsInTable}:</label><br/>
+				<select dojoAttachPoint="numberOfRowsInTable" id="${prefix}numberOfRowsInTableForFacetPair" dojoType="dijit.form.ComboBox" name="facetPairsNumberOfRowsInTable">
+				</select><br/><br/>
+				 -->
+				
+				<label for="${prefix}numberOfColumnResultsIdForFacetPair">${messages_preferences_analytics_facetPairs_numberOfColumnResults}:</label><br/>
+				<select dojoAttachPoint="numberOfColumnResults" id="${prefix}numberOfColumnResultsIdForFacetPair" dojoType="dijit.form.ComboBox" name="facetPairsNumberOfColumnResults">
+				</select><br/><br/>
+				
+				<!-- 
+				<label for="${prefix}numberOfColumnsInTableForFacetPair">${messages_preferences_analytics_facetPairs_numberOfColumnsInTable}:</label><br/>
+				<select dojoAttachPoint="numberOfColumnsInTable" id="${prefix}numberOfColumnsInTableForFacetPair" dojoType="dijit.form.ComboBox" name="facetPairsNumberOfColumnsInTable">
+				</select><br/><br/>
+				-->
+			</div>
+			<div dojoAttachPoint="topRightContainer" style="width:48%;float:left;">
+				<label for="${prefix}defaultRowShowTargetIdForFacetPair">${messages_preferences_analytics_facetPairs_defaultRowShowTarget}:</label>
+				<br/>
+				<select dojoAttachPoint="defaultRowShowTarget" id="${prefix}defaultRowShowTargetIdForFacetPair" dojoType="dijit.form.FilteringSelect" name="facetPairsDefaultRowShowTarget" searchAttr="label" labelAttr="label">
+				</select><br/><br/>	
+				
+				<label for="${prefix}defaultColumnShowTargetIdForFacetPair">${messages_preferences_analytics_facetPairs_defaultColumnShowTarget}:</label>
+				<br/>
+				<select dojoAttachPoint="defaultColumnShowTarget" id="${prefix}defaultColumnShowTargetIdForFacetPair" dojoType="dijit.form.FilteringSelect" name="facetPairsDefaultColumnShowTarget" searchAttr="label" labelAttr="label">
+				</select><br/><br/>	
+				
+				<label for="${prefix}defaultListSortByIdForFacetPair">${messages_preferences_analytics_facetPairs_defaultListSortBy}:</label>
+				<br/>
+				<select dojoAttachPoint="defaultListSortBy" id="${prefix}defaultListSortByIdForFacetPair" dojoType="dijit.form.FilteringSelect" name="facetPairsDefaultListSortBy" searchAttr="label" labelAttr="label">
+				</select><br/><br/>
+				
+				<!-- 
+				<label for="${prefix}defaultRowSortByIdForFacetPair">${messages_preferences_analytics_facetPairs_defaultRowSortBy}:</label>
+				<br/>
+				<select dojoAttachPoint="defaultRowSortBy" id="${prefix}defaultRowSortByIdForFacetPair" dojoType="dijit.form.FilteringSelect" name="facetPairsDefaultRowSortBy" searchAttr="label" labelAttr="label">
+				</select><br/><br/>
+				
+				<label for="${prefix}defaultColumnSortByIdForFacetPair">${messages_preferences_analytics_facetPairs_defaultColumnSortBy}:</label>
+				<br/>
+				<select dojoAttachPoint="defaultColumnSortBy" id="${prefix}defaultColumnSortByIdForFacetPair" dojoType="dijit.form.FilteringSelect" name="facetPairsDefaultColumnSortBy" searchAttr="label" labelAttr="label">
+				</select><br/><br/>
+				-->
+			</div>
+		</div>
+	</form>	
+</div>
